@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1050" viewBox="0 0 1500 1050"><title>Wireframe Benchmark Lab</title><rect width="1500" height="1050" fill="white"/>
+<rect x="20" y="20" width="1460" height="990" fill="white" stroke="black" stroke-width="1.5"/>
+<rect x="20" y="20" width="270" height="990" fill="#f5f5f5" stroke="black" stroke-width="1.5"/>
+<text x="48" y="72" font-family="Arial,sans-serif" font-size="27" fill="black">DIJKSTRA LAB</text>
+<rect x="35" y="135" width="240" height="60" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="48" y="172" font-family="Arial,sans-serif" font-size="21" fill="black">Navigation Simulator</text>
+<rect x="35" y="215" width="240" height="60" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="48" y="252" font-family="Arial,sans-serif" font-size="21" fill="black">Comparison</text>
+<rect x="35" y="295" width="240" height="60" fill="#dddddd" stroke="black" stroke-width="1.5"/>
+<text x="48" y="332" font-family="Arial,sans-serif" font-size="21" fill="black">Benchmark Lab</text>
+<rect x="35" y="375" width="240" height="60" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="48" y="412" font-family="Arial,sans-serif" font-size="21" fill="black">Experiment History</text>
+<text x="45" y="960" font-family="Arial,sans-serif" font-size="20" fill="black">Panel navigasi</text>
+<text x="325" y="76" font-family="Arial,sans-serif" font-size="32" fill="black">Benchmark Lab</text>
+<text x="325" y="112" font-family="Arial,sans-serif" font-size="21" fill="black">Rancangan antarmuka — bukan hasil eksperimen</text>
+<text x="750" y="1035" font-family="Arial,sans-serif" font-size="21" fill="black">Placeholder menunjukkan posisi komponen dan data.</text>
+<rect x="325" y="150" width="1125" height="310" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="345" y="190" font-family="Arial,sans-serif" font-size="21" fill="black">Dataset</text>
+<rect x="345" y="204" width="340" height="48" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="357" y="236" font-family="Arial,sans-serif" font-size="21" fill="black">[Pilih dataset] v</text>
+<text x="720" y="190" font-family="Arial,sans-serif" font-size="21" fill="black">Jumlah kasus uji</text>
+<rect x="720" y="204" width="330" height="48" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="732" y="236" font-family="Arial,sans-serif" font-size="21" fill="black">[jumlah]</text>
+<text x="1080" y="190" font-family="Arial,sans-serif" font-size="21" fill="black">Mode pasangan</text>
+<rect x="1080" y="204" width="350" height="48" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="1092" y="236" font-family="Arial,sans-serif" font-size="21" fill="black">[Preset / Acak] v</text>
+<text x="345" y="295" font-family="Arial,sans-serif" font-size="21" fill="black">Jumlah pengulangan</text>
+<rect x="345" y="309" width="340" height="48" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="357" y="341" font-family="Arial,sans-serif" font-size="21" fill="black">[jumlah]</text>
+<text x="720" y="295" font-family="Arial,sans-serif" font-size="21" fill="black">Pemanasan awal</text>
+<rect x="720" y="309" width="330" height="48" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="732" y="341" font-family="Arial,sans-serif" font-size="21" fill="black">[jumlah]</text>
+<text x="1080" y="295" font-family="Arial,sans-serif" font-size="21" fill="black">Random seed</text>
+<rect x="1080" y="309" width="350" height="48" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="1092" y="341" font-family="Arial,sans-serif" font-size="21" fill="black">[nilai]</text>
+<rect x="345" y="390" width="285" height="48" fill="#e5e5e5" stroke="black" stroke-width="1.5"/>
+<text x="360" y="421" font-family="Arial,sans-serif" font-size="21" fill="black">Jalankan benchmark</text>
+<text x="660" y="422" font-family="Arial,sans-serif" font-size="21" fill="black">Status: [siap / berjalan / selesai / gagal]</text>
+<text x="325" y="510" font-family="Arial,sans-serif" font-size="27" fill="black">Ringkasan hasil eksperimen</text>
+<rect x="325" y="540" width="1125" height="220" fill="white" stroke="black" stroke-width="1.5"/>
+<rect x="325" y="540" width="1125" height="55" fill="#eeeeee" stroke="black" stroke-width="1.5"/>
+<text x="337.0" y="574" font-family="Arial,sans-serif" font-size="20" fill="black">Statistik waktu</text>
+<text x="712.0" y="574" font-family="Arial,sans-serif" font-size="20" fill="black">Standar</text>
+<path d="M700.0 540 V760" stroke="black"/>
+<text x="1087.0" y="574" font-family="Arial,sans-serif" font-size="20" fill="black">Optimasi</text>
+<path d="M1075.0 540 V760" stroke="black"/>
+<path d="M325 595 H1450" stroke="black"/>
+<text x="337.0" y="629" font-family="Arial,sans-serif" font-size="20" fill="black">Rata-rata / median</text>
+<text x="712.0" y="629" font-family="Arial,sans-serif" font-size="20" fill="black">[nilai] / [nilai]</text>
+<text x="1087.0" y="629" font-family="Arial,sans-serif" font-size="20" fill="black">[nilai] / [nilai]</text>
+<path d="M325 650 H1450" stroke="black"/>
+<text x="337.0" y="684" font-family="Arial,sans-serif" font-size="20" fill="black">Minimum / maksimum</text>
+<text x="712.0" y="684" font-family="Arial,sans-serif" font-size="20" fill="black">[nilai] / [nilai]</text>
+<text x="1087.0" y="684" font-family="Arial,sans-serif" font-size="20" fill="black">[nilai] / [nilai]</text>
+<path d="M325 705 H1450" stroke="black"/>
+<text x="337.0" y="739" font-family="Arial,sans-serif" font-size="20" fill="black">Simpangan baku</text>
+<text x="712.0" y="739" font-family="Arial,sans-serif" font-size="20" fill="black">[nilai]</text>
+<text x="1087.0" y="739" font-family="Arial,sans-serif" font-size="20" fill="black">[nilai]</text>
+<text x="325" y="800" font-family="Arial,sans-serif" font-size="22" fill="black">Ketidaksesuaian: [jumlah]     Eksekusi tercatat: [jumlah]</text>
+<rect x="1180" y="775" width="270" height="48" fill="#e5e5e5" stroke="black" stroke-width="1.5"/>
+<text x="1195" y="806" font-family="Arial,sans-serif" font-size="21" fill="black">Ekspor CSV</text>
+<rect x="325" y="850" width="1125" height="110" fill="white" stroke="black" stroke-width="1.5"/>
+<rect x="325" y="850" width="1125" height="55" fill="#eeeeee" stroke="black" stroke-width="1.5"/>
+<text x="337.0" y="884" font-family="Arial,sans-serif" font-size="20" fill="black">Algoritma</text>
+<text x="618.25" y="884" font-family="Arial,sans-serif" font-size="20" fill="black">Sumber / tujuan</text>
+<path d="M606.25 850 V960" stroke="black"/>
+<text x="899.5" y="884" font-family="Arial,sans-serif" font-size="20" fill="black">Waktu</text>
+<path d="M887.5 850 V960" stroke="black"/>
+<text x="1180.75" y="884" font-family="Arial,sans-serif" font-size="20" fill="black">Status</text>
+<path d="M1168.75 850 V960" stroke="black"/>
+<path d="M325 905 H1450" stroke="black"/>
+<text x="337.0" y="939" font-family="Arial,sans-serif" font-size="20" fill="black">[nama]</text>
+<text x="618.25" y="939" font-family="Arial,sans-serif" font-size="20" fill="black">[ID] / [ID]</text>
+<text x="899.5" y="939" font-family="Arial,sans-serif" font-size="20" fill="black">[nilai] ms</text>
+<text x="1180.75" y="939" font-family="Arial,sans-serif" font-size="20" fill="black">[status]</text></svg>

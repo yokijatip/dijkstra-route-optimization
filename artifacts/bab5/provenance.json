@@ -1,0 +1,24 @@
+{
+  "cpu": "Intel Core i5-1240P",
+  "physicalCores": 12,
+  "logicalProcessors": 16,
+  "ramBytes": 8276021248,
+  "os": "Windows-11-10.0.26200-SP0",
+  "algorithmFiles": {
+    "backend/app/algorithms/standard.py": "bde420e46b8b424f22287cecf7fdf3e8c55edc13d050d7e5e74bdebfd8aa2051",
+    "backend/app/algorithms/optimized.py": "3960592acbf3cbed7df6ed0507eb9c6a25871ee55b917946759ae27fc3d2d117",
+    "backend/app/algorithms/common.py": "7b0727bc98daf2d760363c6963857d8d12514dd0910d2e612409e59e87dc316d",
+    "backend/app/services/graph_service.py": "0eab5d12ed1aa6e63a09659865519a5e39e7973dab7b2c81ea92d7ff98100531",
+    "backend/app/services/benchmark_service.py": "46f2aa1872ab7de2b2a707b497eacbc012aba859070d4473e1fe4a46a1b276d6",
+    "backend/scripts/run_thesis_experiment.py": "fac19b2af480cf94618d35b5f95ee2b60cc110a7d7ad72c0a5e5f5d3e7721d3c"
+  },
+  "chartLibrary": {
+    "matplotlib": "3.11.2"
+  },
+  "measurementCaveats": [
+    "Fixed standard-then-optimized order",
+    "Application verification and environment preparation overlapped with part of this session",
+    "Ten sampled pairs are all reachable; not an exhaustive route validation",
+    "Firestore disabled; local memory and file archives only"
+  ]
+}

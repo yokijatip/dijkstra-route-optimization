@@ -1,0 +1,28 @@
+{
+  "id": "small-demo",
+  "name": "Small Demo Network",
+  "version": "1.0.0",
+  "description": "Graf sintetis kecil untuk demo dan regression test. Bobot merepresentasikan jarak relatif.",
+  "nodes": [
+    {"id": "soreang", "name": "Soreang", "latitude": -6.977, "longitude": 107.519},
+    {"id": "margasari", "name": "Margasari", "latitude": -6.978, "longitude": 107.546},
+    {"id": "katapang", "name": "Katapang", "latitude": -6.988, "longitude": 107.566},
+    {"id": "dayeuhkolot", "name": "Dayeuhkolot", "latitude": -6.987, "longitude": 107.621},
+    {"id": "baleendah", "name": "Baleendah", "latitude": -6.996, "longitude": 107.630},
+    {"id": "bojongsoang", "name": "Bojongsoang", "latitude": -7.001, "longitude": 107.644},
+    {"id": "buahbatu", "name": "Buahbatu", "latitude": -6.952, "longitude": 107.646},
+    {"id": "bandung", "name": "Bandung", "latitude": -6.917, "longitude": 107.619}
+  ],
+  "edges": [
+    {"from": "soreang", "to": "margasari", "weight": 3.2, "bidirectional": true},
+    {"from": "soreang", "to": "katapang", "weight": 5.1, "bidirectional": true},
+    {"from": "margasari", "to": "katapang", "weight": 1.8, "bidirectional": true},
+    {"from": "margasari", "to": "dayeuhkolot", "weight": 6.4, "bidirectional": true},
+    {"from": "katapang", "to": "dayeuhkolot", "weight": 2.7, "bidirectional": true},
+    {"from": "dayeuhkolot", "to": "baleendah", "weight": 1.5, "bidirectional": true},
+    {"from": "dayeuhkolot", "to": "bandung", "weight": 4.8, "bidirectional": true},
+    {"from": "baleendah", "to": "bojongsoang", "weight": 2.1, "bidirectional": true},
+    {"from": "bojongsoang", "to": "buahbatu", "weight": 3.7, "bidirectional": true},
+    {"from": "buahbatu", "to": "bandung", "weight": 2.9, "bidirectional": true}
+  ]
+}

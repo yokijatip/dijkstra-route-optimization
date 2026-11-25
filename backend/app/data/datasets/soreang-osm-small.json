@@ -1,0 +1,4240 @@
+{
+  "id": "soreang-osm-small",
+  "name": "Soreang, Bandung Regency, West Java, Indonesia - drive",
+  "version": "1.0.0",
+  "description": "Jaringan jalan drive dari OpenStreetMap untuk wilayah Soreang, Bandung Regency, West Java, Indonesia. Dataset diproses offline sebelum dimuat ke backend.",
+  "source": "OpenStreetMap",
+  "region": "Soreang, Bandung Regency, West Java, Indonesia",
+  "networkType": "drive",
+  "weightUnit": "meter",
+  "extractedAt": "2026-09-04T23:11:56.000697+00:00",
+  "attribution": "\u00a9 OpenStreetMap contributors",
+  "nodes": [
+    {
+      "id": "1865691029",
+      "name": "Intersection 1865691029",
+      "latitude": -7.0350284,
+      "longitude": 107.5240235
+    },
+    {
+      "id": "1865691073",
+      "name": "Intersection 1865691073",
+      "latitude": -7.0370716,
+      "longitude": 107.5384394
+    },
+    {
+      "id": "1865691083",
+      "name": "Intersection 1865691083",
+      "latitude": -7.0297016,
+      "longitude": 107.5285313
+    },
+    {
+      "id": "1865707902",
+      "name": "Intersection 1865707902",
+      "latitude": -7.0335131,
+      "longitude": 107.52089
+    },
+    {
+      "id": "1865707913",
+      "name": "Intersection 1865707913",
+      "latitude": -7.0338538,
+      "longitude": 107.5220434
+    },
+    {
+      "id": "1865707925",
+      "name": "Intersection 1865707925",
+      "latitude": -7.0341353,
+      "longitude": 107.5198312
+    },
+    {
+      "id": "1865707953",
+      "name": "Intersection 1865707953",
+      "latitude": -7.0363341,
+      "longitude": 107.5166692
+    },
+    {
+      "id": "1865707970",
+      "name": "Intersection 1865707970",
+      "latitude": -7.0314102,
+      "longitude": 107.5229943
+    },
+    {
+      "id": "1865707972",
+      "name": "Intersection 1865707972",
+      "latitude": -7.0286649,
+      "longitude": 107.5232688
+    },
+    {
+      "id": "1865707986",
+      "name": "Intersection 1865707986",
+      "latitude": -7.0304766,
+      "longitude": 107.5230994
+    },
+    {
+      "id": "2461217851",
+      "name": "Intersection 2461217851",
+      "latitude": -7.0349635,
+      "longitude": 107.5269377
+    },
+    {
+      "id": "2477174764",
+      "name": "Intersection 2477174764",
+      "latitude": -7.0372139,
+      "longitude": 107.5191151
+    },
+    {
+      "id": "2477175085",
+      "name": "Intersection 2477175085",
+      "latitude": -7.0345136,
+      "longitude": 107.524647
+    },
+    {
+      "id": "2477175086",
+      "name": "Intersection 2477175086",
+      "latitude": -7.0345106,
+      "longitude": 107.525161
+    },
+    {
+      "id": "2477175089",
+      "name": "Intersection 2477175089",
+      "latitude": -7.0346887,
+      "longitude": 107.5258465
+    },
+    {
+      "id": "2477176231",
+      "name": "Intersection 2477176231",
+      "latitude": -7.0360945,
+      "longitude": 107.5404882
+    },
+    {
+      "id": "2477281169",
+      "name": "Intersection 2477281169",
+      "latitude": -7.0293014,
+      "longitude": 107.5264977
+    },
+    {
+      "id": "4961460386",
+      "name": "Intersection 4961460386",
+      "latitude": -7.0363408,
+      "longitude": 107.5287036
+    },
+    {
+      "id": "4961460401",
+      "name": "Intersection 4961460401",
+      "latitude": -7.0360773,
+      "longitude": 107.5313272
+    },
+    {
+      "id": "4961460419",
+      "name": "Intersection 4961460419",
+      "latitude": -7.0380791,
+      "longitude": 107.5356998
+    },
+    {
+      "id": "4961460421",
+      "name": "Intersection 4961460421",
+      "latitude": -7.0371939,
+      "longitude": 107.5361176
+    },
+    {
+      "id": "4961460422",
+      "name": "Intersection 4961460422",
+      "latitude": -7.0371151,
+      "longitude": 107.5361515
+    },
+    {
+      "id": "4961460438",
+      "name": "Intersection 4961460438",
+      "latitude": -7.0361292,
+      "longitude": 107.5380274
+    },
+    {
+      "id": "4961460440",
+      "name": "Intersection 4961460440",
+      "latitude": -7.0358583,
+      "longitude": 107.5382553
+    },
+    {
+      "id": "4961460839",
+      "name": "Intersection 4961460839",
+      "latitude": -7.0302048,
+      "longitude": 107.5271483
+    },
+    {
+      "id": "4961460840",
+      "name": "Intersection 4961460840",
+      "latitude": -7.0306283,
+      "longitude": 107.5271455
+    },
+    {
+      "id": "4961460841",
+      "name": "Intersection 4961460841",
+      "latitude": -7.030697,
+      "longitude": 107.5265819
+    },
+    {
+      "id": "4961460845",
+      "name": "Intersection 4961460845",
+      "latitude": -7.0306148,
+      "longitude": 107.5265757
+    },
+    {
+      "id": "4961460848",
+      "name": "Intersection 4961460848",
+      "latitude": -7.030266,
+      "longitude": 107.5259459
+    },
+    {
+      "id": "4961460850",
+      "name": "Intersection 4961460850",
+      "latitude": -7.0298834,
+      "longitude": 107.5253462
+    },
+    {
+      "id": "4961460851",
+      "name": "Intersection 4961460851",
+      "latitude": -7.030611,
+      "longitude": 107.5268146
+    },
+    {
+      "id": "4961460852",
+      "name": "Intersection 4961460852",
+      "latitude": -7.0300132,
+      "longitude": 107.5268445
+    },
+    {
+      "id": "4961460853",
+      "name": "Intersection 4961460853",
+      "latitude": -7.029954,
+      "longitude": 107.5259891
+    },
+    {
+      "id": "4961460854",
+      "name": "Intersection 4961460854",
+      "latitude": -7.0303125,
+      "longitude": 107.5264932
+    },
+    {
+      "id": "4961460856",
+      "name": "Intersection 4961460856",
+      "latitude": -7.0302285,
+      "longitude": 107.5259759
+    },
+    {
+      "id": "4961460857",
+      "name": "Intersection 4961460857",
+      "latitude": -7.0299466,
+      "longitude": 107.5259222
+    },
+    {
+      "id": "4961460858",
+      "name": "Intersection 4961460858",
+      "latitude": -7.0298721,
+      "longitude": 107.5252131
+    },
+    {
+      "id": "4961460859",
+      "name": "Intersection 4961460859",
+      "latitude": -7.0299865,
+      "longitude": 107.5265073
+    },
+    {
+      "id": "4961460860",
+      "name": "Intersection 4961460860",
+      "latitude": -7.0306188,
+      "longitude": 107.5264965
+    },
+    {
+      "id": "4961460861",
+      "name": "Intersection 4961460861",
+      "latitude": -7.0306893,
+      "longitude": 107.5280964
+    },
+    {
+      "id": "5482223866",
+      "name": "Intersection 5482223866",
+      "latitude": -7.0411796,
+      "longitude": 107.535435
+    },
+    {
+      "id": "5482223871",
+      "name": "Intersection 5482223871",
+      "latitude": -7.0404895,
+      "longitude": 107.5358953
+    },
+    {
+      "id": "5482223947",
+      "name": "Intersection 5482223947",
+      "latitude": -7.0415741,
+      "longitude": 107.5345431
+    },
+    {
+      "id": "5482223951",
+      "name": "Intersection 5482223951",
+      "latitude": -7.0414491,
+      "longitude": 107.533709
+    },
+    {
+      "id": "5482223952",
+      "name": "Intersection 5482223952",
+      "latitude": -7.0416994,
+      "longitude": 107.5338149
+    },
+    {
+      "id": "5482223953",
+      "name": "Intersection 5482223953",
+      "latitude": -7.0419666,
+      "longitude": 107.534063
+    },
+    {
+      "id": "5482223955",
+      "name": "Intersection 5482223955",
+      "latitude": -7.0413294,
+      "longitude": 107.5346719
+    },
+    {
+      "id": "5482223956",
+      "name": "Intersection 5482223956",
+      "latitude": -7.0420102,
+      "longitude": 107.5346006
+    },
+    {
+      "id": "5482223957",
+      "name": "Intersection 5482223957",
+      "latitude": -7.0418032,
+      "longitude": 107.534413
+    },
+    {
+      "id": "5482223959",
+      "name": "Intersection 5482223959",
+      "latitude": -7.0416442,
+      "longitude": 107.5340831
+    },
+    {
+      "id": "5482223961",
+      "name": "Intersection 5482223961",
+      "latitude": -7.0411379,
+      "longitude": 107.5351185
+    },
+    {
+      "id": "5482223969",
+      "name": "Intersection 5482223969",
+      "latitude": -7.0419922,
+      "longitude": 107.5339477
+    },
+    {
+      "id": "5482223974",
+      "name": "Intersection 5482223974",
+      "latitude": -7.0417127,
+      "longitude": 107.5337673
+    },
+    {
+      "id": "5482223982",
+      "name": "Intersection 5482223982",
+      "latitude": -7.0412595,
+      "longitude": 107.534576
+    },
+    {
+      "id": "5482223984",
+      "name": "Intersection 5482223984",
+      "latitude": -7.0411084,
+      "longitude": 107.5348314
+    },
+    {
+      "id": "5482223986",
+      "name": "Intersection 5482223986",
+      "latitude": -7.041208,
+      "longitude": 107.5357999
+    },
+    {
+      "id": "5482223987",
+      "name": "Intersection 5482223987",
+      "latitude": -7.041384,
+      "longitude": 107.5361739
+    },
+    {
+      "id": "5482223988",
+      "name": "Intersection 5482223988",
+      "latitude": -7.0412452,
+      "longitude": 107.5361931
+    },
+    {
+      "id": "5482224000",
+      "name": "Intersection 5482224000",
+      "latitude": -7.0402952,
+      "longitude": 107.5359192
+    },
+    {
+      "id": "5490411762",
+      "name": "Intersection 5490411762",
+      "latitude": -7.0356534,
+      "longitude": 107.5379696
+    },
+    {
+      "id": "5490411767",
+      "name": "Intersection 5490411767",
+      "latitude": -7.0374525,
+      "longitude": 107.5353729
+    },
+    {
+      "id": "5490411769",
+      "name": "Intersection 5490411769",
+      "latitude": -7.0403597,
+      "longitude": 107.5362858
+    },
+    {
+      "id": "5490411774",
+      "name": "Intersection 5490411774",
+      "latitude": -7.0348455,
+      "longitude": 107.5263111
+    },
+    {
+      "id": "5490411775",
+      "name": "Intersection 5490411775",
+      "latitude": -7.034735,
+      "longitude": 107.5267313
+    },
+    {
+      "id": "5490411816",
+      "name": "Intersection 5490411816",
+      "latitude": -7.038902,
+      "longitude": 107.5370598
+    },
+    {
+      "id": "5490411817",
+      "name": "Intersection 5490411817",
+      "latitude": -7.0384025,
+      "longitude": 107.5381413
+    },
+    {
+      "id": "5490412023",
+      "name": "Intersection 5490412023",
+      "latitude": -7.0361968,
+      "longitude": 107.5408274
+    },
+    {
+      "id": "5490412027",
+      "name": "Intersection 5490412027",
+      "latitude": -7.0360165,
+      "longitude": 107.541059
+    },
+    {
+      "id": "5490412029",
+      "name": "Intersection 5490412029",
+      "latitude": -7.0359475,
+      "longitude": 107.5409562
+    },
+    {
+      "id": "5490412030",
+      "name": "Intersection 5490412030",
+      "latitude": -7.0359613,
+      "longitude": 107.5408654
+    },
+    {
+      "id": "5490412430",
+      "name": "Intersection 5490412430",
+      "latitude": -7.0343247,
+      "longitude": 107.5332047
+    },
+    {
+      "id": "5490412436",
+      "name": "Intersection 5490412436",
+      "latitude": -7.0346845,
+      "longitude": 107.5335036
+    },
+    {
+      "id": "5490412467",
+      "name": "Intersection 5490412467",
+      "latitude": -7.0329813,
+      "longitude": 107.5405633
+    },
+    {
+      "id": "5490412469",
+      "name": "Intersection 5490412469",
+      "latitude": -7.0331129,
+      "longitude": 107.5403359
+    },
+    {
+      "id": "5490412470",
+      "name": "Intersection 5490412470",
+      "latitude": -7.0330912,
+      "longitude": 107.539933
+    },
+    {
+      "id": "5490412471",
+      "name": "Intersection 5490412471",
+      "latitude": -7.0329506,
+      "longitude": 107.5400007
+    },
+    {
+      "id": "5490412472",
+      "name": "Intersection 5490412472",
+      "latitude": -7.0328922,
+      "longitude": 107.5398646
+    },
+    {
+      "id": "5490412474",
+      "name": "Intersection 5490412474",
+      "latitude": -7.0334247,
+      "longitude": 107.5408734
+    },
+    {
+      "id": "5490412508",
+      "name": "Intersection 5490412508",
+      "latitude": -7.0369836,
+      "longitude": 107.5385659
+    },
+    {
+      "id": "5490412512",
+      "name": "Intersection 5490412512",
+      "latitude": -7.0374402,
+      "longitude": 107.5382191
+    },
+    {
+      "id": "5490412520",
+      "name": "Intersection 5490412520",
+      "latitude": -7.0380827,
+      "longitude": 107.5378514
+    },
+    {
+      "id": "5490412524",
+      "name": "Intersection 5490412524",
+      "latitude": -7.0396058,
+      "longitude": 107.5368553
+    },
+    {
+      "id": "5490412529",
+      "name": "Intersection 5490412529",
+      "latitude": -7.0393061,
+      "longitude": 107.5366104
+    },
+    {
+      "id": "5490412530",
+      "name": "Intersection 5490412530",
+      "latitude": -7.0333208,
+      "longitude": 107.523986
+    },
+    {
+      "id": "5490412543",
+      "name": "Intersection 5490412543",
+      "latitude": -7.0299306,
+      "longitude": 107.5268505
+    },
+    {
+      "id": "5490412544",
+      "name": "Intersection 5490412544",
+      "latitude": -7.0302893,
+      "longitude": 107.5259467
+    },
+    {
+      "id": "5490412547",
+      "name": "Intersection 5490412547",
+      "latitude": -7.0302282,
+      "longitude": 107.5259051
+    },
+    {
+      "id": "5490412550",
+      "name": "Intersection 5490412550",
+      "latitude": -7.0294474,
+      "longitude": 107.5247786
+    },
+    {
+      "id": "5490412553",
+      "name": "Intersection 5490412553",
+      "latitude": -7.0289776,
+      "longitude": 107.524808
+    },
+    {
+      "id": "5490412554",
+      "name": "Intersection 5490412554",
+      "latitude": -7.0304338,
+      "longitude": 107.5241214
+    },
+    {
+      "id": "5490412561",
+      "name": "Intersection 5490412561",
+      "latitude": -7.0289032,
+      "longitude": 107.5244207
+    },
+    {
+      "id": "5490412562",
+      "name": "Intersection 5490412562",
+      "latitude": -7.028525,
+      "longitude": 107.5252197
+    },
+    {
+      "id": "5490412565",
+      "name": "Intersection 5490412565",
+      "latitude": -7.0290341,
+      "longitude": 107.5251407
+    },
+    {
+      "id": "5490412566",
+      "name": "Intersection 5490412566",
+      "latitude": -7.0278702,
+      "longitude": 107.5228688
+    },
+    {
+      "id": "5490412571",
+      "name": "Intersection 5490412571",
+      "latitude": -7.0288268,
+      "longitude": 107.5240581
+    },
+    {
+      "id": "5490412577",
+      "name": "Intersection 5490412577",
+      "latitude": -7.0281218,
+      "longitude": 107.5244674
+    },
+    {
+      "id": "5490412579",
+      "name": "Intersection 5490412579",
+      "latitude": -7.0280951,
+      "longitude": 107.5243897
+    },
+    {
+      "id": "5490412580",
+      "name": "Intersection 5490412580",
+      "latitude": -7.027866,
+      "longitude": 107.5244547
+    },
+    {
+      "id": "5490412582",
+      "name": "Intersection 5490412582",
+      "latitude": -7.0274495,
+      "longitude": 107.5231258
+    },
+    {
+      "id": "5490412587",
+      "name": "Intersection 5490412587",
+      "latitude": -7.0325302,
+      "longitude": 107.5283078
+    },
+    {
+      "id": "5490412589",
+      "name": "Intersection 5490412589",
+      "latitude": -7.0323793,
+      "longitude": 107.5275922
+    },
+    {
+      "id": "5490412595",
+      "name": "Intersection 5490412595",
+      "latitude": -7.0353425,
+      "longitude": 107.5330129
+    },
+    {
+      "id": "5490412600",
+      "name": "Intersection 5490412600",
+      "latitude": -7.0362184,
+      "longitude": 107.5325489
+    },
+    {
+      "id": "5490412927",
+      "name": "Intersection 5490412927",
+      "latitude": -7.0341926,
+      "longitude": 107.5234643
+    },
+    {
+      "id": "5490412936",
+      "name": "Intersection 5490412936",
+      "latitude": -7.0355489,
+      "longitude": 107.5240436
+    },
+    {
+      "id": "5490413018",
+      "name": "Intersection 5490413018",
+      "latitude": -7.0368932,
+      "longitude": 107.5323544
+    },
+    {
+      "id": "5490413019",
+      "name": "Intersection 5490413019",
+      "latitude": -7.035284,
+      "longitude": 107.5328171
+    },
+    {
+      "id": "5490413021",
+      "name": "Intersection 5490413021",
+      "latitude": -7.0362849,
+      "longitude": 107.5322793
+    },
+    {
+      "id": "5490413053",
+      "name": "Intersection 5490413053",
+      "latitude": -7.0358759,
+      "longitude": 107.5310319
+    },
+    {
+      "id": "5490413077",
+      "name": "Intersection 5490413077",
+      "latitude": -7.0304331,
+      "longitude": 107.5314627
+    },
+    {
+      "id": "5490413079",
+      "name": "Intersection 5490413079",
+      "latitude": -7.0303797,
+      "longitude": 107.5311983
+    },
+    {
+      "id": "5490413080",
+      "name": "Intersection 5490413080",
+      "latitude": -7.0305975,
+      "longitude": 107.5297996
+    },
+    {
+      "id": "5490413243",
+      "name": "Intersection 5490413243",
+      "latitude": -7.0301925,
+      "longitude": 107.5303098
+    },
+    {
+      "id": "5490413255",
+      "name": "Intersection 5490413255",
+      "latitude": -7.0297949,
+      "longitude": 107.5301657
+    },
+    {
+      "id": "5490413257",
+      "name": "Intersection 5490413257",
+      "latitude": -7.0301113,
+      "longitude": 107.5300216
+    },
+    {
+      "id": "5490413259",
+      "name": "Intersection 5490413259",
+      "latitude": -7.0286469,
+      "longitude": 107.526866
+    },
+    {
+      "id": "5490413483",
+      "name": "Intersection 5490413483",
+      "latitude": -7.0296778,
+      "longitude": 107.5284447
+    },
+    {
+      "id": "5490413493",
+      "name": "Intersection 5490413493",
+      "latitude": -7.0352813,
+      "longitude": 107.5234857
+    },
+    {
+      "id": "5490413494",
+      "name": "Intersection 5490413494",
+      "latitude": -7.0352121,
+      "longitude": 107.5234549
+    },
+    {
+      "id": "5490413502",
+      "name": "Intersection 5490413502",
+      "latitude": -7.035107,
+      "longitude": 107.5240383
+    },
+    {
+      "id": "5490413505",
+      "name": "Intersection 5490413505",
+      "latitude": -7.0347699,
+      "longitude": 107.5258518
+    },
+    {
+      "id": "5490413507",
+      "name": "Intersection 5490413507",
+      "latitude": -7.0338145,
+      "longitude": 107.5270544
+    },
+    {
+      "id": "5490413509",
+      "name": "Intersection 5490413509",
+      "latitude": -7.0334045,
+      "longitude": 107.527202
+    },
+    {
+      "id": "5524079443",
+      "name": "Intersection 5524079443",
+      "latitude": -7.0372885,
+      "longitude": 107.5190882
+    },
+    {
+      "id": "5851075225",
+      "name": "Intersection 5851075225",
+      "latitude": -7.0348427,
+      "longitude": 107.5265824
+    },
+    {
+      "id": "5851075226",
+      "name": "Intersection 5851075226",
+      "latitude": -7.034854,
+      "longitude": 107.5265241
+    },
+    {
+      "id": "6059275179",
+      "name": "Intersection 6059275179",
+      "latitude": -7.0333673,
+      "longitude": 107.5182393
+    },
+    {
+      "id": "6059275182",
+      "name": "Intersection 6059275182",
+      "latitude": -7.0336948,
+      "longitude": 107.5181468
+    },
+    {
+      "id": "6059275991",
+      "name": "Intersection 6059275991",
+      "latitude": -7.033559,
+      "longitude": 107.5199935
+    },
+    {
+      "id": "6059275995",
+      "name": "Intersection 6059275995",
+      "latitude": -7.0321668,
+      "longitude": 107.5202402
+    },
+    {
+      "id": "6059276007",
+      "name": "Intersection 6059276007",
+      "latitude": -7.0330958,
+      "longitude": 107.5200699
+    },
+    {
+      "id": "6059276020",
+      "name": "Intersection 6059276020",
+      "latitude": -7.0335909,
+      "longitude": 107.5211683
+    },
+    {
+      "id": "6059276027",
+      "name": "Intersection 6059276027",
+      "latitude": -7.0337387,
+      "longitude": 107.5200337
+    },
+    {
+      "id": "6059276030",
+      "name": "Intersection 6059276030",
+      "latitude": -7.0341766,
+      "longitude": 107.5200015
+    },
+    {
+      "id": "6059276031",
+      "name": "Intersection 6059276031",
+      "latitude": -7.0343017,
+      "longitude": 107.5189286
+    },
+    {
+      "id": "6059276033",
+      "name": "Intersection 6059276033",
+      "latitude": -7.0342605,
+      "longitude": 107.5186956
+    },
+    {
+      "id": "6059276037",
+      "name": "Intersection 6059276037",
+      "latitude": -7.0339317,
+      "longitude": 107.5187704
+    },
+    {
+      "id": "6059276038",
+      "name": "Intersection 6059276038",
+      "latitude": -7.0353146,
+      "longitude": 107.5187415
+    },
+    {
+      "id": "6059276042",
+      "name": "Intersection 6059276042",
+      "latitude": -7.036768,
+      "longitude": 107.5179724
+    },
+    {
+      "id": "6393642180",
+      "name": "Intersection 6393642180",
+      "latitude": -7.0282711,
+      "longitude": 107.5211991
+    },
+    {
+      "id": "6393642181",
+      "name": "Intersection 6393642181",
+      "latitude": -7.0282067,
+      "longitude": 107.5208731
+    },
+    {
+      "id": "6393756438",
+      "name": "Intersection 6393756438",
+      "latitude": -7.0315871,
+      "longitude": 107.5201066
+    },
+    {
+      "id": "6393756462",
+      "name": "Intersection 6393756462",
+      "latitude": -7.0293574,
+      "longitude": 107.522193
+    },
+    {
+      "id": "6393756463",
+      "name": "Intersection 6393756463",
+      "latitude": -7.0294641,
+      "longitude": 107.5221567
+    },
+    {
+      "id": "6393756465",
+      "name": "Intersection 6393756465",
+      "latitude": -7.0284838,
+      "longitude": 107.5224287
+    },
+    {
+      "id": "6393777593",
+      "name": "Intersection 6393777593",
+      "latitude": -7.0285637,
+      "longitude": 107.5213956
+    },
+    {
+      "id": "6430438597",
+      "name": "Intersection 6430438597",
+      "latitude": -7.0348356,
+      "longitude": 107.543799
+    },
+    {
+      "id": "6430438598",
+      "name": "Intersection 6430438598",
+      "latitude": -7.0347744,
+      "longitude": 107.5437498
+    },
+    {
+      "id": "6430599972",
+      "name": "Intersection 6430599972",
+      "latitude": -7.0386414,
+      "longitude": 107.5360177
+    },
+    {
+      "id": "6430599977",
+      "name": "Intersection 6430599977",
+      "latitude": -7.0317076,
+      "longitude": 107.5332463
+    },
+    {
+      "id": "6430599978",
+      "name": "Intersection 6430599978",
+      "latitude": -7.0310642,
+      "longitude": 107.5334145
+    },
+    {
+      "id": "6430599979",
+      "name": "Intersection 6430599979",
+      "latitude": -7.0315106,
+      "longitude": 107.5325435
+    },
+    {
+      "id": "6430599980",
+      "name": "Intersection 6430599980",
+      "latitude": -7.0308147,
+      "longitude": 107.5327467
+    },
+    {
+      "id": "6430602096",
+      "name": "Intersection 6430602096",
+      "latitude": -7.0361837,
+      "longitude": 107.532449
+    },
+    {
+      "id": "6650906886",
+      "name": "Intersection 6650906886",
+      "latitude": -7.0375267,
+      "longitude": 107.5377028
+    },
+    {
+      "id": "6650906887",
+      "name": "Intersection 6650906887",
+      "latitude": -7.0371487,
+      "longitude": 107.5372126
+    },
+    {
+      "id": "6650906888",
+      "name": "Intersection 6650906888",
+      "latitude": -7.0372832,
+      "longitude": 107.5373903
+    },
+    {
+      "id": "6650906889",
+      "name": "Intersection 6650906889",
+      "latitude": -7.0369994,
+      "longitude": 107.5376082
+    },
+    {
+      "id": "6650906890",
+      "name": "Intersection 6650906890",
+      "latitude": -7.0369105,
+      "longitude": 107.5374855
+    },
+    {
+      "id": "6650906894",
+      "name": "Intersection 6650906894",
+      "latitude": -7.0376305,
+      "longitude": 107.5376397
+    },
+    {
+      "id": "6650906895",
+      "name": "Intersection 6650906895",
+      "latitude": -7.0373204,
+      "longitude": 107.5378557
+    },
+    {
+      "id": "6650906896",
+      "name": "Intersection 6650906896",
+      "latitude": -7.0375123,
+      "longitude": 107.5381771
+    },
+    {
+      "id": "6673655498",
+      "name": "Intersection 6673655498",
+      "latitude": -7.0329307,
+      "longitude": 107.527391
+    },
+    {
+      "id": "6673655499",
+      "name": "Intersection 6673655499",
+      "latitude": -7.0333785,
+      "longitude": 107.5271297
+    },
+    {
+      "id": "6673655500",
+      "name": "Intersection 6673655500",
+      "latitude": -7.0332037,
+      "longitude": 107.5266158
+    },
+    {
+      "id": "7298359573",
+      "name": "Intersection 7298359573",
+      "latitude": -7.0387529,
+      "longitude": 107.537996
+    },
+    {
+      "id": "7298359583",
+      "name": "Intersection 7298359583",
+      "latitude": -7.0391845,
+      "longitude": 107.5373126
+    },
+    {
+      "id": "7298391798",
+      "name": "Intersection 7298391798",
+      "latitude": -7.0381709,
+      "longitude": 107.5372615
+    },
+    {
+      "id": "7298391804",
+      "name": "Intersection 7298391804",
+      "latitude": -7.0388664,
+      "longitude": 107.5370999
+    },
+    {
+      "id": "7301067996",
+      "name": "Intersection 7301067996",
+      "latitude": -7.038443,
+      "longitude": 107.5370039
+    },
+    {
+      "id": "7301067997",
+      "name": "Intersection 7301067997",
+      "latitude": -7.0382635,
+      "longitude": 107.5369992
+    },
+    {
+      "id": "7301067998",
+      "name": "Intersection 7301067998",
+      "latitude": -7.0383115,
+      "longitude": 107.5371284
+    },
+    {
+      "id": "7301067999",
+      "name": "Intersection 7301067999",
+      "latitude": -7.0382135,
+      "longitude": 107.5368646
+    },
+    {
+      "id": "7301130032",
+      "name": "Intersection 7301130032",
+      "latitude": -7.0313098,
+      "longitude": 107.534166
+    },
+    {
+      "id": "7301355119",
+      "name": "Intersection 7301355119",
+      "latitude": -7.0311543,
+      "longitude": 107.5336901
+    },
+    {
+      "id": "7509454355",
+      "name": "Intersection 7509454355",
+      "latitude": -7.0286129,
+      "longitude": 107.5269075
+    },
+    {
+      "id": "7509901910",
+      "name": "Intersection 7509901910",
+      "latitude": -7.033768,
+      "longitude": 107.5274661
+    },
+    {
+      "id": "7509901911",
+      "name": "Intersection 7509901911",
+      "latitude": -7.0336297,
+      "longitude": 107.5271209
+    },
+    {
+      "id": "7509901912",
+      "name": "Intersection 7509901912",
+      "latitude": -7.0340115,
+      "longitude": 107.5275761
+    },
+    {
+      "id": "7510400368",
+      "name": "Intersection 7510400368",
+      "latitude": -7.0330911,
+      "longitude": 107.5277598
+    },
+    {
+      "id": "7828032039",
+      "name": "Intersection 7828032039",
+      "latitude": -7.03487,
+      "longitude": 107.5399213
+    },
+    {
+      "id": "8410783707",
+      "name": "Intersection 8410783707",
+      "latitude": -7.02916,
+      "longitude": 107.5235514
+    },
+    {
+      "id": "8410783712",
+      "name": "Intersection 8410783712",
+      "latitude": -7.0287199,
+      "longitude": 107.5235369
+    },
+    {
+      "id": "8411541881",
+      "name": "Intersection 8411541881",
+      "latitude": -7.0321222,
+      "longitude": 107.5285226
+    },
+    {
+      "id": "8411541895",
+      "name": "Intersection 8411541895",
+      "latitude": -7.0319489,
+      "longitude": 107.5277413
+    },
+    {
+      "id": "8411596126",
+      "name": "Intersection 8411596126",
+      "latitude": -7.0362124,
+      "longitude": 107.5395002
+    },
+    {
+      "id": "8411596135",
+      "name": "Intersection 8411596135",
+      "latitude": -7.0359555,
+      "longitude": 107.5394664
+    },
+    {
+      "id": "8411596137",
+      "name": "Intersection 8411596137",
+      "latitude": -7.0356568,
+      "longitude": 107.5392084
+    },
+    {
+      "id": "8413700136",
+      "name": "Intersection 8413700136",
+      "latitude": -7.0330871,
+      "longitude": 107.5417296
+    },
+    {
+      "id": "8413700138",
+      "name": "Intersection 8413700138",
+      "latitude": -7.0327477,
+      "longitude": 107.5411645
+    },
+    {
+      "id": "8764525396",
+      "name": "Intersection 8764525396",
+      "latitude": -7.031456,
+      "longitude": 107.5234106
+    },
+    {
+      "id": "8764629550",
+      "name": "Intersection 8764629550",
+      "latitude": -7.0357961,
+      "longitude": 107.5307633
+    },
+    {
+      "id": "8764629552",
+      "name": "Intersection 8764629552",
+      "latitude": -7.036225,
+      "longitude": 107.5303334
+    },
+    {
+      "id": "8764720460",
+      "name": "Intersection 8764720460",
+      "latitude": -7.0343243,
+      "longitude": 107.533776
+    },
+    {
+      "id": "8767363911",
+      "name": "Intersection 8767363911",
+      "latitude": -7.0341979,
+      "longitude": 107.5246525
+    },
+    {
+      "id": "8767436448",
+      "name": "Intersection 8767436448",
+      "latitude": -7.0311633,
+      "longitude": 107.5230617
+    },
+    {
+      "id": "8767436451",
+      "name": "Intersection 8767436451",
+      "latitude": -7.0311006,
+      "longitude": 107.5225369
+    },
+    {
+      "id": "8767606871",
+      "name": "Intersection 8767606871",
+      "latitude": -7.0352381,
+      "longitude": 107.5197247
+    },
+    {
+      "id": "8767606872",
+      "name": "Intersection 8767606872",
+      "latitude": -7.0351323,
+      "longitude": 107.519284
+    },
+    {
+      "id": "8767641035",
+      "name": "Intersection 8767641035",
+      "latitude": -7.034725,
+      "longitude": 107.5179309
+    },
+    {
+      "id": "10167378207",
+      "name": "Intersection 10167378207",
+      "latitude": -7.0339543,
+      "longitude": 107.5448613
+    },
+    {
+      "id": "10167484407",
+      "name": "Intersection 10167484407",
+      "latitude": -7.0302396,
+      "longitude": 107.5302964
+    },
+    {
+      "id": "10167484408",
+      "name": "Intersection 10167484408",
+      "latitude": -7.0304371,
+      "longitude": 107.5311837
+    },
+    {
+      "id": "10167484409",
+      "name": "Intersection 10167484409",
+      "latitude": -7.0304933,
+      "longitude": 107.5314476
+    },
+    {
+      "id": "10654460989",
+      "name": "Intersection 10654460989",
+      "latitude": -7.0379274,
+      "longitude": 107.5368344
+    },
+    {
+      "id": "10654460996",
+      "name": "Intersection 10654460996",
+      "latitude": -7.0376024,
+      "longitude": 107.5359173
+    },
+    {
+      "id": "10654460997",
+      "name": "Intersection 10654460997",
+      "latitude": -7.0373683,
+      "longitude": 107.5368699
+    },
+    {
+      "id": "11350694034",
+      "name": "Intersection 11350694034",
+      "latitude": -7.0322755,
+      "longitude": 107.5276281
+    },
+    {
+      "id": "11350694035",
+      "name": "Intersection 11350694035",
+      "latitude": -7.032254,
+      "longitude": 107.5275476
+    },
+    {
+      "id": "11764186733",
+      "name": "Intersection 11764186733",
+      "latitude": -7.0343273,
+      "longitude": 107.5330736
+    },
+    {
+      "id": "12673295317",
+      "name": "Intersection 12673295317",
+      "latitude": -7.029174,
+      "longitude": 107.5285838
+    },
+    {
+      "id": "13776017057",
+      "name": "Intersection 13776017057",
+      "latitude": -7.0321481,
+      "longitude": 107.5224801
+    },
+    {
+      "id": "13776023646",
+      "name": "Intersection 13776023646",
+      "latitude": -7.0325845,
+      "longitude": 107.5214264
+    },
+    {
+      "id": "13780863024",
+      "name": "Intersection 13780863024",
+      "latitude": -7.0316513,
+      "longitude": 107.5200857
+    },
+    {
+      "id": "13780863025",
+      "name": "Intersection 13780863025",
+      "latitude": -7.0316477,
+      "longitude": 107.520314
+    },
+    {
+      "id": "13823569691",
+      "name": "Intersection 13823569691",
+      "latitude": -7.0312523,
+      "longitude": 107.5339901
+    },
+    {
+      "id": "13823569692",
+      "name": "Intersection 13823569692",
+      "latitude": -7.0316204,
+      "longitude": 107.5339141
+    },
+    {
+      "id": "13823582489",
+      "name": "Intersection 13823582489",
+      "latitude": -7.0356885,
+      "longitude": 107.5413699
+    },
+    {
+      "id": "13823626401",
+      "name": "Intersection 13823626401",
+      "latitude": -7.0360839,
+      "longitude": 107.539355
+    },
+    {
+      "id": "14000172370",
+      "name": "Intersection 14000172370",
+      "latitude": -7.0368213,
+      "longitude": 107.5372736
+    },
+    {
+      "id": "14000172371",
+      "name": "Intersection 14000172371",
+      "latitude": -7.0367774,
+      "longitude": 107.5378074
+    },
+    {
+      "id": "14000172377",
+      "name": "Intersection 14000172377",
+      "latitude": -7.0366469,
+      "longitude": 107.5374198
+    },
+    {
+      "id": "14000172378",
+      "name": "Intersection 14000172378",
+      "latitude": -7.0365073,
+      "longitude": 107.5372523
+    }
+  ],
+  "edges": [
+    {
+      "from": "1865691029",
+      "to": "5490413502",
+      "weight": 8.891237239479713,
+      "bidirectional": false
+    },
+    {
+      "from": "1865691029",
+      "to": "2477175089",
+      "weight": 205.88722038553936,
+      "bidirectional": false
+    },
+    {
+      "from": "1865691073",
+      "to": "5490412512",
+      "weight": 47.709418546680986,
+      "bidirectional": false
+    },
+    {
+      "from": "1865691073",
+      "to": "5490412508",
+      "weight": 17.181813911910453,
+      "bidirectional": false
+    },
+    {
+      "from": "1865691083",
+      "to": "5490413483",
+      "weight": 9.916752249215431,
+      "bidirectional": false
+    },
+    {
+      "from": "1865691083",
+      "to": "5490413257",
+      "weight": 170.73252768684318,
+      "bidirectional": false
+    },
+    {
+      "from": "1865691083",
+      "to": "8411541895",
+      "weight": 264.69033517241013,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707902",
+      "to": "6059276020",
+      "weight": 31.907862333174485,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707902",
+      "to": "6059276030",
+      "weight": 164.3334346659493,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707902",
+      "to": "6059276007",
+      "weight": 110.69035982796757,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707913",
+      "to": "5490412927",
+      "weight": 163.88496176384726,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707913",
+      "to": "13776017057",
+      "weight": 195.97326933214686,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707913",
+      "to": "6059276020",
+      "weight": 101.20845730298535,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707925",
+      "to": "6059276030",
+      "weight": 19.346936236834,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707925",
+      "to": "8767606871",
+      "weight": 123.69194411153188,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707925",
+      "to": "6059276037",
+      "weight": 119.23693350115457,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707953",
+      "to": "6059276042",
+      "weight": 151.82994382186797,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707970",
+      "to": "8767436448",
+      "weight": 28.468661602564595,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707970",
+      "to": "13776017057",
+      "weight": 100.85300640909414,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707970",
+      "to": "8764525396",
+      "weight": 46.38284448431482,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707972",
+      "to": "8410783712",
+      "weight": 30.21282119534738,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707972",
+      "to": "6393756465",
+      "weight": 94.87474034997214,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707972",
+      "to": "1865707986",
+      "weight": 203.09934792868273,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707986",
+      "to": "1865707972",
+      "weight": 203.09934792868276,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707986",
+      "to": "8767436448",
+      "weight": 76.54252913688391,
+      "bidirectional": false
+    },
+    {
+      "from": "1865707986",
+      "to": "6393756438",
+      "weight": 473.04481443864483,
+      "bidirectional": false
+    },
+    {
+      "from": "2461217851",
+      "to": "5851075225",
+      "weight": 43.428018432052504,
+      "bidirectional": false
+    },
+    {
+      "from": "2461217851",
+      "to": "4961460386",
+      "weight": 276.3046724981899,
+      "bidirectional": false
+    },
+    {
+      "from": "2477174764",
+      "to": "5524079443",
+      "weight": 8.810348448606968,
+      "bidirectional": false
+    },
+    {
+      "from": "2477174764",
+      "to": "8767606871",
+      "weight": 285.96779436298283,
+      "bidirectional": false
+    },
+    {
+      "from": "2477174764",
+      "to": "5490413494",
+      "weight": 540.4343438912263,
+      "bidirectional": false
+    },
+    {
+      "from": "2477175085",
+      "to": "2477175086",
+      "weight": 56.72502875225702,
+      "bidirectional": false
+    },
+    {
+      "from": "2477175085",
+      "to": "5490412927",
+      "weight": 136.64265739635758,
+      "bidirectional": false
+    },
+    {
+      "from": "2477175085",
+      "to": "8767363911",
+      "weight": 35.16210725126466,
+      "bidirectional": false
+    },
+    {
+      "from": "2477175086",
+      "to": "2477175085",
+      "weight": 56.72502875225702,
+      "bidirectional": false
+    },
+    {
+      "from": "2477175086",
+      "to": "2477175089",
+      "weight": 79.20865493395706,
+      "bidirectional": false
+    },
+    {
+      "from": "2477175086",
+      "to": "5490412530",
+      "weight": 246.13914726881626,
+      "bidirectional": false
+    },
+    {
+      "from": "2477175089",
+      "to": "5490413505",
+      "weight": 9.047965672989413,
+      "bidirectional": false
+    },
+    {
+      "from": "2477175089",
+      "to": "2477175086",
+      "weight": 79.20865493395706,
+      "bidirectional": false
+    },
+    {
+      "from": "2477175089",
+      "to": "6673655499",
+      "weight": 246.0025010339011,
+      "bidirectional": false
+    },
+    {
+      "from": "2477176231",
+      "to": "5490412030",
+      "weight": 44.18339441725318,
+      "bidirectional": false
+    },
+    {
+      "from": "2477176231",
+      "to": "5490412508",
+      "weight": 234.41505755154148,
+      "bidirectional": false
+    },
+    {
+      "from": "2477281169",
+      "to": "5490413259",
+      "weight": 86.91589018226819,
+      "bidirectional": false
+    },
+    {
+      "from": "2477281169",
+      "to": "5490413483",
+      "weight": 219.043609432094,
+      "bidirectional": false
+    },
+    {
+      "from": "2477281169",
+      "to": "5490412565",
+      "weight": 152.67993097312387,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460386",
+      "to": "2461217851",
+      "weight": 276.30467249818986,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460386",
+      "to": "8764629550",
+      "weight": 260.5438979218974,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460401",
+      "to": "5490413021",
+      "weight": 110.53544121918074,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460401",
+      "to": "5490413053",
+      "weight": 39.58851205736496,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460401",
+      "to": "5490413018",
+      "weight": 165.07550275255954,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460419",
+      "to": "5490413018",
+      "weight": 448.8834810452959,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460419",
+      "to": "10654460996",
+      "weight": 58.2052179772366,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460419",
+      "to": "6430599972",
+      "weight": 87.75701177258647,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460421",
+      "to": "10654460996",
+      "weight": 50.516125904637505,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460421",
+      "to": "4961460422",
+      "weight": 9.527414500765232,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460421",
+      "to": "10654460997",
+      "weight": 85.41620543191856,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460422",
+      "to": "4961460421",
+      "weight": 9.527414500765232,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460422",
+      "to": "5490411767",
+      "weight": 132.92219253606547,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460422",
+      "to": "14000172378",
+      "weight": 179.4521029214016,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460438",
+      "to": "5490412508",
+      "weight": 112.16853641002967,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460438",
+      "to": "14000172378",
+      "weight": 107.51256600931751,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460438",
+      "to": "4961460440",
+      "weight": 39.38340687917859,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460440",
+      "to": "5490411762",
+      "weight": 38.89982416236096,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460440",
+      "to": "4961460438",
+      "weight": 39.38340687917859,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460440",
+      "to": "8411596137",
+      "weight": 135.84313368946127,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460839",
+      "to": "4961460840",
+      "weight": 47.092131771085775,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460840",
+      "to": "4961460839",
+      "weight": 47.092131771085775,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460840",
+      "to": "4961460851",
+      "weight": 36.56842367116928,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460840",
+      "to": "4961460861",
+      "weight": 105.15933968838753,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460841",
+      "to": "4961460845",
+      "weight": 9.165810210132534,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460841",
+      "to": "4961460841",
+      "weight": 190.55570812969125,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460841",
+      "to": "4961460841",
+      "weight": 190.55570812969125,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460845",
+      "to": "4961460860",
+      "weight": 8.751742035952873,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460845",
+      "to": "4961460851",
+      "weight": 26.368149977614724,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460845",
+      "to": "4961460841",
+      "weight": 9.165810210132534,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460848",
+      "to": "5490412544",
+      "weight": 2.592349280098514,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460848",
+      "to": "5490412547",
+      "weight": 6.159588900128761,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460850",
+      "to": "4961460858",
+      "weight": 14.74244941663506,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460850",
+      "to": "4961460857",
+      "weight": 64.890433581845,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460850",
+      "to": "5490412547",
+      "weight": 99.10881425768963,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460851",
+      "to": "4961460852",
+      "weight": 66.55427122871441,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460851",
+      "to": "4961460845",
+      "weight": 26.368149977614724,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460851",
+      "to": "4961460840",
+      "weight": 36.56842367116928,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460852",
+      "to": "4961460851",
+      "weight": 66.55427122871441,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460852",
+      "to": "4961460859",
+      "weight": 37.33134645310747,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460852",
+      "to": "5490412543",
+      "weight": 9.208551395894123,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460853",
+      "to": "4961460859",
+      "weight": 57.30218040049997,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460853",
+      "to": "4961460856",
+      "weight": 30.55779284073654,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460853",
+      "to": "4961460857",
+      "weight": 7.42873912271426,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460854",
+      "to": "4961460859",
+      "weight": 36.282979994544725,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460854",
+      "to": "4961460860",
+      "weight": 34.061001156828866,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460854",
+      "to": "5490412544",
+      "weight": 60.38212174673353,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460856",
+      "to": "5490412547",
+      "weight": 7.813494615012228,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460856",
+      "to": "4961460848",
+      "weight": 5.324338173974278,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460857",
+      "to": "4961460853",
+      "weight": 7.42873912271426,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460857",
+      "to": "4961460850",
+      "weight": 64.89043358184499,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460858",
+      "to": "4961460850",
+      "weight": 14.74244941663506,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460859",
+      "to": "4961460852",
+      "weight": 37.33134645310747,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460859",
+      "to": "4961460853",
+      "weight": 57.30218040049997,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460859",
+      "to": "4961460854",
+      "weight": 36.282979994544725,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460860",
+      "to": "4961460854",
+      "weight": 34.061001156828866,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460860",
+      "to": "4961460845",
+      "weight": 8.751742035952873,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460860",
+      "to": "5490412544",
+      "weight": 92.31622587614721,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460861",
+      "to": "4961460840",
+      "weight": 105.15933968838753,
+      "bidirectional": false
+    },
+    {
+      "from": "4961460861",
+      "to": "5490413483",
+      "weight": 118.86602834237019,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223866",
+      "to": "5482223961",
+      "weight": 35.23426554355164,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223866",
+      "to": "5482223986",
+      "weight": 40.39271449511791,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223866",
+      "to": "5482223871",
+      "weight": 114.36312649853079,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223871",
+      "to": "5482223986",
+      "weight": 80.58434869683636,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223871",
+      "to": "5482224000",
+      "weight": 21.765601491214543,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223871",
+      "to": "5482223866",
+      "weight": 114.3631264985308,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223947",
+      "to": "5482223955",
+      "weight": 30.698348636893755,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223947",
+      "to": "5482223957",
+      "weight": 29.242075531538,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223947",
+      "to": "5482223951",
+      "weight": 99.7079720252582,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223951",
+      "to": "5482223974",
+      "weight": 30.0088257777979,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223951",
+      "to": "5482223947",
+      "weight": 99.7079720252582,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223951",
+      "to": "5482223982",
+      "weight": 136.7047179157217,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223952",
+      "to": "5482223969",
+      "weight": 35.70429378546111,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223952",
+      "to": "5482223974",
+      "weight": 5.457173842791026,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223952",
+      "to": "5482223959",
+      "weight": 30.23967704145145,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223953",
+      "to": "5482223959",
+      "weight": 35.91785343877239,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223953",
+      "to": "5482223956",
+      "weight": 89.26180857272425,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223953",
+      "to": "5482223969",
+      "weight": 13.205144666470877,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223955",
+      "to": "5482223947",
+      "weight": 30.698348636893755,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223955",
+      "to": "5482223982",
+      "weight": 13.130731502776438,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223955",
+      "to": "5482223984",
+      "weight": 30.240656908543798,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223956",
+      "to": "5482223957",
+      "weight": 30.958159501415047,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223956",
+      "to": "5482223961",
+      "weight": 112.64850577200741,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223956",
+      "to": "5482223953",
+      "weight": 89.26180857272423,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223957",
+      "to": "5482223947",
+      "weight": 29.242075531538,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223957",
+      "to": "5482223956",
+      "weight": 30.958159501415047,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223957",
+      "to": "5482223959",
+      "weight": 40.661811213403915,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223959",
+      "to": "5482223953",
+      "weight": 35.91785343877239,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223959",
+      "to": "5482223957",
+      "weight": 40.661811213403915,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223959",
+      "to": "5482223952",
+      "weight": 30.23967704145145,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223961",
+      "to": "5482223866",
+      "weight": 35.23426554355164,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223961",
+      "to": "5482223956",
+      "weight": 112.6485057720074,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223961",
+      "to": "5482223984",
+      "weight": 31.85415477864153,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223969",
+      "to": "5482223952",
+      "weight": 35.70429378546111,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223969",
+      "to": "5482223953",
+      "weight": 13.205144666470877,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223969",
+      "to": "5482223974",
+      "weight": 121.04729745076989,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223974",
+      "to": "5482223952",
+      "weight": 5.457173842791026,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223974",
+      "to": "5482223951",
+      "weight": 30.0088257777979,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223974",
+      "to": "5482223969",
+      "weight": 121.0472974507699,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223982",
+      "to": "5482223955",
+      "weight": 13.130731502776438,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223982",
+      "to": "5482223951",
+      "weight": 136.70471791572174,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223982",
+      "to": "5482223984",
+      "weight": 33.78773591086815,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223984",
+      "to": "5482223955",
+      "weight": 30.240656908543798,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223984",
+      "to": "5482223982",
+      "weight": 33.78773591086816,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223984",
+      "to": "5482223961",
+      "weight": 31.85415477864153,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223986",
+      "to": "5482223866",
+      "weight": 40.39271449511791,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223986",
+      "to": "5482223871",
+      "weight": 80.58434869683636,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223987",
+      "to": "5482223988",
+      "weight": 15.578641719571992,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223988",
+      "to": "5482223987",
+      "weight": 15.578641719571992,
+      "bidirectional": false
+    },
+    {
+      "from": "5482223988",
+      "to": "5490411769",
+      "weight": 98.99325710281448,
+      "bidirectional": false
+    },
+    {
+      "from": "5482224000",
+      "to": "5490411769",
+      "weight": 41.087568957325594,
+      "bidirectional": false
+    },
+    {
+      "from": "5482224000",
+      "to": "5482223871",
+      "weight": 21.765601491214543,
+      "bidirectional": false
+    },
+    {
+      "from": "5482224000",
+      "to": "5490412529",
+      "weight": 142.19553464124766,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411762",
+      "to": "4961460440",
+      "weight": 38.89982416236096,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411767",
+      "to": "4961460422",
+      "weight": 132.9221925360655,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411769",
+      "to": "5482223988",
+      "weight": 98.99325710281448,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411769",
+      "to": "5482224000",
+      "weight": 41.087568957325594,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411769",
+      "to": "5490412524",
+      "weight": 111.00146135509817,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411774",
+      "to": "5490413505",
+      "weight": 51.37978367356829,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411774",
+      "to": "5490412936",
+      "weight": 311.25998922289426,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411775",
+      "to": "2461217851",
+      "weight": 34.123343747398685,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411775",
+      "to": "5851075225",
+      "weight": 20.637192394015752,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411816",
+      "to": "7298359583",
+      "weight": 42.01266909770127,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411816",
+      "to": "7298391804",
+      "weight": 5.93746647834635,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411816",
+      "to": "5490412529",
+      "weight": 66.92283205896217,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411817",
+      "to": "5490412520",
+      "weight": 47.833566032504095,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411817",
+      "to": "5490412512",
+      "weight": 126.08842338878179,
+      "bidirectional": false
+    },
+    {
+      "from": "5490411817",
+      "to": "7298359573",
+      "weight": 76.01513921468624,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412023",
+      "to": "2477176231",
+      "weight": 39.123528081715904,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412023",
+      "to": "5490412030",
+      "weight": 30.790159567962277,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412027",
+      "to": "5490412023",
+      "weight": 47.26911367905806,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412029",
+      "to": "5490412027",
+      "weight": 14.080106489360812,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412029",
+      "to": "13823582489",
+      "weight": 54.171007081077526,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412030",
+      "to": "5490412029",
+      "weight": 10.26239791173917,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412430",
+      "to": "5490412436",
+      "weight": 60.25758386933062,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412436",
+      "to": "5490412430",
+      "weight": 60.25758386933062,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412436",
+      "to": "5490413019",
+      "weight": 103.71669380693524,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412436",
+      "to": "8764720460",
+      "weight": 51.14916369583385,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412467",
+      "to": "5490412469",
+      "weight": 38.008340000262855,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412469",
+      "to": "5490412474",
+      "weight": 68.70685980954873,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412469",
+      "to": "5490412467",
+      "weight": 38.008340000262855,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412469",
+      "to": "5490412471",
+      "weight": 41.16621660087312,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412470",
+      "to": "5490412471",
+      "weight": 17.327511681398228,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412471",
+      "to": "5490412470",
+      "weight": 17.327511681398228,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412471",
+      "to": "5490412472",
+      "weight": 16.36347395965155,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412471",
+      "to": "5490412469",
+      "weight": 41.16621660087312,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412472",
+      "to": "5490412471",
+      "weight": 16.36347395965155,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412474",
+      "to": "5490412469",
+      "weight": 68.70685980954873,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412474",
+      "to": "7828032039",
+      "weight": 192.21455653437425,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412474",
+      "to": "8413700138",
+      "weight": 81.94435804240278,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412508",
+      "to": "4961460438",
+      "weight": 112.16853641002966,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412508",
+      "to": "1865691073",
+      "weight": 17.181813911910453,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412508",
+      "to": "2477176231",
+      "weight": 234.41505755154145,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412512",
+      "to": "6650906896",
+      "weight": 9.260575294856583,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412512",
+      "to": "5490411817",
+      "weight": 126.08842338878182,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412512",
+      "to": "1865691073",
+      "weight": 47.709418546680986,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412520",
+      "to": "5490411817",
+      "weight": 47.833566032504095,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412520",
+      "to": "7298391804",
+      "weight": 121.02505657999811,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412520",
+      "to": "6650906896",
+      "weight": 72.92323681922899,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412524",
+      "to": "7298359583",
+      "weight": 68.85805912875459,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412524",
+      "to": "5490411769",
+      "weight": 111.00146135509816,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412524",
+      "to": "5490412529",
+      "weight": 43.05201291820517,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412529",
+      "to": "5490412524",
+      "weight": 43.05201291820517,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412529",
+      "to": "5482224000",
+      "weight": 142.19553464124766,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412529",
+      "to": "5490411816",
+      "weight": 66.92283205896217,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412530",
+      "to": "2477175086",
+      "weight": 246.13914726881626,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412543",
+      "to": "4961460852",
+      "weight": 9.208551395894123,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412544",
+      "to": "4961460848",
+      "weight": 2.592349280098514,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412544",
+      "to": "4961460860",
+      "weight": 92.31622587614721,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412544",
+      "to": "4961460854",
+      "weight": 60.38212174673353,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412547",
+      "to": "4961460856",
+      "weight": 7.813494615012228,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412547",
+      "to": "4961460857",
+      "weight": 31.388685604707945,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412547",
+      "to": "4961460850",
+      "weight": 99.10881425768964,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412550",
+      "to": "5490412553",
+      "weight": 53.314034069488,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412553",
+      "to": "5490412565",
+      "weight": 37.25018436464278,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412553",
+      "to": "5490412561",
+      "weight": 43.535458906163505,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412553",
+      "to": "5490412550",
+      "weight": 53.314034069488,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412554",
+      "to": "5490412561",
+      "weight": 173.50397074583262,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412561",
+      "to": "5490412553",
+      "weight": 43.535458906163505,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412561",
+      "to": "5490412571",
+      "weight": 40.908144302044775,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412561",
+      "to": "5490412554",
+      "weight": 173.50397074583262,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412562",
+      "to": "5490412565",
+      "weight": 57.36223022067681,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412565",
+      "to": "5490412553",
+      "weight": 37.25018436464278,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412565",
+      "to": "2477281169",
+      "weight": 152.67993097312387,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412565",
+      "to": "5490412562",
+      "weight": 57.36223022067681,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412566",
+      "to": "5490412582",
+      "weight": 54.75232198009437,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412571",
+      "to": "5490412561",
+      "weight": 40.908144302044775,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412571",
+      "to": "8410783712",
+      "weight": 58.73473429641535,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412571",
+      "to": "5490412579",
+      "weight": 121.64087889311332,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412577",
+      "to": "5490412579",
+      "weight": 9.074360529526954,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412579",
+      "to": "5490412577",
+      "weight": 9.074360529526954,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412579",
+      "to": "5490412580",
+      "weight": 26.465495039221345,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412579",
+      "to": "5490412571",
+      "weight": 121.64087889311332,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412580",
+      "to": "5490412579",
+      "weight": 26.465495039221345,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412580",
+      "to": "5490413259",
+      "weight": 279.9496154376001,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412580",
+      "to": "5490412582",
+      "weight": 153.81804483178735,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412582",
+      "to": "5490412566",
+      "weight": 54.75232198009437,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412582",
+      "to": "5490412580",
+      "weight": 153.81804483178735,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412587",
+      "to": "5490412589",
+      "weight": 80.99568556405116,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412589",
+      "to": "5490412587",
+      "weight": 80.99568556405114,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412589",
+      "to": "6673655498",
+      "weight": 65.21750947698766,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412595",
+      "to": "5490413019",
+      "weight": 22.56596319033998,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412600",
+      "to": "6430602096",
+      "weight": 11.680431551293475,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412600",
+      "to": "5490413019",
+      "weight": 123.18787591596104,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412600",
+      "to": "5490413018",
+      "weight": 117.9734407545416,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412927",
+      "to": "2477175085",
+      "weight": 136.64265739635758,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412927",
+      "to": "1865707913",
+      "weight": 163.8849617638473,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412927",
+      "to": "5490413494",
+      "weight": 114.54432287454888,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412936",
+      "to": "5490413493",
+      "weight": 70.18607529290506,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412936",
+      "to": "5490411774",
+      "weight": 311.25998922289426,
+      "bidirectional": false
+    },
+    {
+      "from": "5490412936",
+      "to": "5490413502",
+      "weight": 49.16742709053234,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413018",
+      "to": "5490412600",
+      "weight": 117.97344075454158,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413018",
+      "to": "4961460401",
+      "weight": 165.07550275255954,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413018",
+      "to": "4961460419",
+      "weight": 448.88348104529587,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413019",
+      "to": "5490412595",
+      "weight": 22.56596319033998,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413019",
+      "to": "5490412436",
+      "weight": 103.71669380693523,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413019",
+      "to": "5490412600",
+      "weight": 123.18787591596104,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413021",
+      "to": "4961460401",
+      "weight": 110.5354412191807,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413053",
+      "to": "11764186733",
+      "weight": 364.75172403192585,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413053",
+      "to": "8764629550",
+      "weight": 30.999822571850476,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413053",
+      "to": "4961460401",
+      "weight": 39.58851205736496,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413077",
+      "to": "10167484409",
+      "weight": 6.898249562728896,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413077",
+      "to": "6430599980",
+      "weight": 148.27795600710394,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413077",
+      "to": "5490413079",
+      "weight": 29.776967943086838,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413079",
+      "to": "10167484408",
+      "weight": 6.582830372362811,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413079",
+      "to": "5490413077",
+      "weight": 29.776967943086838,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413079",
+      "to": "5490413243",
+      "weight": 100.24389809048975,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413080",
+      "to": "5490413257",
+      "weight": 59.39075400843296,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413243",
+      "to": "5490413257",
+      "weight": 33.06226012805348,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413243",
+      "to": "10167484407",
+      "weight": 5.442065289999563,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413243",
+      "to": "5490413079",
+      "weight": 100.24389809048975,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413255",
+      "to": "5490413257",
+      "weight": 38.685068548198515,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413257",
+      "to": "5490413243",
+      "weight": 33.06226012805348,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413257",
+      "to": "1865691083",
+      "weight": 170.73252768684318,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413257",
+      "to": "5490413080",
+      "weight": 59.39075400843296,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413257",
+      "to": "5490413255",
+      "weight": 38.685068548198515,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413259",
+      "to": "7509454355",
+      "weight": 5.939205027166829,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413259",
+      "to": "2477281169",
+      "weight": 86.91589018226817,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413259",
+      "to": "5490412580",
+      "weight": 279.9496154376001,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413483",
+      "to": "1865691083",
+      "weight": 9.916752249215431,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413483",
+      "to": "2477281169",
+      "weight": 219.04360943209403,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413483",
+      "to": "12673295317",
+      "weight": 58.10100076455171,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413493",
+      "to": "5490412936",
+      "weight": 70.18607529290506,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413493",
+      "to": "5524079443",
+      "weight": 547.5049158819593,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413494",
+      "to": "1865691029",
+      "weight": 66.00446848592239,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413494",
+      "to": "5490412927",
+      "weight": 114.54432287454888,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413502",
+      "to": "1865691029",
+      "weight": 8.891237239479713,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413502",
+      "to": "5490412936",
+      "weight": 49.16742709053234,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413502",
+      "to": "5490413493",
+      "weight": 64.05825940247351,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413505",
+      "to": "2477175089",
+      "weight": 9.047965672989413,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413505",
+      "to": "5490413502",
+      "weight": 205.02463292870814,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413507",
+      "to": "7509901912",
+      "weight": 61.60032066978335,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413507",
+      "to": "5490411775",
+      "weight": 108.46331745874625,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413509",
+      "to": "7509901911",
+      "weight": 26.592515569467906,
+      "bidirectional": false
+    },
+    {
+      "from": "5490413509",
+      "to": "6673655499",
+      "weight": 8.486534418672214,
+      "bidirectional": false
+    },
+    {
+      "from": "5524079443",
+      "to": "2477174764",
+      "weight": 8.810348448606968,
+      "bidirectional": false
+    },
+    {
+      "from": "5851075225",
+      "to": "5851075226",
+      "weight": 6.5554173780153775,
+      "bidirectional": false
+    },
+    {
+      "from": "5851075226",
+      "to": "5490411774",
+      "weight": 23.577696825156405,
+      "bidirectional": false
+    },
+    {
+      "from": "6059275179",
+      "to": "6059275182",
+      "weight": 37.826314306231,
+      "bidirectional": false
+    },
+    {
+      "from": "6059275182",
+      "to": "6059276037",
+      "weight": 73.88793064792776,
+      "bidirectional": false
+    },
+    {
+      "from": "6059275182",
+      "to": "6059275179",
+      "weight": 37.826314306231,
+      "bidirectional": false
+    },
+    {
+      "from": "6059275991",
+      "to": "6059276007",
+      "weight": 52.216084897389905,
+      "bidirectional": false
+    },
+    {
+      "from": "6059275995",
+      "to": "6059276007",
+      "weight": 116.55548768359023,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276007",
+      "to": "6059275991",
+      "weight": 52.2160848973899,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276007",
+      "to": "6059275995",
+      "weight": 116.55548768359019,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276007",
+      "to": "1865707902",
+      "weight": 110.69035982796758,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276020",
+      "to": "1865707913",
+      "weight": 101.20845730298534,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276020",
+      "to": "1865707902",
+      "weight": 31.907862333174485,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276020",
+      "to": "13776023646",
+      "weight": 115.95096323098737,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276027",
+      "to": "6059276030",
+      "weight": 48.87903122613419,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276030",
+      "to": "1865707925",
+      "weight": 19.346936236834,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276030",
+      "to": "1865707902",
+      "weight": 164.33343466594937,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276030",
+      "to": "6059276027",
+      "weight": 48.87903122613419,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276031",
+      "to": "6059276033",
+      "weight": 26.121625454486292,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276033",
+      "to": "6059276031",
+      "weight": 26.121625454486292,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276033",
+      "to": "8767641035",
+      "weight": 159.11814874888498,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276033",
+      "to": "6059276037",
+      "weight": 37.51195724681982,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276037",
+      "to": "1865707925",
+      "weight": 119.23693350115457,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276037",
+      "to": "6059275182",
+      "weight": 73.88793064792776,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276037",
+      "to": "6059276033",
+      "weight": 37.51195724681982,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276038",
+      "to": "6059276042",
+      "weight": 196.66602626194694,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276042",
+      "to": "2477174764",
+      "weight": 135.9326997787692,
+      "bidirectional": false
+    },
+    {
+      "from": "6059276042",
+      "to": "6059276038",
+      "weight": 196.6660262619469,
+      "bidirectional": false
+    },
+    {
+      "from": "6393642180",
+      "to": "6393756465",
+      "weight": 137.87703529640515,
+      "bidirectional": false
+    },
+    {
+      "from": "6393642180",
+      "to": "6393642181",
+      "weight": 36.69057645967571,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756438",
+      "to": "13780863025",
+      "weight": 23.85970403739621,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756438",
+      "to": "13780863024",
+      "weight": 7.502087632958376,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756438",
+      "to": "1865707986",
+      "weight": 473.0448144386448,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756462",
+      "to": "6393756463",
+      "weight": 12.522583535811172,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756462",
+      "to": "6393777593",
+      "weight": 166.59008697436187,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756462",
+      "to": "6393756465",
+      "weight": 100.64022193284788,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756463",
+      "to": "6393756462",
+      "weight": 12.522583535811172,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756465",
+      "to": "1865707972",
+      "weight": 94.87474034997214,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756465",
+      "to": "6393642180",
+      "weight": 137.87703529640515,
+      "bidirectional": false
+    },
+    {
+      "from": "6393756465",
+      "to": "6393756462",
+      "weight": 100.64022193284788,
+      "bidirectional": false
+    },
+    {
+      "from": "6393777593",
+      "to": "6393756462",
+      "weight": 166.5900869743619,
+      "bidirectional": false
+    },
+    {
+      "from": "6430438597",
+      "to": "6430438598",
+      "weight": 8.7057809790686,
+      "bidirectional": false
+    },
+    {
+      "from": "6430438597",
+      "to": "5490412027",
+      "weight": 345.43832707430363,
+      "bidirectional": false
+    },
+    {
+      "from": "6430438598",
+      "to": "6430438597",
+      "weight": 8.7057809790686,
+      "bidirectional": false
+    },
+    {
+      "from": "6430438598",
+      "to": "10167378207",
+      "weight": 153.6950779615281,
+      "bidirectional": false
+    },
+    {
+      "from": "6430599972",
+      "to": "4961460419",
+      "weight": 87.75701177258648,
+      "bidirectional": false
+    },
+    {
+      "from": "6430599977",
+      "to": "6430599978",
+      "weight": 73.91177089271208,
+      "bidirectional": false
+    },
+    {
+      "from": "6430599978",
+      "to": "7301355119",
+      "weight": 32.0224991262022,
+      "bidirectional": false
+    },
+    {
+      "from": "6430599978",
+      "to": "6430599977",
+      "weight": 73.91177089271208,
+      "bidirectional": false
+    },
+    {
+      "from": "6430599978",
+      "to": "6430599980",
+      "weight": 78.74693421859028,
+      "bidirectional": false
+    },
+    {
+      "from": "6430599979",
+      "to": "6430599980",
+      "weight": 80.56452975951332,
+      "bidirectional": false
+    },
+    {
+      "from": "6430599980",
+      "to": "6430599979",
+      "weight": 80.56452975951332,
+      "bidirectional": false
+    },
+    {
+      "from": "6430599980",
+      "to": "6430599978",
+      "weight": 78.74693421859028,
+      "bidirectional": false
+    },
+    {
+      "from": "6430599980",
+      "to": "5490413077",
+      "weight": 148.27795600710394,
+      "bidirectional": false
+    },
+    {
+      "from": "6430602096",
+      "to": "5490412600",
+      "weight": 11.680431551293475,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906886",
+      "to": "6650906888",
+      "weight": 43.84565156887092,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906886",
+      "to": "6650906894",
+      "weight": 13.47998199845306,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906886",
+      "to": "6650906895",
+      "weight": 28.764578201268797,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906887",
+      "to": "6650906888",
+      "weight": 24.662652168662575,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906888",
+      "to": "6650906886",
+      "weight": 43.84565156887092,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906888",
+      "to": "6650906887",
+      "weight": 24.662652168662575,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906888",
+      "to": "6650906889",
+      "weight": 39.675022781968075,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906889",
+      "to": "6650906888",
+      "weight": 39.675022781968075,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906889",
+      "to": "6650906890",
+      "weight": 16.765232581131837,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906889",
+      "to": "6650906895",
+      "weight": 46.60356814510508,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906890",
+      "to": "6650906889",
+      "weight": 16.765232581131837,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906894",
+      "to": "6650906886",
+      "weight": 13.47998199845306,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906895",
+      "to": "6650906889",
+      "weight": 46.60356814510508,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906895",
+      "to": "6650906886",
+      "weight": 28.764578201268797,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906895",
+      "to": "6650906896",
+      "weight": 41.44720201359949,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906896",
+      "to": "5490412512",
+      "weight": 9.260575294856583,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906896",
+      "to": "5490412520",
+      "weight": 72.92323681922899,
+      "bidirectional": false
+    },
+    {
+      "from": "6650906896",
+      "to": "6650906895",
+      "weight": 41.44720201359949,
+      "bidirectional": false
+    },
+    {
+      "from": "6673655498",
+      "to": "5490413509",
+      "weight": 56.662803449107834,
+      "bidirectional": false
+    },
+    {
+      "from": "6673655498",
+      "to": "7510400368",
+      "weight": 44.44577921241208,
+      "bidirectional": false
+    },
+    {
+      "from": "6673655499",
+      "to": "5490413509",
+      "weight": 8.486534418672214,
+      "bidirectional": false
+    },
+    {
+      "from": "6673655499",
+      "to": "6673655500",
+      "weight": 59.95346890498606,
+      "bidirectional": false
+    },
+    {
+      "from": "6673655499",
+      "to": "11350694035",
+      "weight": 133.28178305482845,
+      "bidirectional": false
+    },
+    {
+      "from": "6673655500",
+      "to": "6673655499",
+      "weight": 59.95346890498606,
+      "bidirectional": false
+    },
+    {
+      "from": "7298359573",
+      "to": "5490411817",
+      "weight": 76.01513921468626,
+      "bidirectional": false
+    },
+    {
+      "from": "7298359573",
+      "to": "7298359583",
+      "weight": 100.34679285209785,
+      "bidirectional": false
+    },
+    {
+      "from": "7298359583",
+      "to": "5490411816",
+      "weight": 42.01266909770127,
+      "bidirectional": false
+    },
+    {
+      "from": "7298359583",
+      "to": "5490412524",
+      "weight": 68.85805912875459,
+      "bidirectional": false
+    },
+    {
+      "from": "7298359583",
+      "to": "7298359573",
+      "weight": 100.34679285209785,
+      "bidirectional": false
+    },
+    {
+      "from": "7298391798",
+      "to": "7301067998",
+      "weight": 21.451715433586035,
+      "bidirectional": false
+    },
+    {
+      "from": "7298391804",
+      "to": "5490411816",
+      "weight": 5.93746647834635,
+      "bidirectional": false
+    },
+    {
+      "from": "7298391804",
+      "to": "5490412520",
+      "weight": 121.02505657999811,
+      "bidirectional": false
+    },
+    {
+      "from": "7298391804",
+      "to": "7301067996",
+      "weight": 56.567125272182466,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067996",
+      "to": "7301067998",
+      "weight": 20.064403296507614,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067996",
+      "to": "7301067997",
+      "weight": 19.966255720500314,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067996",
+      "to": "7298391804",
+      "weight": 56.567125272182466,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067997",
+      "to": "7301067996",
+      "weight": 19.966255720500314,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067997",
+      "to": "7301067998",
+      "weight": 15.22439492004657,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067997",
+      "to": "7301067999",
+      "weight": 15.86046874224725,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067998",
+      "to": "7298391798",
+      "weight": 21.451715433586035,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067998",
+      "to": "7301067996",
+      "weight": 20.064403296507614,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067998",
+      "to": "7301067997",
+      "weight": 15.22439492004657,
+      "bidirectional": false
+    },
+    {
+      "from": "7301067999",
+      "to": "7301067997",
+      "weight": 15.86046874224725,
+      "bidirectional": false
+    },
+    {
+      "from": "7301130032",
+      "to": "13823569691",
+      "weight": 20.4379550264024,
+      "bidirectional": false
+    },
+    {
+      "from": "7301355119",
+      "to": "6430599978",
+      "weight": 32.0224991262022,
+      "bidirectional": false
+    },
+    {
+      "from": "7301355119",
+      "to": "13823569691",
+      "weight": 34.85490107225759,
+      "bidirectional": false
+    },
+    {
+      "from": "7509454355",
+      "to": "5490413259",
+      "weight": 5.939205027166829,
+      "bidirectional": false
+    },
+    {
+      "from": "7509454355",
+      "to": "12673295317",
+      "weight": 195.24606559953259,
+      "bidirectional": false
+    },
+    {
+      "from": "7509901910",
+      "to": "7509901911",
+      "weight": 41.08249937644104,
+      "bidirectional": false
+    },
+    {
+      "from": "7509901911",
+      "to": "5490413507",
+      "weight": 21.820028331730942,
+      "bidirectional": false
+    },
+    {
+      "from": "7509901911",
+      "to": "7509901910",
+      "weight": 41.08249937644104,
+      "bidirectional": false
+    },
+    {
+      "from": "7509901912",
+      "to": "5490413507",
+      "weight": 61.60032066978335,
+      "bidirectional": false
+    },
+    {
+      "from": "7510400368",
+      "to": "6673655498",
+      "weight": 44.44577921241208,
+      "bidirectional": false
+    },
+    {
+      "from": "7828032039",
+      "to": "8411596137",
+      "weight": 119.50361819419345,
+      "bidirectional": false
+    },
+    {
+      "from": "7828032039",
+      "to": "5490412474",
+      "weight": 192.21455653437422,
+      "bidirectional": false
+    },
+    {
+      "from": "7828032039",
+      "to": "13823582489",
+      "weight": 200.3070457728421,
+      "bidirectional": false
+    },
+    {
+      "from": "8410783707",
+      "to": "8410783712",
+      "weight": 52.60708885437158,
+      "bidirectional": false
+    },
+    {
+      "from": "8410783712",
+      "to": "5490412571",
+      "weight": 58.73473429641535,
+      "bidirectional": false
+    },
+    {
+      "from": "8410783712",
+      "to": "1865707972",
+      "weight": 30.21282119534738,
+      "bidirectional": false
+    },
+    {
+      "from": "8410783712",
+      "to": "8410783707",
+      "weight": 52.60708885437159,
+      "bidirectional": false
+    },
+    {
+      "from": "8411541881",
+      "to": "8411541895",
+      "weight": 89.51586687692264,
+      "bidirectional": false
+    },
+    {
+      "from": "8411541895",
+      "to": "11350694034",
+      "weight": 38.40497884605558,
+      "bidirectional": false
+    },
+    {
+      "from": "8411541895",
+      "to": "8411541881",
+      "weight": 89.51586687692263,
+      "bidirectional": false
+    },
+    {
+      "from": "8411596126",
+      "to": "8411596135",
+      "weight": 34.75501960121681,
+      "bidirectional": false
+    },
+    {
+      "from": "8411596135",
+      "to": "13823626401",
+      "weight": 18.841026177099387,
+      "bidirectional": false
+    },
+    {
+      "from": "8411596135",
+      "to": "8411596126",
+      "weight": 34.7550196012168,
+      "bidirectional": false
+    },
+    {
+      "from": "8411596135",
+      "to": "8411596137",
+      "weight": 43.747716871541314,
+      "bidirectional": false
+    },
+    {
+      "from": "8411596137",
+      "to": "4961460440",
+      "weight": 135.8431336894612,
+      "bidirectional": false
+    },
+    {
+      "from": "8411596137",
+      "to": "7828032039",
+      "weight": 119.50361819419346,
+      "bidirectional": false
+    },
+    {
+      "from": "8411596137",
+      "to": "8411596135",
+      "weight": 43.747716871541314,
+      "bidirectional": false
+    },
+    {
+      "from": "8413700136",
+      "to": "8413700138",
+      "weight": 74.16844972895719,
+      "bidirectional": false
+    },
+    {
+      "from": "8413700138",
+      "to": "5490412474",
+      "weight": 81.9443580424028,
+      "bidirectional": false
+    },
+    {
+      "from": "8413700138",
+      "to": "8413700136",
+      "weight": 74.16844972895719,
+      "bidirectional": false
+    },
+    {
+      "from": "8764525396",
+      "to": "1865707970",
+      "weight": 46.38284448431482,
+      "bidirectional": false
+    },
+    {
+      "from": "8764629550",
+      "to": "4961460386",
+      "weight": 260.5438979218974,
+      "bidirectional": false
+    },
+    {
+      "from": "8764629550",
+      "to": "5490413053",
+      "weight": 30.999822571850473,
+      "bidirectional": false
+    },
+    {
+      "from": "8764629550",
+      "to": "8764629552",
+      "weight": 67.27142282390696,
+      "bidirectional": false
+    },
+    {
+      "from": "8764629552",
+      "to": "8764629550",
+      "weight": 67.27142282390696,
+      "bidirectional": false
+    },
+    {
+      "from": "8764720460",
+      "to": "5490412436",
+      "weight": 51.14916369583384,
+      "bidirectional": false
+    },
+    {
+      "from": "8767363911",
+      "to": "2477175085",
+      "weight": 35.16210725126466,
+      "bidirectional": false
+    },
+    {
+      "from": "8767436448",
+      "to": "1865707986",
+      "weight": 76.54252913688391,
+      "bidirectional": false
+    },
+    {
+      "from": "8767436448",
+      "to": "1865707970",
+      "weight": 28.468661602564595,
+      "bidirectional": false
+    },
+    {
+      "from": "8767436448",
+      "to": "8767436451",
+      "weight": 58.37962406477843,
+      "bidirectional": false
+    },
+    {
+      "from": "8767436451",
+      "to": "8767436448",
+      "weight": 58.37962406477844,
+      "bidirectional": false
+    },
+    {
+      "from": "8767606871",
+      "to": "8767606872",
+      "weight": 50.03737693754413,
+      "bidirectional": false
+    },
+    {
+      "from": "8767606871",
+      "to": "2477174764",
+      "weight": 285.9677943629828,
+      "bidirectional": false
+    },
+    {
+      "from": "8767606871",
+      "to": "1865707925",
+      "weight": 123.69194411153188,
+      "bidirectional": false
+    },
+    {
+      "from": "8767606872",
+      "to": "8767606871",
+      "weight": 50.03737693754413,
+      "bidirectional": false
+    },
+    {
+      "from": "8767641035",
+      "to": "6059276033",
+      "weight": 159.118148748885,
+      "bidirectional": false
+    },
+    {
+      "from": "10167378207",
+      "to": "6430438597",
+      "weight": 153.48669569985864,
+      "bidirectional": false
+    },
+    {
+      "from": "10167484407",
+      "to": "5490413243",
+      "weight": 5.442065289999563,
+      "bidirectional": false
+    },
+    {
+      "from": "10167484408",
+      "to": "5490413079",
+      "weight": 6.582830372362811,
+      "bidirectional": false
+    },
+    {
+      "from": "10167484409",
+      "to": "5490413077",
+      "weight": 6.898249562728896,
+      "bidirectional": false
+    },
+    {
+      "from": "10654460989",
+      "to": "10654460996",
+      "weight": 107.74188898960244,
+      "bidirectional": false
+    },
+    {
+      "from": "10654460996",
+      "to": "4961460421",
+      "weight": 50.516125904637505,
+      "bidirectional": false
+    },
+    {
+      "from": "10654460996",
+      "to": "4961460419",
+      "weight": 58.2052179772366,
+      "bidirectional": false
+    },
+    {
+      "from": "10654460996",
+      "to": "10654460989",
+      "weight": 107.74188898960244,
+      "bidirectional": false
+    },
+    {
+      "from": "10654460997",
+      "to": "4961460421",
+      "weight": 85.41620543191857,
+      "bidirectional": false
+    },
+    {
+      "from": "11350694034",
+      "to": "5490412589",
+      "weight": 12.203087783275283,
+      "bidirectional": false
+    },
+    {
+      "from": "11350694034",
+      "to": "11350694035",
+      "weight": 9.199919724321457,
+      "bidirectional": false
+    },
+    {
+      "from": "11350694035",
+      "to": "11350694034",
+      "weight": 9.199919724321457,
+      "bidirectional": false
+    },
+    {
+      "from": "11350694035",
+      "to": "4961460861",
+      "weight": 184.2272814777672,
+      "bidirectional": false
+    },
+    {
+      "from": "11764186733",
+      "to": "5490413053",
+      "weight": 364.75172403192573,
+      "bidirectional": false
+    },
+    {
+      "from": "12673295317",
+      "to": "7509454355",
+      "weight": 195.24606559953259,
+      "bidirectional": false
+    },
+    {
+      "from": "13776017057",
+      "to": "1865707970",
+      "weight": 100.85300640909414,
+      "bidirectional": false
+    },
+    {
+      "from": "13776017057",
+      "to": "1865707913",
+      "weight": 195.97326933214686,
+      "bidirectional": false
+    },
+    {
+      "from": "13776017057",
+      "to": "13776023646",
+      "weight": 158.47568457183513,
+      "bidirectional": false
+    },
+    {
+      "from": "13776023646",
+      "to": "13776017057",
+      "weight": 158.47568457183513,
+      "bidirectional": false
+    },
+    {
+      "from": "13776023646",
+      "to": "6059276020",
+      "weight": 115.95096323098738,
+      "bidirectional": false
+    },
+    {
+      "from": "13780863024",
+      "to": "6393756438",
+      "weight": 7.502087632958376,
+      "bidirectional": false
+    },
+    {
+      "from": "13780863025",
+      "to": "6393756438",
+      "weight": 23.85970403739621,
+      "bidirectional": false
+    },
+    {
+      "from": "13823569691",
+      "to": "7301130032",
+      "weight": 20.4379550264024,
+      "bidirectional": false
+    },
+    {
+      "from": "13823569691",
+      "to": "13823569692",
+      "weight": 41.78140373786487,
+      "bidirectional": false
+    },
+    {
+      "from": "13823569691",
+      "to": "7301355119",
+      "weight": 34.85490107225759,
+      "bidirectional": false
+    },
+    {
+      "from": "13823569692",
+      "to": "13823569691",
+      "weight": 41.78140373786487,
+      "bidirectional": false
+    },
+    {
+      "from": "13823582489",
+      "to": "6430438598",
+      "weight": 295.83991282739515,
+      "bidirectional": false
+    },
+    {
+      "from": "13823582489",
+      "to": "7828032039",
+      "weight": 200.30704577284212,
+      "bidirectional": false
+    },
+    {
+      "from": "13823626401",
+      "to": "8411596135",
+      "weight": 18.841026177099387,
+      "bidirectional": false
+    },
+    {
+      "from": "14000172370",
+      "to": "14000172377",
+      "weight": 25.226589268076864,
+      "bidirectional": false
+    },
+    {
+      "from": "14000172371",
+      "to": "14000172377",
+      "weight": 48.83532173921086,
+      "bidirectional": false
+    },
+    {
+      "from": "14000172377",
+      "to": "14000172370",
+      "weight": 25.226589268076864,
+      "bidirectional": false
+    },
+    {
+      "from": "14000172377",
+      "to": "14000172378",
+      "weight": 24.138137651481962,
+      "bidirectional": false
+    },
+    {
+      "from": "14000172377",
+      "to": "14000172371",
+      "weight": 48.835321739210855,
+      "bidirectional": false
+    },
+    {
+      "from": "14000172378",
+      "to": "14000172377",
+      "weight": 24.138137651481962,
+      "bidirectional": false
+    },
+    {
+      "from": "14000172378",
+      "to": "4961460422",
+      "weight": 179.4521029214016,
+      "bidirectional": false
+    },
+    {
+      "from": "14000172378",
+      "to": "4961460438",
+      "weight": 107.51256600931751,
+      "bidirectional": false
+    }
+  ]
+}

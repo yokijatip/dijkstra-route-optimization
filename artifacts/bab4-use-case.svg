@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1260" viewBox="0 0 1300 1260"><title>Use Case Diagram Sistem Navigasi dan Eksperimen</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="black"/></marker><marker id="general" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="15" markerHeight="15" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="white" stroke="black"/></marker></defs>
+<rect width="1300" height="1260" fill="white"/>
+<rect x="440" y="40" width="820" height="1120" fill="white" stroke="black" stroke-width="2"/>
+<text x="850" y="93" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="30" font-weight="bold" fill="black">
+<tspan x="850" dy="0">Sistem Navigasi dan Eksperimen Dijkstra</tspan>
+</text>
+<circle cx="185" cy="235" r="20" fill="white" stroke="black" stroke-width="2"/>
+<path d="M185 255 V310 M150 280 H220 M185 310 L155 350 M185 310 L215 350" fill="none" stroke="black" stroke-width="2"/>
+<text x="185" y="393" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="185" dy="0">Pengguna demo</tspan>
+</text>
+<circle cx="185" cy="795" r="20" fill="white" stroke="black" stroke-width="2"/>
+<path d="M185 815 V870 M150 840 H220 M185 870 L155 910 M185 870 L215 910" fill="none" stroke="black" stroke-width="2"/>
+<text x="185" y="953" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="185" dy="0">Peneliti</tspan>
+</text>
+<path d="M185 770 V440" fill="none" stroke="black" stroke-width="2" marker-end="url(#general)"/>
+<ellipse cx="865" cy="190" rx="325.0" ry="47.5" fill="white" stroke="black" stroke-width="2"/>
+<text x="865" y="198" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="865" dy="0">Melihat informasi dataset</tspan>
+</text>
+<path d="M220 280 H350 V190 H540" fill="none" stroke="black" stroke-width="2"/>
+<ellipse cx="865" cy="330" rx="325.0" ry="47.5" fill="white" stroke="black" stroke-width="2"/>
+<text x="865" y="322" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="865" dy="0">Menentukan titik awal</tspan>
+<tspan x="865" dy="32">dan tujuan</tspan>
+</text>
+<path d="M220 280 H350 V330 H540" fill="none" stroke="black" stroke-width="2"/>
+<ellipse cx="865" cy="470" rx="325.0" ry="47.5" fill="white" stroke="black" stroke-width="2"/>
+<text x="865" y="478" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="865" dy="0">Menjalankan pencarian rute</tspan>
+</text>
+<path d="M220 280 H350 V470 H540" fill="none" stroke="black" stroke-width="2"/>
+<ellipse cx="865" cy="610" rx="325.0" ry="47.5" fill="white" stroke="black" stroke-width="2"/>
+<text x="865" y="602" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="865" dy="0">Membandingkan</tspan>
+<tspan x="865" dy="32">hasil algoritma</tspan>
+</text>
+<path d="M220 280 H350 V610 H540" fill="none" stroke="black" stroke-width="2"/>
+<ellipse cx="865" cy="750" rx="325.0" ry="47.5" fill="white" stroke="black" stroke-width="2"/>
+<text x="865" y="742" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="865" dy="0">Menjalankan eksperimen</tspan>
+<tspan x="865" dy="32">berkelompok</tspan>
+</text>
+<path d="M220 840 H390 V750 H540" fill="none" stroke="black" stroke-width="2"/>
+<ellipse cx="865" cy="890" rx="325.0" ry="47.5" fill="white" stroke="black" stroke-width="2"/>
+<text x="865" y="882" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="865" dy="0">Melihat riwayat dan</tspan>
+<tspan x="865" dy="32">detail eksperimen</tspan>
+</text>
+<path d="M220 840 H390 V890 H540" fill="none" stroke="black" stroke-width="2"/>
+<ellipse cx="865" cy="1030" rx="325.0" ry="47.5" fill="white" stroke="black" stroke-width="2"/>
+<text x="865" y="1038" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="865" dy="0">Mengekspor hasil eksperimen</tspan>
+</text>
+<path d="M220 840 H390 V1030 H540" fill="none" stroke="black" stroke-width="2"/>
+<text x="650" y="1218" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="24" font-weight="normal" fill="black">
+<tspan x="650" dy="0">Peneliti mewarisi aktivitas pengguna demo; autentikasi tidak diasumsikan.</tspan>
+</text>
+</svg>

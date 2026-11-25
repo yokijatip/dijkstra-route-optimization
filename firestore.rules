@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // The application server uses Firebase Admin SDK. Browser clients do not
+    // access experiment documents directly.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

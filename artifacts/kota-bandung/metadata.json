@@ -1,0 +1,21 @@
+{
+  "datasetId": "kota-bandung-osm-drive",
+  "extractedAt": "2026-09-15T17:02:44.392955+00:00",
+  "boundaryRelation": 13290062,
+  "boundaryName": "Bandung City, West Java, Indonesia",
+  "nodeCount": 27172,
+  "directedEdgeCount": 61630,
+  "weakComponents": 396,
+  "strongComponents": 534,
+  "simplify": true,
+  "retainAll": true,
+  "truncateByEdge": false,
+  "networkType": "drive",
+  "weightUnit": "meter",
+  "osmnx": "2.1.1",
+  "python": "3.13.7",
+  "sha256": "fa87b042d03d62e07e61630a3d544e2a14c9213ccbce52be9bf5f4b48f14b8a7",
+  "validation": "Passed GraphDataset schema, unique IDs, finite nonnegative weights and endpoint references",
+  "attribution": "© OpenStreetMap contributors",
+  "licenseUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,269 @@
+PAGE 1
+1 
+Naskah Presentasi Sidang  
+Zia Ulhaq • NIM 21110383 
+Optimasi Algoritma Dijkstra untuk Penentuan Jalur Terpendek pada Sistem Navigasi Cerdas 
+Durasi presentasi utama 15 menit, termasuk demonstrasi sekitar 1 menit 50 detik. Slide 1–16 
+merupakan materi utama. Slide 17–20 digunakan hanya saat tanya jawab. Pelajari gagasannya lalu 
+sampaikan dengan bahasa sendiri; sesuaikan uraian tindakan dengan hal yang benar-benar dipahami 
+dan dilakukan. 
+Bagian Slide Alokasi 
+Pembukaan dan konteks 1–4 3 menit 
+Konsep dan sistem 5–9 4 menit 45 detik 
+Pengujian dan hasil 10–13 3 menit 35 detik 
+Demo 14 1 menit 50 detik 
+Batasan dan penutup 15–16 1 menit 50 detik 
+Latihan: pertama pahami panduan belajar, lalu jelaskan contoh hitungan tanpa membaca. Setelah itu 
+berlatih dengan stopwatch. Jika lebih dari 15 menit, ringkas kalimat penjelasan, bukan 
+menghilangkan batasan hasil. Siapkan screenshot sebagai cadangan demo. 
+  
+
+PAGE 2
+2 
+Slide 1  Optimasi Algoritma Dijkstra 
+Waktu 00:00–00:30 • 30 detik 
+Assalamu’alaikum warahmatullahi wabarakatuh. Selamat pagi atau siang, Bapak dan Ibu penguji. 
+Saya Zia Ulhaq akan mempresentasikan penelitian berjudul Optimasi Algoritma Dijkstra untuk 
+Penentuan Jalur Terpendek pada Sistem Navigasi Cerdas. Penelitian ini membandingkan ketepatan 
+dan kinerja dua implementasi Dijkstra pada jaringan jalan Kota Bandung. 
+Petunjuk penyampaian: Sebutkan judul lengkap. Pilih sapaan sesuai waktu sidang. 
+Slide 2  Masalah dan tujuan penelitian 
+Waktu 00:30–01:20 • 50 detik 
+Pencarian rute perlu memberikan hasil yang benar sekaligus menggunakan waktu komputasi yang 
+efisien. Implementasi standar dalam penelitian ini mencari simpul berjarak minimum dengan 
+memindai himpunan simpul yang belum diproses. Proses ini dapat menjadi mahal pada graf besar. 
+Tujuannya adalah mengevaluasi penggunaan min-heap dan penghentian dini, sambil memeriksa 
+apakah hasil rutenya tetap valid dan memiliki total jarak minimum yang sesuai. 
+Petunjuk penyampaian: Bedakan efisiensi perhitungan komputer dengan waktu perjalanan 
+kendaraan. 
+  
+
+PAGE 3
+3 
+Slide 3  Dataset jaringan jalan Kota Bandung 
+Waktu 01:20–02:15 • 55 detik 
+Dataset utama berasal dari jaringan jalan kendaraan di Kota Bandung pada OpenStreetMap yang 
+diolah menggunakan OSMnx. Graf memuat 27.172 simpul dan 61.630 sisi berarah. Simpul dapat 
+mewakili persimpangan, ujung jalan, atau titik penghubung yang dipertahankan. Sisi menunjukkan 
+hubungan perjalanan, sedangkan bobotnya adalah panjang ruas dalam meter. Jumlah sisi tidak sama 
+dengan jumlah jalan fisik karena dua arah perjalanan dan sisi paralel dapat tercatat secara terpisah. 
+Data ini merupakan snapshot, bukan informasi lalu lintas langsung. 
+Petunjuk penyampaian: Tekankan wilayah Kota Bandung, bukan Kabupaten Bandung. 
+Slide 4  Metode penelitian dan pengembangan 
+Waktu 02:15–03:00 • 45 detik 
+Metode penelitiannya adalah eksperimen perbandingan. Dua implementasi dijalankan pada graf dan 
+pasangan asal–tujuan yang sama. Pengembangan aplikasinya mengikuti tahapan analisis kebutuhan, 
+perancangan, implementasi, pengujian, dan pemeliharaan. Waterfall menjelaskan proses 
+pembangunan sistem, sedangkan eksperimen menjelaskan cara mengevaluasi algoritma. Hasil 
+pengukuran kemudian dianalisis secara deskriptif dan diperiksa bersama ketepatan rutenya. 
+Petunjuk penyampaian: Jangan menyebut waterfall sebagai algoritma pencarian rute. 
+  
+
+PAGE 4
+4 
+Slide 5  Graf sebagai peta hubungan 
+Waktu 03:00–03:55 • 55 detik 
+Bayangkan kurir yang harus menuju suatu tempat. Nama tempat menjadi simpul, jalan menjadi sisi, 
+dan panjang jalan menjadi bobot. Komputer menyimpan hubungan tersebut sebagai adjacency list, 
+yaitu daftar tetangga setiap simpul beserta bobotnya. Dalam contoh kecil ini, A terhubung ke B 
+dengan bobot empat dan ke C dengan bobot dua. Ada pula C ke B berbobot satu, B ke D berbobot 
+empat, C ke D berbobot delapan, dan D ke E berbobot dua. Tujuannya mencari rute A menuju D. 
+Petunjuk penyampaian: Tunjukkan tabel sisi. Contoh ini hanya ilustrasi, bukan potongan jalan nyata. 
+Slide 6  Langkah Dijkstra pada contoh kecil 
+Waktu 03:55–05:05 • 70 detik 
+Mula-mula A bernilai nol dan simpul lain belum diketahui, sehingga ditulis tak hingga. Setelah 
+memproses A, jarak B menjadi empat dan C dua. C dipilih karena dua adalah jarak sementara terkecil. 
+Lewat C, jarak B membaik menjadi tiga dan D menjadi sepuluh. B lalu dipilih dan memperbaiki D 
+menjadi tujuh. Berikutnya D dipilih sebagai minimum dan jaraknya final. Dengan menelusuri 
+pendahulu D, B, C, dan A secara terbalik, kita mendapatkan rute A–C–B–D dengan total tujuh. 
+Dijkstra memilih total jarak dari sumber, bukan sekadar jalan terpendek dari posisi terakhir. 
+Petunjuk penyampaian: Jelaskan empat baris tabel perlahan. Tujuan ditemukan pertama kali dengan 
+biaya 10, lalu membaik menjadi 7. 
+  
+
+PAGE 5
+5 
+Slide 7  Perbedaan dua implementasi 
+Waktu 05:05–06:15 • 70 detik 
+Kedua versi memakai aturan pembaruan jarak yang sama dan adjacency list yang sama. Versi standar 
+mencari nilai minimum dengan pemindaian linear, lalu melanjutkan pemrosesan seluruh simpul 
+terjangkau. Versi optimasi memakai min-heap untuk mengambil kandidat minimum. Ia berhenti 
+ketika tujuan dikeluarkan sebagai kandidat minimum yang valid dan ditetapkan final. Tujuan yang 
+baru ditemukan belum cukup untuk berhenti. Karena dua teknik berubah sekaligus, hasil penelitian 
+menunjukkan manfaat gabungan min-heap dan penghentian dini. Besar kontribusi masing-masing 
+teknik belum dipisahkan. 
+Petunjuk penyampaian: Istilah standar merujuk pada baseline kode penelitian ini, bukan semua 
+implementasi Dijkstra. 
+Slide 8  Arsitektur aplikasi 
+Waktu 06:15–06:55 • 40 detik 
+Pengguna memilih dataset dan titik melalui antarmuka Nuxt. Antarmuka mengirim permintaan ke 
+FastAPI. Backend menjalankan algoritma pada graf yang sudah tersedia di memori, lalu 
+mengembalikan rute dan metrik. Peta menampilkan hasil kepada pengguna. Dalam sesi pengujian, 
+riwayat memakai penyimpanan memori dan arsip JSON atau CSV. Integrasi Firestore tersedia sebagai 
+rancangan fitur, tetapi persistensinya belum diverifikasi dalam pengujian penelitian. 
+Petunjuk penyampaian: Jelaskan perjalanan permintaan dari pengguna hingga hasil. Jangan 
+mengklaim Firestore sudah teruji. 
+  
+
+PAGE 6
+6 
+Slide 9  Navigation Simulator 
+Waktu 06:55–07:45 • 50 detik 
+Ini adalah tampilan Navigation Simulator pada dataset Kota Bandung. Masukan utamanya berupa 
+dataset, simpul asal, simpul tujuan, dan mode algoritma. Setelah pencarian dijalankan, aplikasi 
+menampilkan rute dan metrik perhitungan. Total jarak merupakan panjang rute pada graf. Waktu 
+eksekusi merupakan waktu komputasi algoritma. Angka tersebut tidak menunjukkan lama perjalanan 
+kendaraan. Garis pada peta menghubungkan koordinat simpul dan belum mengikuti seluruh 
+geometri lengkung jalan. 
+Petunjuk penyampaian: Gunakan screenshot ini bila demo langsung bermasalah. 
+Slide 10  Rancangan eksperimen kinerja 
+Waktu 07:45–08:45 • 60 detik 
+Eksperimen memakai sepuluh pasangan asal–tujuan yang dipilih acak dengan seed empat puluh dua. 
+Setiap algoritma pada setiap pasangan menjalani satu pemanasan dan tiga pengulangan terukur. Jadi 
+terdapat enam puluh eksekusi terukur dan dua puluh pemanasan yang tidak masuk statistik. 
+Urutannya selalu standar kemudian optimasi. Pengujian dilakukan pada satu perangkat dengan 
+prosesor Intel Core i5-1240P. Batas waktunya mencakup inisialisasi struktur pencarian dan iterasi, 
+tetapi tidak mencakup pemuatan dataset, rekonstruksi rute, komunikasi API, maupun penggambaran 
+peta. 
+Petunjuk penyampaian: Tunjukkan perhitungan 10 × 2 × 3 = 60. Akui urutan tetap sebagai 
+keterbatasan. 
+  
+
+PAGE 7
+7 
+Slide 11  Ketepatan hasil pada sampel uji 
+Waktu 08:45–09:30 • 45 detik 
+Seluruh enam puluh hasil terukur sesuai pada pemeriksaan status, biaya, dan validitas rute. 
+Pemeriksaan memastikan simpul awal dan akhir benar, setiap perpindahan memiliki sisi, dan jumlah 
+bobot sesuai. NetworkX dipakai sebagai pembanding tambahan. Semua sepuluh pasangan ternyata 
+terjangkau. Hasil ini menunjukkan kesesuaian pada sampel pengujian. Kita belum menguji seluruh 
+kemungkinan pasangan simpul di Kota Bandung. Tes backend dan antarmuka melengkapi 
+pemeriksaan fungsi sistem. 
+Petunjuk penyampaian: Hindari klaim akurasi 100 persen untuk seluruh jaringan. 
+Slide 12  Waktu komputasi pada sesi pengujian 
+Waktu 09:30–10:40 • 70 detik 
+Rata-rata waktu versi standar adalah 78.697,65 milidetik, atau sekitar 78,70 detik. Versi optimasi 
+rata-rata 25,88 milidetik, atau sekitar 0,02588 detik. Pengurangan relatifnya sekitar 99,97 persen. 
+Median juga ditampilkan untuk memberi gambaran nilai tengah. Perbedaan besar ini harus dibaca 
+terhadap baseline yang melakukan pemindaian linear dan memproses seluruh simpul terjangkau. 
+Angka tersebut bukan janji bahwa setiap implementasi Dijkstra akan mengalami percepatan yang 
+sama, dan bukan berarti perjalanan kendaraan menjadi lebih cepat sebesar persentase tersebut. 
+Petunjuk penyampaian: Jangan tertukar milidetik dengan detik. Persentase dihitung dari nilai 
+mentah sebelum pembulatan. 
+  
+
+PAGE 8
+8 
+Slide 13  Pekerjaan pencarian yang berkurang 
+Waktu 10:40–11:20 • 40 detik 
+Selain waktu, kita melihat banyaknya pekerjaan pencarian. Rata-rata simpul yang diselesaikan turun 
+dari 25.610 menjadi 13.084,30. Sisi yang diperiksa turun dari 59.072 menjadi 30.351,80. Penghentian 
+dini membantu mengurangi pekerjaan setelah tujuan final. Min-heap membantu pemilihan kandidat. 
+Kedua metrik ini menjelaskan aktivitas pencarian, tetapi tidak mengukur penggunaan memori 
+maupun keseluruhan respons aplikasi. 
+Petunjuk penyampaian: Nilai pecahan muncul karena yang ditampilkan adalah rata-rata. 
+Slide 14  Demonstrasi aplikasi 
+Waktu 11:20–13:10 • 110 detik 
+Pada demonstrasi, saya mulai dari dataset small-demo agar alurnya cepat terlihat. Saya memilih 
+soreang sebagai asal dan baleendah sebagai tujuan, lalu menjalankan perbandingan. Kedua algoritma 
+menghasilkan biaya 9,2 dalam satuan bobot dataset demo. Angka ini berbeda dari data penelitian 
+Kota Bandung. Selanjutnya saya menunjukkan dataset Kota Bandung dalam mode optimized. 
+Perhatikan rute, jarak, waktu, dan jumlah simpul. Untuk hasil benchmark utama, saya menggunakan 
+hasil tersimpan pada slide karena benchmark lengkap memerlukan waktu jauh lebih lama daripada 
+alokasi demo. Jika aplikasi tidak tersedia, screenshot tetap menunjukkan alur yang sudah diuji. 
+Petunjuk penyampaian: Alokasikan sekitar 80 detik untuk klik dan 30 detik untuk narasi. Jangan 
+jalankan benchmark Bandung penuh saat sidang. 
+  
+
+PAGE 9
+9 
+Slide 15  Keterbatasan penelitian 
+Waktu 13:10–14:10 • 60 detik 
+Ada beberapa batas interpretasi. Eksperimen memakai satu graf, satu perangkat, dan sepuluh 
+pasangan yang semuanya terjangkau. Urutan algoritma tetap, dan sebagian aktivitas penyiapan serta 
+pemeriksaan aplikasi terjadi pada perangkat yang sama selama sesi pengukuran. Karena itu, kondisi 
+beban belum sepenuhnya terkendali. Penelitian belum menguji signifikansi statistik atau 
+memisahkan dampak masing-masing teknik. Sistem juga memakai jarak statis, belum 
+mempertimbangkan kemacetan, dan persistensi Firestore belum diverifikasi. Batas ini menjadi dasar 
+saran pengujian lanjutan. 
+Petunjuk penyampaian: Sampaikan keterbatasan dengan tenang dan jelaskan perbaikan yang dapat 
+dilakukan. 
+Slide 16  Kesimpulan dan pengembangan lanjutan 
+Waktu 14:10–15:00 • 50 detik 
+Kesimpulannya, implementasi optimasi mempertahankan kesesuaian rute pada sampel pengujian 
+serta menurunkan waktu dan pekerjaan pencarian terhadap baseline penelitian. Hasil tersebut 
+mendukung penggunaan struktur antrean dan penghentian yang sesuai untuk pencarian satu tujuan. 
+Pengembangan selanjutnya dapat mengacak urutan pengujian, menambah pasangan dan perangkat, 
+serta menguji min-heap dan penghentian dini secara terpisah. Demikian pemaparan saya. Terima 
+kasih atas perhatian Bapak dan Ibu. Saya siap menerima pertanyaan dan masukan. 
+Petunjuk penyampaian: Berhenti di sini untuk presentasi utama. Slide berikut hanya dibuka jika 
+dibutuhkan. 
+  
+
+PAGE 10
+10 
+Slide 17  Cadangan A Mengapa tujuan harus final 
+Cadangan tanya jawab • di luar 15 menit 
+Ditemukan berarti sudah ada rute sementara menuju tujuan. Final berarti tujuan terpilih sebagai 
+jarak minimum yang valid di antara kandidat. Contoh menunjukkan D ditemukan dengan biaya 
+sepuluh, tetapi kemudian membaik menjadi tujuh. Karena itu, penghentian pada penemuan pertama 
+dapat menghasilkan rute yang salah. 
+Petunjuk penyampaian: Gunakan bila penguji menanyakan early termination. 
+Slide 18  Cadangan B Kompleksitas implementasi 
+Cadangan tanya jawab • di luar 15 menit 
+V adalah jumlah simpul dan E jumlah sisi. Pemindaian minimum berulang membuat batas waktu 
+baseline kuadratik terhadap simpul, ditambah pemeriksaan sisi. Kode heap memakai entri baru 
+ketika jarak membaik dan melewati entri lama. Karena ada sisi paralel dan lazy entries, batas umum 
+heap dapat dijelaskan memakai E log E. Rumus yang sering digunakan untuk graf sederhana adalah 
+O((V+E) log V). Big O menjelaskan pertumbuhan pekerjaan, bukan prediksi waktu tepat dalam 
+milidetik. 
+Petunjuk penyampaian: Jawab bertahap. Jangan menyamakan heapq dengan decrease-key yang 
+mengubah entri lama. 
+  
+
+PAGE 11
+11 
+Slide 19  Cadangan C Rencana pengujian yang lebih kuat 
+Cadangan tanya jawab • di luar 15 menit 
+Eksperimen lanjutan dapat memisahkan pengaruh struktur antrean dan aturan berhenti melalui 
+empat kombinasi. Urutan eksekusi dibuat acak atau seimbang, perangkat dipersiapkan dalam kondisi 
+yang lebih terkendali, dan cakupan pasangan diperluas. Hasil baru kemudian digunakan untuk 
+menilai konsistensi temuan. 
+Petunjuk penyampaian: Ini usulan pengembangan, bukan pengujian yang sudah dilakukan. 
+Slide 20  Cadangan D Rujukan dan bukti 
+Cadangan tanya jawab • di luar 15 menit 
+Dasar angka pada presentasi berasal dari arsip eksperimen dan pembahasan BAB V. Manifest 
+memuat konfigurasi, CSV memuat hasil mentah, dan berkas correctness memuat pemeriksaan 
+ketepatan. Kode kedua implementasi menjelaskan perlakuan yang dibandingkan. Data jalan berasal 
+dari kontributor OpenStreetMap. 
+Petunjuk penyampaian: Buka arsip asli bila penguji meminta asal angka. 
+  
+
+PAGE 12
+12 
+Urutan demonstrasi selama sidang 
+Tahap Tindakan Hal yang dijelaskan 
+Persiapan Buka http://localhost:3000. Pastikan backend aktif di 
+127.0.0.1:8000. 
+Latih sebelum sidang; jangan memulai 
+instalasi saat presentasi. 
+1 Navigation Simulator: pilih small-demo, asal soreang, 
+tujuan baleendah, mode compare. 
+Ini dataset kecil untuk memperlihatkan 
+fungsi. 
+2 Klik Run shortest path, lalu lihat Comparison. Biaya kedua algoritma 9,2 satuan 
+bobot demo. Waktu setiap 
+pengulangan bisa berubah. 
+3 Pilih kota-bandung-osm-drive dan mode optimized. Dataset penelitian berisi 27.172 simpul 
+dan 61.630 sisi. 
+4 Pilih asal 8123304877 dan tujuan 2477129890. 
+Jalankan pencarian. 
+Pasangan P1 berjarak sekitar 9.156,48 
+meter pada data arsip. 
+5 Kembali ke slide hasil. Tabel penelitian berasal dari 
+eksperimen tersimpan, bukan 
+pengukuran demo baru. 
+Jika demo tertunda: hentikan bagian klik dan lanjutkan dengan screenshot pada slide 9 dan 14. 
+Katakan bahwa gambar menunjukkan pengujian sebelumnya. Jangan mengklaim screenshot sebagai 
+eksekusi langsung. Jika backend baru dinyalakan, riwayat memori dapat kosong. Arsip penelitian 
+tetap ada di artifacts/bab5. 

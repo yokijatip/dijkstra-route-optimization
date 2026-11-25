@@ -1,0 +1,432 @@
+PAGE 1
+1 
+Panduan Memahami Dijkstra dan Aplikasi  
+Bahasa sederhana, contoh hitungan, latihan aplikasi, dan persiapan tanya jawab 
+Untuk Zia Ulhaq • Penelitian jaringan jalan Kota Bandung 
+Tujuan panduan ini adalah membantu memahami alasan algoritma bekerja, bagian yang dioptimasi, 
+cara membaca hasil, dan penggunaan aplikasi. Mulailah dari contoh kecil. Jangan menghafal angka 
+tanpa mengerti artinya. Kemampuan paling penting adalah menjelaskan proses dengan kata-kata 
+sendiri dan menyatakan batas pengetahuan secara jujur. 
+Urutan belajar Target 
+1. Gambaran penelitian Bisa menjelaskan topik dalam satu menit. 
+2. Graf dan hitungan Bisa menghitung rute A menuju D tanpa melihat jawaban. 
+3. Implementasi Bisa membedakan scan linear, heap, dan penghentian dini. 
+4. Aplikasi dan hasil Bisa menjalankan demo serta membedakan jarak dengan waktu 
+komputasi. 
+5. Latihan sidang Bisa menjawab pertanyaan berdasarkan bukti dan keterbatasan. 
+Pegangan satu kalimat: penelitian membandingkan dua cara menjalankan Dijkstra pada graf jalan 
+yang sama, lalu memeriksa kebenaran rute dan besarnya pekerjaan komputasi. Materi ini tidak 
+menjadikan hasil sampel sebagai jaminan untuk semua jalan atau semua perangkat. 
+  
+
+PAGE 2
+2 
+1  Gambaran skripsi dalam bahasa sehari-hari 
+Masalah yang ingin dijawab 
+Bayangkan ada ribuan persimpangan dan banyak pilihan jalan. Komputer perlu menentukan 
+rangkaian jalan dengan total jarak paling pendek. Cara mengatur calon simpul yang akan diperiksa 
+dapat membuat perhitungan cepat atau lambat, walaupun aturan pencarian jarak minimumnya tetap 
+sama. 
+Apa yang dibandingkan 
+Versi standar mencari jarak terkecil dengan membaca seluruh daftar simpul yang belum selesai. Versi 
+optimasi menggunakan min-heap, yaitu struktur antrean yang memudahkan pengambilan nilai 
+terkecil. Versi optimasi juga berhenti setelah tujuan final, sementara baseline meneruskan simpul 
+lain yang masih dapat dijangkau. 
+Apa kontribusinya 
+Kontribusi penelitian berupa implementasi, aplikasi visualisasi, dan evaluasi perbandingan pada 
+jaringan jalan Kota Bandung. Min-heap dan penghentian dini merupakan teknik yang sudah dikenal. 
+Penelitian ini tidak memperkenalkan algoritma Dijkstra baru. Nilai penelitiannya terletak pada 
+penerapan dan pengukuran yang dijelaskan beserta batasnya. 
+Pertanyaan Jawaban pendek 
+Objeknya apa? Kinerja dan ketepatan dua implementasi Dijkstra. 
+Datanya apa? Graf jalan kendaraan Kota Bandung dari OpenStreetMap. 
+Optimasi apa? Min-heap dan penghentian ketika tujuan final. 
+Ukuran hasilnya apa? Waktu algoritma, simpul diselesaikan, sisi diperiksa, serta validitas dan 
+biaya rute. 
+Sistem cerdas berarti AI? Istilah judul mengacu pada pengolahan rute secara algoritmik. Sistem ini 
+tidak memakai model pembelajaran mesin. 
+Latihan satu menit: jelaskan topik kepada orang yang belum pernah belajar pemrograman. Jawaban 
+harus memuat masalah, data, perbandingan, dan cara mengecek hasil. 
+  
+
+PAGE 3
+3 
+2  Graf seperti peta pengantaran paket 
+Analogi kurir 
+Kurir melihat daftar tempat dan jalan yang menghubungkannya. Dalam komputer, tempat disebut 
+simpul atau node, hubungan jalan disebut sisi atau edge, dan panjang jalan disebut bobot atau 
+weight. Graf adalah kumpulan simpul beserta hubungannya. Panah menunjukkan arah yang boleh 
+dilalui. 
+Istilah Analogi Arti dalam penelitian 
+Simpul Tempat atau 
+persimpangan 
+Identitas titik beserta koordinat. 
+Sisi berarah Jalan satu arah Hubungan u menuju v belum tentu berlaku terbalik. 
+Bobot Panjang ruas jalan Jarak dalam meter, bernilai nonnegatif. 
+Lintasan Urutan tempat yang 
+dilewati 
+Rangkaian simpul yang setiap pasangannya memiliki sisi. 
+Adjacency list Buku daftar tetangga Untuk tiap simpul, simpan tetangga dan bobotnya. 
+Graf terputus Wilayah yang tidak 
+tersambung 
+Sebagian tujuan mungkin tidak dapat dicapai. 
+Mengapa jumlah sisi lebih besar 
+Dua arah pada jalan fisik dapat menjadi dua sisi berarah. Antara dua simpul juga dapat ada sisi 
+paralel. Karena itu, 61.630 sisi tidak boleh disebut 61.630 nama jalan. Simpul pun tidak selalu satu 
+persimpangan fisik. 
+Jarak bukan waktu tempuh 
+Jalan sepanjang satu kilometer yang macet dapat memerlukan waktu lebih lama daripada jalan dua 
+kilometer yang lancar. Penelitian ini memilih total jarak minimum menurut bobot dataset. 
+Kemacetan, lampu merah, cuaca, dan perubahan akses tidak dimodelkan. 
+  
+
+PAGE 4
+4 
+3  Contoh kecil yang bisa dihitung sendiri 
+Gunakan graf berarah berikut untuk mencari A menuju D. Angka adalah satuan bobot ilustratif. 
+Hanya arah yang tertulis yang boleh digunakan. Tidak ada jalan lain dalam contoh ini. 
+Dari Ke Bobot 
+A B 4 
+A C 2 
+C B 1 
+C D 8 
+B D 4 
+D E 2 
+Bandingkan beberapa rute 
+A–B–D memiliki biaya 4 + 4 = 8. A–C–D memiliki biaya 2 + 8 = 10. A–C–B–D memiliki biaya 2 + 1 + 4 = 
+7. Jadi rute dengan lebih banyak ruas dapat memiliki total bobot yang lebih kecil. Yang diminimalkan 
+adalah jumlah bobot, bukan jumlah simpul. 
+Buku catatan jarak 
+Dijkstra membuat catatan d(A), d(B), dan seterusnya. Jarak sumber adalah nol. Jarak yang belum 
+diketahui ditulis ∞ atau tak hingga. Simbol ini berarti belum ada rute yang diketahui, bukan hasil 
+pengukuran jalan yang benar-benar tak berujung. 
+Relaksasi dengan analogi penawaran ongkos 
+Anggap catatan jarak sebagai ongkos terbaik yang pernah kamu terima. Jika ada penawaran melalui 
+simpul lain yang lebih murah, ganti catatan lama. Rumusnya: calon = d(u) + w(u,v). Jika calon < d(v), 
+ubah d(v) menjadi calon dan catat u sebagai pendahulu v. 
+Latihan: sebelum membuka halaman berikutnya, tulis sendiri jarak B dan C setelah A diproses. Lalu 
+hitung apakah lewat C dapat memperbaiki jarak B. 
+  
+
+PAGE 5
+5 
+4  Menelusuri langkah Dijkstra sampai selesai 
+Tahap A B C D E 
+Awal 0 ∞ ∞ ∞ ∞ 
+Proses A 0 4 2 ∞ ∞ 
+Proses C 0 3 2 10 ∞ 
+Proses B 0 3 2 7 ∞ 
+D final 0 3 2 7 ∞ 
+Standar lanjut D lalu E 0 3 2 7 9 
+Mengapa C dipilih sebelum B 
+Setelah A, C memiliki jarak sementara dua dan B empat. C menjadi kandidat minimum. Setelah C 
+diproses, B membaik menjadi tiga. Urutan simpul final adalah A, C, B, D, lalu E apabila pencarian 
+diteruskan. 
+Cara menyusun rutenya 
+Saat B membaik melalui C, simpan prev(B)=C. Saat D membaik melalui B, simpan prev(D)=B. Karena 
+prev(C)=A, penelusuran mundur adalah D, B, C, A. Balik urutannya menjadi A, C, B, D. 
+Ditemukan dan final berbeda 
+D pertama kali ditemukan dengan jarak sepuluh. Setelah B diproses, jaraknya menjadi tujuh. Jika 
+berhenti pada penemuan pertama, hasilnya salah. Versi optimasi berhenti ketika D menjadi 
+minimum yang valid dan diselesaikan. Pada saat itu bobot nonnegatif memastikan jalur lewat 
+kandidat yang tersisa tidak dapat membuat jarak D lebih kecil. 
+Pekerjaan kedua versi pada contoh 
+Standar menyelesaikan 5 simpul dan memeriksa 6 sisi. Optimasi menuju D menyelesaikan 4 simpul 
+dan memeriksa 5 sisi. Sisi D menuju E tidak diperiksa oleh optimasi karena pemeriksaan tujuan 
+dilakukan sebelum membaca tetangganya. 
+  
+
+PAGE 6
+6 
+5  Min-heap dengan analogi tumpukan kartu 
+Cara standar 
+Bayangkan kartu-kartu kandidat ditaruh tanpa pengaturan. Untuk memilih kartu dengan angka paling 
+kecil, kamu membaca semua kartu yang masih tersedia. Sesudah memperbarui jarak, kamu kembali 
+mencari minimum. Inilah gambaran scan linear. 
+Cara min-heap 
+Sekarang kartu disimpan dengan aturan yang menjamin angka terkecil berada di bagian atas. 
+Mengambil minimum dan memasukkan kandidat baru tidak perlu membaca seluruh daftar. Heap 
+tidak berarti semua kartu tersusun rapi dari kecil ke besar. Sifat pentingnya adalah nilai minimum 
+mudah diambil. 
+Mengapa ada kartu lama 
+Kode menggunakan heapq dan menambahkan entri baru jika jarak membaik. Misalnya B pernah 
+masuk dengan biaya empat, lalu masuk lagi dengan biaya tiga. Ketika entri lama muncul, kode 
+memeriksa apakah simpul sudah selesai atau biayanya lebih besar daripada catatan terbaik. Entri 
+lama dilewati. Teknik ini sering disebut lazy deletion atau lazy entries. 
+Aspek Standar Optimasi 
+Representasi graf Adjacency list Adjacency list yang sama 
+Memilih minimum Memindai simpul belum selesai Mengambil entri minimum heap 
+Berhenti Setelah simpul terjangkau selesai Saat tujuan final atau heap habis 
+Aturan relaksasi Calon lebih kecil memperbarui jarak Aturan yang sama 
+Penting: lebih sedikit simpul bukan satu-satunya alasan waktu turun. Cara mengambil minimum juga 
+berubah. Eksperimen ini belum memisahkan besarnya pengaruh dua perubahan tersebut. 
+  
+
+PAGE 7
+7 
+6  Mengapa Dijkstra benar dan kapan tidak cocok 
+Alasan bobot harus nonnegatif 
+Ketika simpul dengan jarak sementara terkecil dipilih, jalan lanjutan dengan bobot nol atau positif 
+tidak bisa membuat total biaya tiba-tiba berkurang. Karena itu jaraknya dapat ditetapkan final. Jika 
+ada bobot negatif, sebuah jalur yang tampak mahal dapat kemudian menjadi murah, sehingga dasar 
+keputusan ini tidak berlaku secara umum. 
+Jangan tertukar dengan algoritma lain 
+BFS sesuai untuk meminimalkan jumlah langkah pada graf tanpa bobot atau bobot seragam. Dijkstra 
+memakai bobot nonnegatif yang dapat berbeda. A* memakai tambahan perkiraan jarak ke tujuan 
+atau heuristik. Penelitian ini tidak menjalankan pembandingan dengan A*, sehingga tidak ada dasar 
+menyatakan Dijkstra lebih cepat dari A*. 
+Kondisi Makna hasil 
+Tujuan tidak terjangkau Tidak ada lintasan sesuai arah sisi. Aplikasi backend mengembalikan 
+unreachable, rute kosong, dan biaya null. 
+Sumber sama dengan tujuan Secara algoritmik biayanya nol. UI simulator menerapkan aturan agar dua 
+titik berbeda. 
+Dua rute sama pendek Keduanya dapat benar jika sisi valid dan total bobot minimum sama. 
+Urutan simpul tidak wajib identik. 
+Bobot negatif Model dataset penelitian menolak input tersebut. 
+Bobot nol Secara teori Dijkstra mendukungnya, tetapi belum ada kasus uji khusus 
+bobot nol pada laporan ini. 
+Latihan: jelaskan mengapa tujuan yang baru masuk heap belum boleh langsung dianggap final. 
+Gunakan perubahan biaya D dari sepuluh menjadi tujuh pada contoh. 
+  
+
+PAGE 8
+8 
+7  Mengenali kode dan arsitektur sistem 
+Berkas atau bagian Tanggung jawab 
+backend/app/algorithms/standard.py Pemilihan minimum linear dan relaksasi seluruh 
+simpul terjangkau. 
+backend/app/algorithms/optimized.py heapq, pemeriksaan entri lama, relaksasi, dan 
+penghentian pada tujuan. 
+backend/app/algorithms/common.py Validasi simpul dan penyusunan hasil, termasuk 
+rekonstruksi jalur. 
+backend/app/services/graph_service.py Graf di memori dan adjacency list. 
+backend/app/services/benchmark_service.py Menjalankan pasangan, pemanasan, pengulangan, 
+dan merangkum hasil. 
+Antarmuka Nuxt Memilih input, memanggil API, dan menampilkan 
+hasil serta peta. 
+Alur permintaan 
+Pengguna memilih titik di browser. Browser memanggil API. FastAPI mengambil graf yang tersedia, 
+menjalankan fungsi algoritma, dan mengembalikan hasil. Browser kemudian menggambar rute. 
+NetworkX dipakai untuk pemeriksaan pembanding pada penelitian, bukan mesin pencarian rute 
+utama di endpoint aplikasi. 
+Batas pengukuran waktu 
+perf_counter_ns mencatat waktu sebelum inisialisasi jarak dan sesudah iterasi pencarian. Waktu 
+mencakup inisialisasi struktur algoritma dan pencarian. Validasi simpul, pemuatan graf, rekonstruksi 
+rute, jaringan HTTP, penyimpanan, dan tampilan tidak termasuk. Waktu di layar karena menunggu 
+jaringan dapat berbeda dari execution time algoritma. 
+Penyimpanan yang benar-benar diuji 
+Sesi penelitian memakai memory fallback serta ekspor JSON/CSV lokal. Riwayat memori dapat hilang 
+setelah backend dimulai ulang. Jangan menyatakan Firestore sudah menyimpan semua hasil secara 
+permanen karena persistensinya belum diverifikasi. 
+  
+
+PAGE 9
+9 
+8  Menjalankan aplikasi sebelum latihan 
+Petunjuk berikut untuk komputer proyek yang dependensinya sudah disiapkan. Folder proyek adalah 
+C:\Dev\Web\dijkstra-route-optimization. Jangan mengubah konfigurasi atau memasang ulang paket 
+sesaat sebelum sidang. 
+Terminal backend 
+Buka PowerShell di folder proyek, lalu jalankan: 
+cd backend 
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000 
+Biarkan terminal ini tetap berjalan. Buka http://127.0.0.1:8000/docs untuk memeriksa bahwa 
+layanan tersedia. 
+Terminal frontend 
+Buka terminal kedua di folder proyek dan jalankan pnpm dev. Buka alamat yang dicetak terminal, 
+biasanya http://localhost:3000. Konfigurasi aplikasi menunjuk backend ke http://127.0.0.1:8000. Jika 
+server sudah berjalan, gunakan proses yang ada agar port tidak berbenturan. 
+Gejala Pemeriksaan 
+Dataset tidak muncul Pastikan backend aktif dan alamat API benar. Muat ulang halaman 
+setelah layanan siap. 
+Port sudah dipakai Gunakan server yang sudah aktif atau minta penyiap lingkungan 
+menghentikan proses yang tepat. Jangan menjalankan banyak server 
+sekaligus. 
+Peta dasar kosong Periksa koneksi internet penyedia tile. Graf lokal dan layanan algoritma 
+berbeda dari pemuatan tile peta. 
+Pencarian lama Pastikan tidak memakai standar atau compare pada graf Bandung untuk 
+demo singkat. 
+Riwayat kosong Memory fallback tidak mempertahankan data setelah restart. Gunakan 
+arsip penelitian untuk bukti hasil lama. 
+Sebelum sidang: coba seluruh demo, simpan screenshot, dan pastikan PPT serta arsip dapat dibuka 
+tanpa internet. Jangan menghentikan server di tengah demo. 
+  
+
+PAGE 10
+10 
+9  Latihan fitur aplikasi secara berurutan 
+Fitur Latihan Yang harus dipahami 
+Navigation 
+Simulator 
+Pilih small-demo, sumber soreang, tujuan 
+baleendah, mode compare. Klik Run 
+shortest path. 
+Dataset demo memakai satuan bobot 
+demo, bukan otomatis meter Kota 
+Bandung. 
+Comparison Baca kedua biaya, waktu, visited nodes, dan 
+processed edges. 
+Biaya demo yang sudah diuji adalah 
+9,2. Waktu baru dapat berbeda dari 
+arsip. 
+Kota Bandung Pilih kota-bandung-osm-drive, mode 
+optimized, sumber 8123304877, tujuan 
+2477129890. 
+Jarak arsip sekitar 9.156,48 meter. 
+Simpul dipilih memakai identitas, 
+bukan alamat jalan bebas. 
+Benchmark Lab Untuk latihan cepat: small-demo, 2 
+pasangan, 0 pemanasan, 1 pengulangan. Klik 
+Run benchmark. 
+Ini eksperimen demo baru, berbeda 
+dari konfigurasi penelitian utama. 
+Experiment History Buka hasil eksperimen yang baru selesai. Riwayat dapat bersifat sementara 
+pada mode memori. 
+Download CSV Ekspor hasil latihan lalu buka berkasnya. Setiap baris run memuat metrik untuk 
+ditelusuri, bukan sekadar gambar 
+grafik. 
+Apa yang dijelaskan saat menunjuk layar 
+Sebutkan input lebih dahulu, kemudian proses, kemudian output. Contoh: “Saya memilih sumber dan 
+tujuan pada graf ini. Backend menjalankan algoritma. Hasil menunjukkan jarak rute dan waktu 
+perhitungannya.” Hindari membacakan semua label tanpa menjelaskan hubungan antarbagian. 
+Mengapa benchmark penuh tidak cocok untuk demo 
+Sesi utama beserta pemanasan berlangsung sekitar 53 menit pada perangkat pengujian. Satu run 
+baseline saja rata-rata sekitar 79 detik. Saat sidang, gunakan demo kecil dan tunjukkan hasil Bandung 
+yang sudah diarsipkan. Jangan mengubah angka demo agar menyerupai hasil penelitian. 
+  
+
+PAGE 11
+11 
+10  Memahami angka hasil penelitian 
+Metrik Standar Optimasi 
+Rata-rata waktu 78.697,65 ms 25,88 ms 
+Median waktu 77.896,86 ms 26,65 ms 
+Rata-rata simpul 25.610,00 13.084,30 
+Rata-rata sisi 59.072,00 30.351,80 
+Cara membaca satuan 
+1.000 milidetik sama dengan satu detik. Jadi 78.697,65 ms sekitar 78,70 detik, sedangkan 25,88 ms 
+sekitar 0,02588 detik. Angka tersebut mengukur perhitungan, bukan durasi kendaraan melewati 
+jalan. 
+Cara menghitung pengurangan 
+Pengurangan = (standar − optimasi) / standar × 100%. Gunakan angka mentah untuk perhitungan, 
+baru bulatkan saat menampilkan. Hasil waktu sekitar 99,97%, simpul 48,91%, dan sisi 48,62%. Jangan 
+menyebut waktu perjalanan berkurang 99,97%. 
+Rata-rata, median, dan pengulangan 
+Rata-rata adalah jumlah nilai dibagi jumlah pengamatan. Median adalah nilai tengah setelah 
+pengurutan. Simpangan baku menggambarkan penyebaran; laporan memakai simpangan baku 
+populasi dari pengamatan yang terkumpul. Statistik utama merangkum 30 run per algoritma. Tiga 
+pengulangan pada pasangan yang sama bukan tiga pasangan rute independen baru. 
+Ketepatan dan generalisasi 
+Ada sepuluh pasangan terjangkau dan enam puluh hasil yang sesuai dengan pemeriksaan NetworkX 
+serta validitas rute. Ini bukti untuk sampel tersebut. NetworkX juga memakai graf masukan yang 
+sama, sehingga kesesuaian tidak membuktikan semua jalan di dunia nyata telah tercatat dengan 
+benar. 
+  
+
+PAGE 12
+12 
+11  Pertanyaan sidang tentang metode dan hasil 
+Mengapa memilih Dijkstra? 
+Graf memakai panjang jalan nonnegatif sehingga sesuai dengan syarat Dijkstra. Algoritma ini 
+memberi dasar pembandingan implementasi yang jelas. Penelitian tidak membuktikan bahwa 
+Dijkstra selalu paling baik dibanding semua algoritma lain. 
+Apa yang baru dari penelitian ini? 
+Penerapan dan evaluasi dua implementasi pada dataset Kota Bandung beserta sistem visualisasi dan 
+arsip hasil. Teknik min-heap dan penghentian dini bukan penemuan baru dalam penelitian ini. 
+Mengapa selisih waktunya sangat besar? 
+Baseline melakukan pemindaian minimum berulang dan memproses semua simpul terjangkau. Versi 
+optimasi mengubah antrean dan menghentikan pencarian lebih awal. Angka juga dipengaruhi graf, 
+pasangan, perangkat, dan kondisi sesi. Kontribusi kedua teknik belum diukur secara terpisah. 
+Apakah perbandingannya adil? 
+Input, pasangan, dan perangkat sama. Namun, aturan berhenti berbeda dan urutan tetap. Jadi hasil 
+sah untuk dua implementasi yang didefinisikan ini, tetapi belum mengisolasi pengaruh heap saja. 
+Pengujian empat kombinasi akan memberi pemisahan pengaruh yang lebih kuat. 
+Apakah 10 pasangan cukup untuk seluruh Kota Bandung? 
+Sepuluh pasangan memberi bukti awal pada sampel yang diuji, belum mewakili seluruh kemungkinan 
+rute. Karena itu penambahan pasangan dan kondisi menjadi saran lanjutan. Jangan mengklaim 
+signifikansi statistik karena laporan hanya memakai statistik deskriptif. 
+Mengapa ada bobot desimal dan toleransi? 
+Panjang ruas tersimpan sebagai bilangan desimal. Perhitungan floating point bisa memberi selisih 
+sangat kecil. Eksperimen memakai toleransi absolut 10⁻⁹ meter untuk membandingkan biaya. 
+Toleransi komputasi ini bukan klaim akurasi pengukuran jalan sampai sepermiliar meter. 
+  
+
+PAGE 13
+13 
+12  Pertanyaan teknis dan batas kemampuan sistem 
+Berapa kompleksitasnya? 
+Baseline memiliki batas O(V² + E). Kode optimasi memakai lazy heap, sehingga batas umum dapat 
+ditulis O(V + E log(E + 1)). Pada graf sederhana, bentuk O((V + E) log V) sering digunakan. Heap dapat 
+menyimpan entri lama sehingga ruang antreannya tidak otomatis hanya satu entri per simpul. Big O 
+membahas pertumbuhan pekerjaan, bukan waktu tepat pada laptop tertentu. 
+Mengapa simpul graf 27.172, tetapi standar memproses 25.610? 
+Tidak semua simpul harus terjangkau dari sumber pada graf berarah. Baseline berhenti ketika 
+minimum yang tersisa masih tak hingga. Angka 25.610 merupakan rata-rata simpul terjangkau yang 
+diproses pada sampel, bukan jumlah seluruh simpul dataset. 
+Apakah hasilnya rute tercepat? 
+Hasilnya rute dengan jarak minimum menurut bobot graf. Waktu tempuh belum menjadi bobot. 
+Untuk mencari waktu perjalanan minimum, dibutuhkan model bobot waktu yang sesuai dan data 
+pendukung. 
+Apakah aplikasinya sama dengan navigasi komersial? 
+Aplikasi ini merupakan prototipe penelitian. Belum ada lalu lintas waktu nyata, pencarian alamat 
+lengkap, maupun verifikasi geometri seluruh ruas. Jangan menjanjikan fungsi yang belum dibangun 
+atau diuji. 
+Apa yang dilakukan jika tidak tahu jawaban? 
+Nyatakan bagian yang dipahami dan batasnya. Contoh: “Pada pengujian ini saya belum mengukur 
+penggunaan memori, sehingga saya belum dapat menyimpulkan perbandingannya. Metrik yang 
+tersedia adalah waktu, simpul, dan sisi.” Catat pertanyaan untuk tindak lanjut. Hindari menebak 
+angka atau mengklaim proses yang belum dilakukan. 
+  
+
+PAGE 14
+14 
+13  Latihan mandiri dan kunci jawaban 
+Soal Tugas 
+1 Pada contoh A menuju D, sebutkan urutan simpul final sampai D dan biaya akhirnya.  
+2 Mengapa tidak boleh berhenti ketika D pertama kali ditemukan? 
+3 Apa perbedaan min-heap dan penghentian dini? 
+4 Ubah 25,88 ms menjadi detik. 
+5 Jelaskan 10 × 2 × 3 = 60 dan mengapa pemanasan tidak masuk hitungan.  
+6 Sebutkan tiga keterbatasan penelitian tanpa membaca naskah. 
+7 Jalankan small-demo dan tunjukkan mana jarak, mana waktu perhitungan. 
+8 Jelaskan mengapa dua rute berbeda bisa sama-sama benar. 
+Kunci jawaban 
+1. A, C, B, D dengan biaya 7. 2. Jarak sementara D masih 10 sebelum B memperbaikinya menjadi 7. 3. 
+Heap mengatur pemilihan minimum; penghentian dini membatasi sampai tujuan final. 4. 0,02588 
+detik. 5. Sepuluh pasangan, dua algoritma, tiga run terukur; dua puluh run pemanasan dicatat 
+terpisah. 6. Misalnya satu perangkat, sedikit pasangan, urutan tetap, beban belum terkendali, dan 
+perubahan gabungan. 7. Lakukan di aplikasi. 8. Total bobot minimum dapat sama walaupun urutan 
+simpul berbeda, asalkan semua sisi valid. 
+Urutan latihan sebelum sidang 
+Sesi pertama: hitung contoh dan jelaskan analoginya. Sesi kedua: praktik aplikasi dan baca hasil. Sesi 
+ketiga: presentasikan slide 1–16 dengan stopwatch, lalu minta orang lain memilih lima pertanyaan 
+acak. Jika belum bisa menjelaskan tanpa membaca, ulangi konsep tersebut sebelum menghafal 
+naskah. 
+  
+
+PAGE 15
+15 
+14  Peta bukti dan bahan yang perlu dibuka 
+Bahan Kegunaan 
+Skripsi revisi BAB I–II Masalah, tujuan, batasan, dan teori. 
+Skripsi revisi BAB III–IV Dataset, analisis, rancangan sistem, dan antarmuka. 
+Skripsi revisi BAB V–VI Implementasi, hasil uji, pembahasan, keterbatasan, 
+dan kesimpulan. 
+artifacts/bab5/manifest.json Konfigurasi eksperimen, pasangan, versi, dan 
+identitas dataset. 
+artifacts/bab5/raw-runs.csv Hasil mentah tiap eksekusi terukur. 
+artifacts/bab5/benchmark.json Ringkasan statistik dan hasil eksperimen. 
+artifacts/bab5/correctness.json Pemeriksaan NetworkX dan validitas rute. 
+artifacts/bab5/ui-tests.json dan pytest.xml Bukti tes antarmuka dan backend. 
+backend/app/algorithms/standard.py dan 
+optimized.py 
+Kode yang menentukan perbedaan dua 
+implementasi. 
+Bacaan teknis pendamping 
+Python heapq: https://docs.python.org/3/library/heapq.html 
+NetworkX shortest paths: 
+https://networkx.org/documentation/stable/reference/algorithms/shortest_paths.html 
+OpenStreetMap contributors dan lisensi: https://www.openstreetmap.org/copyright 
+Pegangan akhir: jelaskan input, langkah, keluaran, bukti, dan keterbatasan. Ketika menyebut angka, 
+selalu sebutkan satuannya serta kondisi pengujiannya. Kemampuan menjelaskan satu contoh kecil 
+secara benar lebih berguna daripada menghafal banyak istilah tanpa pemahaman. 

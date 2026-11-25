@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1250" viewBox="0 0 1300 1250"><title>Struktur Koleksi Firestore</title><rect width="100%" height="100%" fill="white"/>
+<text x="650" y="48" font-family="Times New Roman,Times,serif" font-size="32" text-anchor="middle" font-weight="bold">Struktur Koleksi Firestore</text>
+<rect x="70" y="105" width="460" height="110" fill="white" stroke="black" stroke-width="2"/><path d="M70 157 H530" stroke="black" stroke-width="2"/>
+<text x="300.0" y="140" font-family="Times New Roman,Times,serif" font-size="28" text-anchor="middle" font-weight="bold">Koleksi: experiments</text>
+<text x="88" y="190" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">Menampung dokumen eksperimen</text>
+<rect x="215" y="300" width="980" height="212" fill="white" stroke="black" stroke-width="2"/><path d="M215 352 H1195" stroke="black" stroke-width="2"/>
+<text x="705.0" y="335" font-family="Times New Roman,Times,serif" font-size="28" text-anchor="middle" font-weight="bold">Dokumen: {experimentId}</text>
+<text x="233" y="385" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">experimentId, datasetId, datasetVersion</text>
+<text x="233" y="419" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">testCaseCount, repeatCount, warmupRuns</text>
+<text x="233" y="453" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">pairMode, randomSeed, correctnessMismatchCount</text>
+<text x="233" y="487" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">standard, optimized, improvement, createdAt</text>
+<path d="M110 215 V260 H255 V300" fill="none" stroke="black" stroke-width="2"/>
+<rect x="360" y="590" width="460" height="110" fill="white" stroke="black" stroke-width="2"/><path d="M360 642 H820" stroke="black" stroke-width="2"/>
+<text x="590.0" y="625" font-family="Times New Roman,Times,serif" font-size="28" text-anchor="middle" font-weight="bold">Subkoleksi: runs</text>
+<text x="378" y="675" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">Menampung hasil setiap eksekusi</text>
+<path d="M255 512 V555 H400 V590" fill="none" stroke="black" stroke-width="2"/>
+<rect x="500" y="785" width="710" height="280" fill="white" stroke="black" stroke-width="2"/><path d="M500 837 H1210" stroke="black" stroke-width="2"/>
+<text x="855.0" y="820" font-family="Times New Roman,Times,serif" font-size="28" text-anchor="middle" font-weight="bold">Dokumen: {experimentId}-run-{nomorUrut}</text>
+<text x="518" y="870" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">id, experimentId, datasetId, datasetVersion</text>
+<text x="518" y="904" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">sourceId, destinationId</text>
+<text x="518" y="938" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">algorithm, algorithmVersion</text>
+<text x="518" y="972" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">executionTimeNs, executionTimeMs</text>
+<text x="518" y="1006" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">visitedNodes, processedEdges</text>
+<text x="518" y="1040" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="start" font-weight="normal">totalCost, path, pathLength, status, createdAt</text>
+<path d="M400 700 V745 H540 V785" fill="none" stroke="black" stroke-width="2"/>
+<text x="650" y="1155" font-family="Times New Roman,Times,serif" font-size="26" text-anchor="middle" font-weight="normal">Path: experiments/{experimentId}/runs/{runId}</text>
+<text x="650" y="1205" font-family="Times New Roman,Times,serif" font-size="25" text-anchor="middle" font-weight="normal">Simpul dan sisi graf disimpan dalam JSON, bukan pada koleksi di atas.</text></svg>

@@ -1,0 +1,68 @@
+{
+  "startedAt": "2026-09-16T18:41:21.623461+00:00",
+  "request": {
+    "datasetId": "kota-bandung-osm-drive",
+    "testCaseCount": 10,
+    "pairMode": "random",
+    "pairs": null,
+    "warmupRuns": 1,
+    "repeatCount": 3,
+    "randomSeed": 42,
+    "tolerance": 1e-09
+  },
+  "pairs": [
+    {
+      "sourceId": "8123304877",
+      "destinationId": "2477129890"
+    },
+    {
+      "sourceId": "1014721789",
+      "destinationId": "10187071456"
+    },
+    {
+      "sourceId": "4681200983",
+      "destinationId": "4123963951"
+    },
+    {
+      "sourceId": "4054910693",
+      "destinationId": "3115195211"
+    },
+    {
+      "sourceId": "10143074316",
+      "destinationId": "2255972227"
+    },
+    {
+      "sourceId": "9148177736",
+      "destinationId": "10184426411"
+    },
+    {
+      "sourceId": "5866940448",
+      "destinationId": "1966222861"
+    },
+    {
+      "sourceId": "6453694935",
+      "destinationId": "5447158256"
+    },
+    {
+      "sourceId": "1387999365",
+      "destinationId": "1381753714"
+    },
+    {
+      "sourceId": "2093775898",
+      "destinationId": "3959677853"
+    }
+  ],
+  "datasetSha256": "fa87b042d03d62e07e61630a3d544e2a14c9213ccbce52be9bf5f4b48f14b8a7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "fastapi": "0.141.1",
+    "uvicorn": "0.52.4",
+    "networkx": "3.6.1",
+    "osmnx": "2.1.1",
+    "firebase-admin": "7.5.0"
+  },
+  "order": "standard then optimized; fixed order",
+  "persistence": "memory; local JSON and CSV export",
+  "finishedAt": "2026-09-16T19:34:02.092327+00:00"
+}

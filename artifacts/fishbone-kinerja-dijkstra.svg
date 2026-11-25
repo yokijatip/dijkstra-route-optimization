@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<title>Analisis Faktor yang Berpotensi Memengaruhi Kinerja Dijkstra</title>
+<desc>Diagram sebab akibat berisi mekanisme pencarian, karakteristik graf, pasangan rute, dan kondisi pengujian. Faktor merupakan dugaan analitis, bukan hasil eksperimen.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="black"/></marker></defs>
+<rect width="1600" height="900" fill="white"/>
+<g stroke="black" stroke-width="3" fill="none">
+<path d="M65 450 H1260" marker-end="url(#a)"/>
+<path d="M420 125 L570 450 M1020 125 L1170 450 M420 775 L570 450 M1020 775 L1170 450"/>
+<path d="M85 245 H475.38 M125 325 H512.31 M685 245 H1075.38 M725 325 H1112.31 M85 655 H475.38 M125 575 H512.31 M685 655 H1075.38 M725 575 H1112.31"/>
+<rect x="1275" y="345" width="300" height="210"/>
+</g>
+<g fill="black" font-family="Times New Roman,Times,serif" font-size="27">
+<text x="90" y="90" font-weight="bold">Mekanisme pencarian</text>
+<text x="690" y="90" font-weight="bold">Karakteristik graf</text>
+<text x="90" y="825" font-weight="bold">Karakteristik pasangan rute</text>
+<text x="690" y="825" font-weight="bold">Kondisi pengujian</text>
+<text x="85" y="199"><tspan x="85">Pemilihan simpul</tspan><tspan x="85" dy="32">secara linear</tspan></text>
+<text x="125" y="280"><tspan x="125">Pencarian berlanjut</tspan><tspan x="125" dy="32">setelah tujuan final</tspan></text>
+<text x="685" y="199"><tspan x="685">Jumlah simpul</tspan><tspan x="685" dy="32">dan sisi</tspan></text>
+<text x="725" y="280"><tspan x="725">Kepadatan, arah,</tspan><tspan x="725" dy="32">dan keterhubungan</tspan></text>
+<text x="85" y="690"><tspan x="85">Posisi sumber</tspan><tspan x="85" dy="32">dan tujuan</tspan></text>
+<text x="125" y="610">Keterjangkauan tujuan</text>
+<text x="685" y="690"><tspan x="685">Beban perangkat</tspan><tspan x="685" dy="32">dan urutan eksekusi</tspan></text>
+<text x="725" y="610">Batas waktu pengukuran</text>
+<text x="1425" y="414" text-anchor="middle" font-size="28"><tspan x="1425">Variasi waktu eksekusi</tspan><tspan x="1425" dy="36">dan jumlah operasi</tspan><tspan x="1425" dy="36">pencarian Dijkstra</tspan></text>
+</g>
+</svg>
+

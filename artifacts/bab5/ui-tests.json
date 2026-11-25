@@ -1,0 +1,26 @@
+[
+  {
+    "test": "UI comparison on small-demo",
+    "passed": true
+  },
+  {
+    "test": "UI rejects identical source and destination",
+    "passed": true
+  },
+  {
+    "test": "UI benchmark on small-demo (2 cases, 1 repeat, 0 warmup)",
+    "passed": true
+  },
+  {
+    "test": "UI history detail request",
+    "passed": true
+  },
+  {
+    "test": "UI export link returns CSV",
+    "passed": true
+  },
+  {
+    "test": "UI loads Bandung graph and calculates optimized route",
+    "passed": true
+  }
+]

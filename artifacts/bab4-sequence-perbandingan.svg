@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1550" viewBox="0 0 1600 1550"><title>Sequence Diagram Perbandingan Rute</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="black"/></marker><marker id="general" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="15" markerHeight="15" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="white" stroke="black"/></marker></defs>
+<rect width="1600" height="1550" fill="white"/>
+<rect x="10" y="35" width="220" height="95" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="120.0" y="90.5" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="120.0" dy="0">Pengguna</tspan>
+</text>
+<path d="M120 130 V1430" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="315" y="35" width="220" height="95" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="425.0" y="90.5" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="425.0" dy="0">Antarmuka</tspan>
+</text>
+<path d="M425 130 V1430" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="635" y="35" width="220" height="95" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="745.0" y="74.5" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="745.0" dy="0">API / Layanan</tspan>
+<tspan x="745.0" dy="32">Perbandingan</tspan>
+</text>
+<path d="M745 130 V1430" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="960" y="35" width="220" height="95" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="1070.0" y="90.5" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="1070.0" dy="0">Layanan dataset</tspan>
+</text>
+<path d="M1070 130 V1430" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="1310" y="35" width="220" height="95" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="1420.0" y="90.5" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="1420.0" dy="0">Mesin algoritma</tspan>
+</text>
+<path d="M1420 130 V1430" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 6"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="272.5" y="170" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="272.5" dy="0">Pilih dataset, sumber, tujuan</tspan>
+<tspan x="272.5" dy="32">dan mode bandingkan</tspan>
+</text>
+<path d="M120 220 H425" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="585.0" y="323" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="585.0" dy="0">Kirim permintaan perbandingan</tspan>
+</text>
+<path d="M425 340 H745" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)"/>
+<rect x="650" y="390" width="280" height="75" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="790.0" y="435.5" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="790.0" dy="0">Validasi permintaan</tspan>
+</text>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="907.5" y="533" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="907.5" dy="0">Minta graf dataset</tspan>
+</text>
+<path d="M745 550 H1070" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="907.5" y="633" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="907.5" dy="0">Kembalikan graf di memori</tspan>
+</text>
+<path d="M1070 650 H745" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)" stroke-dasharray="8 6"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="1082.5" y="743" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="1082.5" dy="0">Jalankan Dijkstra standar (graf, sumber, tujuan)</tspan>
+</text>
+<path d="M745 760 H1420" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="1082.5" y="848" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="1082.5" dy="0">Hasil standar dan metrik</tspan>
+</text>
+<path d="M1420 865 H745" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)" stroke-dasharray="8 6"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="1082.5" y="958" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="1082.5" dy="0">Jalankan Dijkstra optimasi (input identik)</tspan>
+</text>
+<path d="M745 975 H1420" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="1082.5" y="1063" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="1082.5" dy="0">Hasil optimasi dan metrik</tspan>
+</text>
+<path d="M1420 1080 H745" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)" stroke-dasharray="8 6"/>
+<rect x="590" y="1140" width="490" height="95" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="835.0" y="1179.5" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="26" font-weight="normal" fill="black">
+<tspan x="835.0" dy="0">Bandingkan biaya dan status;</tspan>
+<tspan x="835.0" dy="32">susun hasil perbandingan</tspan>
+</text>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="585.0" y="1283" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="585.0" dy="0">Kembalikan hasil perbandingan</tspan>
+</text>
+<path d="M745 1300 H425" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)" stroke-dasharray="8 6"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="272.5" y="1383" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="23" font-weight="normal" fill="black">
+<tspan x="272.5" dy="0">Tampilkan jalur, status, dan metrik</tspan>
+</text>
+<path d="M425 1400 H120" fill="none" stroke="black" stroke-width="2" marker-end="url(#a)" stroke-dasharray="8 6"/>
+<text stroke="white" stroke-width="5" paint-order="stroke" x="800" y="1508" text-anchor="middle" font-family="Times New Roman,Times,serif" font-size="24" font-weight="normal" fill="black">
+<tspan x="800" dy="0">Alur utama untuk permintaan valid; timer berada di dalam setiap eksekusi algoritma.</tspan>
+</text>
+</svg>

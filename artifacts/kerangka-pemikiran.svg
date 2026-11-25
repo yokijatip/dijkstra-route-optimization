@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1400" viewBox="0 0 1000 1400">
+  <title>Kerangka Pemikiran Penelitian</title>
+  <desc>Tujuh tahapan penelitian dari identifikasi masalah efisiensi pencarian rute hingga kesimpulan.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="black"/></marker></defs>
+  <rect width="1000" height="1400" fill="white"/>
+  <g fill="white" stroke="black" stroke-width="3">
+    <rect x="130" y="50" width="740" height="140"/>
+    <rect x="130" y="240" width="740" height="140"/>
+    <rect x="130" y="430" width="740" height="140"/>
+    <rect x="130" y="620" width="740" height="140"/>
+    <rect x="130" y="810" width="740" height="140"/>
+    <rect x="130" y="1000" width="740" height="140"/>
+    <rect x="130" y="1190" width="740" height="140"/>
+  </g>
+  <g stroke="black" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M500 190 V232"/><path d="M500 380 V422"/><path d="M500 570 V612"/>
+    <path d="M500 760 V802"/><path d="M500 950 V992"/><path d="M500 1140 V1182"/>
+  </g>
+  <g fill="black" font-family="Times New Roman, Times, serif" font-size="36" text-anchor="middle">
+    <text x="500" y="109"><tspan x="500">Identifikasi masalah efisiensi</tspan><tspan x="500" dy="44">pencarian rute</tspan></text>
+    <text x="500" y="299"><tspan x="500">Kajian teori dan</tspan><tspan x="500" dy="44">penelitian terdahulu</tspan></text>
+    <text x="500" y="512">Pemodelan jaringan jalan</text>
+    <text x="500" y="679"><tspan x="500">Implementasi Dijkstra standar</tspan><tspan x="500" dy="44">dan optimasi</tspan></text>
+    <text x="500" y="892">Pengujian ketepatan dan kinerja</text>
+    <text x="500" y="1082">Analisis hasil</text>
+    <text x="500" y="1272">Kesimpulan</text>
+  </g>
+</svg>

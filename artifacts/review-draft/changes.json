@@ -1,0 +1,162 @@
+[
+  {
+    "before": "2025",
+    "after": "2026"
+  },
+  {
+    "before": "Permasalahan yang hendak dikaji adalah sejauh mana perubahan implementasi Dijkstra dapat meningkatkan efisiensi pencarian dengan tetap mempertahankan ketepatan hasil. Pada rancangan awal penelitian, optimasi diarahkan pada penggunaan daftar ketetanggaan atau adjacency list, antrean prioritas berbasis min-heap, serta penghentian pencarian ketika jarak menuju simpul tujuan telah ditetapkan sebagai jarak final. Pengaruh penerapan teknik tersebut perlu dibuktikan melalui eksperimen. Peningkatan kinerja belum dapat ditetapkan sebelum pengujian dilakukan karena hasilnya perlu dinilai berdasarkan karakteristik graf dan pasangan titik awal–tujuan yang digunakan.",
+    "after": "Permasalahan yang dikaji adalah sejauh mana perubahan implementasi Dijkstra dapat meningkatkan efisiensi pencarian dengan tetap mempertahankan ketepatan hasil. Kedua implementasi menggunakan adjacency list yang sama. Optimasi yang dibandingkan meliputi penggunaan antrean prioritas berbasis min-heap sebagai pengganti pencarian minimum linear serta penghentian dini ketika simpul tujuan telah diselesaikan. Pengaruh gabungan kedua teknik tersebut dievaluasi melalui eksperimen pada dataset dan pasangan titik yang sama."
+  },
+  {
+    "before": "Pelaksanaan eksperimen memerlukan mekanisme pengukuran yang dapat ditelusuri dan diulang. Oleh karena itu, pengujian direncanakan menggunakan beberapa ukuran graf, sejumlah pasangan titik awal–tujuan, serta pengulangan pada setiap kasus uji. Waktu eksekusi akan diukur pada proses pencarian algoritma setelah graf tersedia di memori, sehingga tidak mencakup pemuatan dataset, komunikasi jaringan, penyimpanan hasil, maupun penampilan antarmuka. Hasil setiap pengujian akan disimpan sebagai data mentah dan diolah menjadi statistik untuk mendukung pembahasan perbandingan kinerja.",
+    "after": "Pelaksanaan eksperimen menggunakan satu graf jaringan jalan Kota Bandung, sepuluh pasangan titik asal–tujuan, satu pemanasan, dan tiga pengulangan terukur untuk setiap algoritma pada setiap pasangan. Dataset demo digunakan untuk pengujian fungsional dan tidak digabungkan ke dalam statistik kinerja Kota Bandung. Waktu algoritma diukur setelah graf tersedia di memori, tanpa mencakup pemuatan dataset, komunikasi jaringan, penyimpanan hasil, maupun penampilan antarmuka. Hasil setiap eksekusi dicatat sebagai data mentah untuk analisis deskriptif."
+  },
+  {
+    "before": "Perbandingan dilakukan menggunakan dataset, pasangan titik awal–tujuan, dan lingkungan pengujian yang sama. Pengujian mencakup variasi ukuran graf dan pengulangan kasus uji sesuai konfigurasi eksperimen yang ditetapkan.",
+    "after": "Perbandingan kinerja dilakukan pada satu graf Kota Bandung dengan 10 pasangan titik asal–tujuan dan tiga pengulangan terukur untuk setiap algoritma pada lingkungan yang sama. Variasi ukuran graf belum diuji; dataset demo hanya digunakan dalam pengujian fungsional."
+  },
+  {
+    "before": "Berdasarkan latar belakang, identifikasi masalah, dan batasan masalah yang telah diuraikan, rumusan masalah dalam penelitian ini adalah bagaimana menerapkan optimasi algoritma Dijkstra menggunakan adjacency list, antrean prioritas berbasis min-heap, dan penghentian pencarian ketika jarak tujuan telah final pada sistem navigasi cerdas berbasis web untuk jaringan jalan Kota Bandung, serta bagaimana perbandingan kinerjanya terhadap Dijkstra standar berdasarkan waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa dengan tetap menghasilkan jalur yang valid dan total bobot terpendek yang ekuivalen?",
+    "after": "Berdasarkan latar belakang, identifikasi masalah, dan batasan masalah yang telah diuraikan, rumusan masalah dalam penelitian ini adalah bagaimana menerapkan optimasi algoritma Dijkstra menggunakan antrean prioritas berbasis min-heap dan penghentian dini pada sistem navigasi cerdas berbasis web untuk jaringan jalan Kota Bandung, serta bagaimana perbandingan kinerjanya terhadap implementasi standar dengan pencarian minimum linear berdasarkan waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa, dengan kedua implementasi menggunakan adjacency list yang sama dan tetap menghasilkan jalur valid dengan total bobot terpendek yang ekuivalen?"
+  },
+  {
+    "before": "Tujuan penelitian ini adalah menerapkan optimasi algoritma Dijkstra menggunakan adjacency list, antrean prioritas berbasis min-heap, dan penghentian pencarian ketika jarak menuju simpul tujuan telah final dalam sistem navigasi cerdas berbasis web untuk jaringan jalan Kota Bandung. Penelitian ini juga bertujuan membandingkan kinerja Dijkstra standar dan Dijkstra yang dioptimasi berdasarkan waktu eksekusi, jumlah simpul yang diproses, serta jumlah sisi yang diperiksa pada kondisi pengujian yang sama. Selain itu, penelitian ini bertujuan memverifikasi bahwa penerapan optimasi tetap menghasilkan jalur yang valid dengan total bobot terpendek yang ekuivalen dengan hasil Dijkstra standar.",
+    "after": "Tujuan penelitian ini adalah menerapkan optimasi algoritma Dijkstra menggunakan antrean prioritas berbasis min-heap dan penghentian dini dalam sistem navigasi cerdas berbasis web untuk jaringan jalan Kota Bandung. Penelitian membandingkan kinerja implementasi tersebut dengan Dijkstra standar yang menggunakan pemilihan minimum linear, berdasarkan waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa. Kedua implementasi menggunakan adjacency list yang sama. Penelitian juga memverifikasi validitas rute dan kesetaraan total bobot minimum pada pasangan titik yang diuji."
+  },
+  {
+    "before": "Penelitian difokuskan pada perbandingan Dijkstra standar dan Dijkstra yang dioptimasi menggunakan adjacency list, antrean prioritas berbasis min-heap, serta penghentian pencarian ketika jarak menuju simpul tujuan telah final. Aspek yang diteliti meliputi waktu eksekusi, jumlah simpul yang diproses, jumlah sisi yang diperiksa, serta validitas jalur dan kesetaraan total bobot. Pengujian dilakukan menggunakan dataset dan pasangan titik awal–tujuan yang sama.",
+    "after": "Penelitian difokuskan pada perbandingan Dijkstra standar dengan pemilihan minimum linear dan Dijkstra optimasi menggunakan min-heap serta penghentian dini ketika tujuan telah diselesaikan. Kedua implementasi menggunakan adjacency list yang sama. Aspek yang diteliti meliputi waktu eksekusi, jumlah simpul yang diproses, jumlah sisi yang diperiksa, serta validitas rute dan kesetaraan total bobot."
+  },
+  {
+    "before": "Perlakuan yang dibandingkan adalah penggunaan Dijkstra standar dan Dijkstra yang dioptimasi menggunakan adjacency list, antrean prioritas berbasis min-heap, serta penghentian pencarian ketika jarak menuju simpul tujuan telah final. Variabel yang diukur meliputi waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa. Ketepatan hasil diperiksa melalui validitas jalur dan kesetaraan total bobot terpendek. Dataset, pasangan titik awal–tujuan, serta perangkat keras dan perangkat lunak dibuat sama untuk setiap perbandingan.",
+    "after": "Perlakuan yang dibandingkan adalah Dijkstra standar dengan pemilihan minimum linear dan pemrosesan seluruh simpul terjangkau, serta Dijkstra optimasi dengan min-heap dan penghentian dini. Representasi adjacency list digunakan pada kedua implementasi. Variabel respons meliputi waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa. Ketepatan hasil diperiksa melalui validitas rute serta kesetaraan total bobot minimum."
+  },
+  {
+    "before": "Menetapkan variasi ukuran graf, pasangan titik awal–tujuan, jumlah pengulangan, dan lingkungan pengujian. Setiap kasus uji dijalankan menggunakan kedua implementasi dengan input yang identik. Urutan eksekusi algoritma diatur secara bergantian atau acak untuk mengurangi kemungkinan pengaruh urutan pengujian.",
+    "after": "Eksperimen kinerja menggunakan satu graf Kota Bandung dan 10 pasangan titik berbeda yang dipilih secara acak dengan seed 42. Setiap pasangan menjalani satu pemanasan dan tiga pengulangan terukur per algoritma. Urutan pelaksanaan selalu Dijkstra standar kemudian Dijkstra optimasi. Urutan algoritma tidak diacak atau diseimbangkan; potensi pengaruh urutan dan beban perangkat dinyatakan sebagai keterbatasan pada BAB V."
+  },
+  {
+    "before": "Menggunakan ilustrasi pada Tabel 2.2, lintasan A–B–C memiliki total bobot (4+2=6), sedangkan lintasan langsung A–C memiliki bobot 7. Dengan demikian, lintasan yang melalui lebih banyak sisi dapat memiliki total bobot lebih kecil.",
+    "after": "Sebagai ilustrasi, apabila bobot A–B adalah 4, B–C adalah 2, dan A–C adalah 7, maka lintasan A–B–C memiliki total bobot 6, sedangkan lintasan langsung A–C memiliki bobot 7. Contoh ini menunjukkan bahwa lintasan dengan lebih banyak sisi dapat memiliki total bobot yang lebih kecil."
+  },
+  {
+    "before": "Sistem navigasi membantu pengguna menentukan rute dari titik awal menuju tujuan. (Yovi & Sekarwati, 2024)menerapkan fungsi tersebut dalam aplikasi navigasi supermarket, sedangkan (Kurniawan & Atmojo, 2025) menggunakannya untuk menentukan rute kunjungan wisata (Pramestiana & Anwar, 2025). menerapkan pencarian rute pada pengiriman kendaraan bermotor. Ketiga penelitian tersebut menunjukkan penggunaan algoritma untuk menentukan jalur dalam konteks perjalanan yang berbeda.",
+    "after": "Sistem navigasi membantu pengguna menentukan rute dari titik awal menuju tujuan. Yovi dan Sekarwati (2024) menerapkan fungsi tersebut dalam aplikasi navigasi supermarket. Kurniawan dan Atmojo (2025) menggunakannya untuk pencarian rute kunjungan wisata, sedangkan Pramestiana dan Anwar (2025) menerapkannya pada pengiriman kendaraan bermotor. Ketiga penelitian menunjukkan penggunaan algoritma pencarian jalur pada konteks perjalanan yang berbeda."
+  },
+  {
+    "before": "Dalam penelitian ini, optimasi diarahkan pada penggunaan adjacency list, antrean prioritas berbasis min-heap, dan penghentian dini. Pengaruhnya dinilai melalui perbandingan dengan implementasi baseline yang didefinisikan secara jelas.",
+    "after": "Dalam penelitian ini, optimasi diarahkan pada penggunaan antrean prioritas berbasis min-heap dan penghentian dini. Adjacency list dipertahankan pada kedua implementasi sehingga perbedaan representasi graf tidak menjadi perlakuan yang diuji."
+  },
+  {
+    "before": "Dalam penelitian ini, pengendalian dilakukan melalui penggunaan dataset, pasangan titik awal–tujuan, perangkat keras, dan lingkungan perangkat lunak yang sama. Urutan eksekusi kedua algoritma diatur bergantian atau acak, sedangkan kegiatan komputasi lain diupayakan tetap minimum selama pengujian. Jika digunakan pemanasan awal, hasilnya dipisahkan dari data utama.",
+    "after": "Dalam penelitian ini, dataset, pasangan titik asal–tujuan, dan perangkat pengujian dibuat sama. Namun, urutan algoritma tetap standar kemudian optimasi dan beban perangkat belum sepenuhnya dikendalikan. Pemanasan awal dipisahkan dari pengulangan terukur. Dampak potensial urutan, cache, dan aktivitas perangkat dijelaskan sebagai keterbatasan pada pembahasan hasil."
+  },
+  {
+    "before": "Kasus pengujian mencakup jalur tunggal, beberapa jalur dengan bobot minimum yang sama, titik awal sama dengan tujuan, tujuan tidak terjangkau, sisi berbobot nol, dan penolakan bobot negatif. Pengujian tersebut digunakan untuk memeriksa ketepatan setiap implementasi sebelum eksperimen kinerja dilakukan.",
+    "after": "Kasus batas yang relevan meliputi asal sama dengan tujuan, tujuan tidak terjangkau, bobot negatif, bobot nol, dan beberapa rute minimum yang setara. Bukti pengujian pada penelitian ini mencakup kesetaraan biaya rute, asal sama dengan tujuan, tujuan tidak terjangkau, dan penolakan bobot negatif. Kasus bobot nol serta beberapa rute minimum yang setara belum menjadi kasus uji khusus dalam laporan pengujian ini."
+  },
+  {
+    "before": "Jaringan jalan dimodelkan sebagai graf berbobot nonnegatif, kemudian diproses menggunakan Dijkstra standar dan Dijkstra yang dioptimasi. Optimasi diterapkan melalui penggunaan adjacency list, antrean prioritas berbasis min-heap, serta penghentian pencarian ketika jarak menuju simpul tujuan telah final. Aplikasi berbasis web digunakan sebagai sarana visualisasi dan pelaksanaan eksperimen.",
+    "after": "Jaringan jalan dimodelkan sebagai graf berbobot nonnegatif dalam bentuk adjacency list yang sama untuk kedua implementasi. Perbandingan dilakukan antara Dijkstra standar dengan pencarian minimum linear dan Dijkstra optimasi dengan min-heap serta penghentian dini. Aplikasi berbasis web digunakan untuk visualisasi dan pelaksanaan pengujian."
+  },
+  {
+    "before": "Daftar pasangan rute, jumlah pengulangan, serta nilai seed untuk pemilihan acak ditetapkan dan disimpan sebelum eksperimen final. Jika digunakan beberapa ukuran graf, setiap subset dibentuk dari dataset utama dan didokumentasikan jumlah simpul, sisi, serta cara pembentukannya.",
+    "after": "Eksperimen final menggunakan satu graf Kota Bandung, sepuluh pasangan acak dengan seed 42, satu pemanasan, dan tiga pengulangan terukur untuk setiap algoritma pada setiap pasangan. Identitas pasangan dan parameter disimpan pada manifest eksperimen. Variasi ukuran graf belum diuji."
+  },
+  {
+    "before": "Menjalankan kedua implementasi secara bergantian atau dalam urutan acak pada kasus yang sama, tanpa menjalankan keduanya secara bersamaan.",
+    "after": "Menjalankan Dijkstra standar terlebih dahulu, kemudian Dijkstra optimasi pada pasangan titik dan pengulangan yang sama. Kedua algoritma tidak dijalankan secara bersamaan. Urutan tetap ini dicatat sebagai keterbatasan eksperimen."
+  },
+  {
+    "before": "Melakukan pengujian fungsional untuk memeriksa kesesuaian fitur dengan kebutuhan, serta pengujian algoritma untuk memeriksa ketepatan jalur dan total bobot. Kasus uji mencakup titik awal yang sama dengan tujuan, jalur yang tidak tersedia, beberapa jalur dengan bobot minimum yang sama, dan penolakan bobot negatif. Setelah ketepatan sistem diperiksa, pengujian kinerja dilaksanakan sesuai rancangan eksperimen.",
+    "after": "Pengujian fungsional memeriksa kesesuaian fitur dengan kebutuhan. Pengujian algoritma memeriksa validitas jalur, kesetaraan total bobot, sumber sama dengan tujuan, tujuan tidak terjangkau, serta penolakan bobot negatif. Kasus beberapa jalur minimum yang setara belum diuji secara khusus. Pengujian kinerja dilaksanakan setelah pemeriksaan ketepatan hasil."
+  },
+  {
+    "before": "Pengujian selanjutnya juga mencakup tujuan tidak terjangkau, sumber sama dengan tujuan, serta beberapa jalur dengan bobot minimum yang sama. Kesamaan total bobot antarkedua implementasi diperiksa bersama hasil acuan pada graf sederhana agar kesalahan yang mungkin terjadi pada keduanya tidak terlewat.",
+    "after": "Pengujian juga mencakup tujuan tidak terjangkau dan sumber sama dengan tujuan. Kesetaraan total bobot diperiksa bersama hasil acuan dan validitas jalur. Kasus beberapa jalur dengan bobot minimum yang sama belum menjadi kasus uji khusus dalam laporan ini."
+  },
+  {
+    "before": "Waktu eksekusi dianalisis menggunakan rata-rata, median, minimum, maksimum, dan simpangan baku untuk setiap pasangan rute. Jumlah simpul serta sisi yang diproses dibandingkan pada input yang sama. Hasil kemudian disajikan dalam tabel, grafik, dan persentase perubahan terhadap baseline.",
+    "after": "Statistik waktu berupa rata-rata, median, minimum, maksimum, dan simpangan baku populasi dihitung dari 30 eksekusi terukur per algoritma. Rata-rata tiga pengulangan juga disajikan untuk setiap pasangan rute. Jumlah simpul dan sisi dibandingkan pada input yang sama. Hasil disajikan dalam tabel, grafik, dan persentase perubahan terhadap baseline."
+  },
+  {
+    "before": "",
+    "after": "Penelitian ini bertujuan mengevaluasi ketepatan dan kinerja optimasi algoritma Dijkstra untuk pencarian jalur terpendek pada jaringan jalan Kota Bandung. Sistem dikembangkan berbasis web menggunakan Nuxt dan FastAPI, dengan dataset OpenStreetMap yang diolah melalui OSMnx. Dataset terdiri atas 27.172 simpul dan 61.630 sisi berarah dengan bobot panjang ruas dalam meter. Kedua implementasi menggunakan adjacency list yang sama. Dijkstra standar memilih simpul minimum secara linear dan memproses seluruh simpul yang dapat dijangkau, sedangkan Dijkstra optimasi menggunakan min-heap dan berhenti ketika simpul tujuan telah diselesaikan. Pengujian menggunakan 10 pasangan titik acak, satu pemanasan, dan tiga pengulangan terukur per algoritma per pasangan, sehingga menghasilkan 60 eksekusi terukur. Ketepatan diperiksa melalui validitas rute, kesetaraan biaya, dan pembandingan dengan NetworkX. Seluruh hasil sesuai tanpa ketidaksesuaian pada sampel yang diuji. Rata-rata waktu eksekusi berkurang dari 78.697,65 ms menjadi 25,88 ms atau sekitar 99,97%. Rata-rata jumlah simpul yang diproses berkurang 48,91% dan jumlah sisi yang diperiksa berkurang 48,62%. Hasil menunjukkan manfaat gabungan min-heap dan penghentian dini terhadap baseline yang digunakan. Kesimpulan dibatasi pada satu dataset, satu perangkat, dan sepuluh pasangan yang dapat dijangkau. Urutan algoritma tetap serta beban perangkat yang belum sepenuhnya dikendalikan menjadi keterbatasan pengukuran."
+  },
+  {
+    "before": "",
+    "after": "Kata kunci: Dijkstra, jalur terpendek, min-heap, penghentian dini, Kota Bandung."
+  },
+  {
+    "before": "",
+    "after": "This study evaluates the correctness and performance of an optimized Dijkstra implementation for shortest-path search on the road network of Bandung City. A web-based system was developed using Nuxt and FastAPI with OpenStreetMap data processed through OSMnx. The dataset contains 27,172 nodes and 61,630 directed edges weighted by road-segment length in meters. Both implementations use the same adjacency list. The baseline selects the minimum-distance node by linear scanning and processes all reachable nodes, while the optimized version uses a min-heap and stops when the destination is settled. Testing involved 10 randomly selected origin–destination pairs, one warm-up run, and three measured repetitions per algorithm per pair, producing 60 measured runs. Correctness was checked through route validity, cost agreement, and comparison with NetworkX. All sampled results passed these checks. Mean execution time decreased from 78,697.65 ms to 25.88 ms, a reduction of approximately 99.97%. Mean settled-node and examined-edge counts decreased by 48.91% and 48.62%, respectively. These findings indicate the combined benefit of a min-heap and early termination relative to the tested baseline. Conclusions are limited to one dataset, one computer, and ten reachable pairs. Fixed algorithm order and incompletely controlled system load remain measurement limitations."
+  },
+  {
+    "before": "",
+    "after": "Keywords: Dijkstra, shortest path, min-heap, early termination, Bandung City."
+  },
+  {
+    "before": "",
+    "after": "Skripsi berjudul “Optimasi Algoritma Dijkstra untuk Penentuan Jalur Terpendek pada Sistem Navigasi Cerdas” disusun untuk memenuhi salah satu syarat penyelesaian pendidikan pada Program Studi Teknik Informatika STMIK Mardira Indonesia. Penelitian ini membahas implementasi dan evaluasi pencarian rute pada jaringan jalan Kota Bandung. Penulis menyampaikan terima kasih kepada pihak-pihak yang mendukung proses penyusunan skripsi ini. Penulis menyadari bahwa penelitian masih memiliki keterbatasan dan mengharapkan kritik serta saran untuk penyempurnaan selanjutnya. Semoga hasil penelitian dapat menjadi bahan pembelajaran dan pengembangan sistem pencarian rute."
+  },
+  {
+    "before": "",
+    "after": "Bandung, September 2026\nPenulis\n\nZia Ulhaq"
+  },
+  {
+    "before": "(WAI), W. W. A. I. (n.d.). Designing for Web Accessibility – Tips for Getting Started.",
+    "after": "World Wide Web Consortium. (n.d.). Designing for web accessibility. Web Accessibility Initiative. https://www.w3.org/WAI/tips/designing/"
+  },
+  {
+    "before": "FastAPI¶. (n.d.).",
+    "after": "FastAPI. (n.d.). FastAPI documentation. https://fastapi.tiangolo.com/"
+  },
+  {
+    "before": "Gita Jackson, M. K. (n.d.). What is the Software Development Lifecycle (SDLC)? | IBM.",
+    "after": "Jackson, G., & Kosinski, M. (n.d.). What is the software development lifecycle (SDLC)? IBM. https://www.ibm.com/think/topics/sdlc"
+  },
+  {
+    "before": "Handbook - The TypeScript Handbook. (n.d.).",
+    "after": "Microsoft. (n.d.). The TypeScript handbook. https://www.typescriptlang.org/docs/handbook/intro.html"
+  },
+  {
+    "before": "heapq — Heap queue algorithm. (n.d.).",
+    "after": "Python Software Foundation. (n.d.). heapq — Heap queue algorithm. Python documentation. https://docs.python.org/3/library/heapq.html"
+  },
+  {
+    "before": "Introduction · Get Started with Nuxt v4. (n.d.).",
+    "after": "Nuxt. (n.d.). Introduction. Nuxt documentation. https://nuxt.com/docs/4.x/getting-started/introduction"
+  },
+  {
+    "before": "Kurniawan, E. K., & Atmojo, W. T. (2025). Penerapan Algoritma Dijkstra Dalam Penentuan Rute. ZONAsi: Jurnal Sistem Informasi, 7(2), 445–454.",
+    "after": "Kurniawan, E. K., & Atmojo, W. T. (2025). Penerapan Algoritma Dijkstra dalam Penentuan Rute Terpendek Kunjungan Wisata Jakarta. ZONAsi: Jurnal Sistem Informasi, 7(2), 445–454. https://journal.unilak.ac.id/index.php/zn/article/view/26342"
+  },
+  {
+    "before": "Lewis, R. (2023). A Comparison of Dijkstra’s Algorithm Using Fibonacci Heaps, Binary Heaps, and Self-Balancing Binary Trees.",
+    "after": "Lewis, R. (2023). A comparison of Dijkstra’s algorithm using Fibonacci heaps, binary heaps, and self-balancing binary trees [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2303.10034"
+  },
+  {
+    "before": "Maurer, S. B., & Ralston, A. (2020). Graphs and Trees. Discrete Algorithmic Mathematics, 247–350. https://doi.org/10.1201/b13782-13",
+    "after": "Maurer, S. B., & Ralston, A. (2005). Discrete algorithmic mathematics (3rd ed.). A K Peters/CRC Press. https://www.routledge.com/Discrete-Algorithmic-Mathematics/Maurer-Ralston/p/book/9781568811666"
+  },
+  {
+    "before": "Model data Cloud Firestore  |  Firebase. (n.d.).",
+    "after": "Google. (n.d.). Model data Cloud Firestore. Firebase documentation. https://firebase.google.com/docs/firestore/data-model?hl=id"
+  },
+  {
+    "before": "Pramestiana, I., & Anwar, A. (2025). Penentuan Rute Terpendek pada Pengiriman Kendaraan Motor menggunakan Algoritma Dijkstra di PT Pos Logistik Indonesia. Jurnal Logic: Logistics & Supply Chain Center, 3, 69–77. https://doi.org/10.33197/jlscc.v3i2.2480",
+    "after": "Pramestiana, I., & Anwar, A. (2025). Penentuan Rute Terpendek pada Pengiriman Kendaraan Motor menggunakan Algoritma Dijkstra di PT X. Jurnal Logic: Logistics & Supply Chain Center, 3(2), 69–77. https://doi.org/10.33197/jlscc.v3i2.2480"
+  },
+  {
+    "before": "Tian, T., Wu, H., Wei, H., Wu, F., & Xu, M. (2025). An Efficient Route Planning Algorithm for Special Vehicles with Large-Scale Road Network Data. ISPRS International Journal of Geo-Information, 14. https://doi.org/10.3390/ijgi14020071",
+    "after": "Tian, T., Wu, H., Wei, H., Wu, F., & Xu, M. (2025). An efficient route planning algorithm for special vehicles with large-scale road network data. ISPRS International Journal of Geo-Information, 14(2), 71. https://doi.org/10.3390/ijgi14020071"
+  },
+  {
+    "before": "Yovi, M., & Sekarwati, K. A. (2024). Aplikasi Navigasi Supermarket Berbasis Web Menggunakan Algoritma Dijkstra. Jurnal Ilmiah Komputasi, 23(4 SE-Sistem Informasi), 505–512. https://doi.org/10.32409/jikstik.23.4.3606",
+    "after": "Yovi, M., & Sekarwati, K. A. (2024). Aplikasi Navigasi Supermarket Berbasis Web Menggunakan Algoritma Dijkstra. Jurnal Ilmiah Komputasi, 23(4), 505–512. https://doi.org/10.32409/jikstik.23.4.3606"
+  },
+  {
+    "before": "",
+    "after": "G: graf; V: himpunan simpul; E: himpunan sisi; w(u, v): bobot sisi; d(v): jarak sementara dari sumber ke simpul v; P: lintasan; W(P): total bobot lintasan; ∞: tak hingga; ε: toleransi numerik; O: notasi batas kompleksitas."
+  }
+]

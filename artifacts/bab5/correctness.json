@@ -1,0 +1,72 @@
+[
+  {
+    "sourceId": "8123304877",
+    "destinationId": "2477129890",
+    "referenceCost": 9156.482427320367,
+    "valid": true,
+    "runCount": 6
+  },
+  {
+    "sourceId": "1014721789",
+    "destinationId": "10187071456",
+    "referenceCost": 9990.069843397629,
+    "valid": true,
+    "runCount": 6
+  },
+  {
+    "sourceId": "4681200983",
+    "destinationId": "4123963951",
+    "referenceCost": 4477.0974251810485,
+    "valid": true,
+    "runCount": 6
+  },
+  {
+    "sourceId": "4054910693",
+    "destinationId": "3115195211",
+    "referenceCost": 7827.670273184858,
+    "valid": true,
+    "runCount": 6
+  },
+  {
+    "sourceId": "10143074316",
+    "destinationId": "2255972227",
+    "referenceCost": 11578.81431044143,
+    "valid": true,
+    "runCount": 6
+  },
+  {
+    "sourceId": "9148177736",
+    "destinationId": "10184426411",
+    "referenceCost": 8304.951005126597,
+    "valid": true,
+    "runCount": 6
+  },
+  {
+    "sourceId": "5866940448",
+    "destinationId": "1966222861",
+    "referenceCost": 10900.283910828864,
+    "valid": true,
+    "runCount": 6
+  },
+  {
+    "sourceId": "6453694935",
+    "destinationId": "5447158256",
+    "referenceCost": 10937.084406710925,
+    "valid": true,
+    "runCount": 6
+  },
+  {
+    "sourceId": "1387999365",
+    "destinationId": "1381753714",
+    "referenceCost": 10817.815226833083,
+    "valid": true,
+    "runCount": 6
+  },
+  {
+    "sourceId": "2093775898",
+    "destinationId": "3959677853",
+    "referenceCost": 10145.44216688298,
+    "valid": true,
+    "runCount": 6
+  }
+]

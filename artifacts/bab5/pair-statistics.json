@@ -1,0 +1,142 @@
+[
+  {
+    "pair": "P1",
+    "algorithm": "standard",
+    "meanMs": 81835.15486666666,
+    "minMs": 77125.106,
+    "maxMs": 86962.583
+  },
+  {
+    "pair": "P2",
+    "algorithm": "standard",
+    "meanMs": 81719.76743333333,
+    "minMs": 79458.7667,
+    "maxMs": 84842.8892
+  },
+  {
+    "pair": "P3",
+    "algorithm": "standard",
+    "meanMs": 79035.22076666667,
+    "minMs": 78225.5103,
+    "maxMs": 79612.5136
+  },
+  {
+    "pair": "P4",
+    "algorithm": "standard",
+    "meanMs": 77588.60366666666,
+    "minMs": 77396.838,
+    "maxMs": 77708.083
+  },
+  {
+    "pair": "P5",
+    "algorithm": "standard",
+    "meanMs": 77643.09203333333,
+    "minMs": 77406.2181,
+    "maxMs": 77891.3507
+  },
+  {
+    "pair": "P6",
+    "algorithm": "standard",
+    "meanMs": 77961.10763333333,
+    "minMs": 77824.3777,
+    "maxMs": 78105.0281
+  },
+  {
+    "pair": "P7",
+    "algorithm": "standard",
+    "meanMs": 78037.0473,
+    "minMs": 77930.2768,
+    "maxMs": 78220.8466
+  },
+  {
+    "pair": "P8",
+    "algorithm": "standard",
+    "meanMs": 77463.30233333334,
+    "minMs": 77360.0583,
+    "maxMs": 77543.1582
+  },
+  {
+    "pair": "P9",
+    "algorithm": "standard",
+    "meanMs": 77969.24489999999,
+    "minMs": 77597.01,
+    "maxMs": 78408.3581
+  },
+  {
+    "pair": "P10",
+    "algorithm": "standard",
+    "meanMs": 77723.96296666667,
+    "minMs": 77709.6638,
+    "maxMs": 77732.2112
+  },
+  {
+    "pair": "P1",
+    "algorithm": "optimized",
+    "meanMs": 38.10766666666667,
+    "minMs": 36.6384,
+    "maxMs": 40.1083
+  },
+  {
+    "pair": "P2",
+    "algorithm": "optimized",
+    "meanMs": 37.288,
+    "minMs": 36.679,
+    "maxMs": 38.1577
+  },
+  {
+    "pair": "P3",
+    "algorithm": "optimized",
+    "meanMs": 8.805466666666668,
+    "minMs": 7.1277,
+    "maxMs": 10.9001
+  },
+  {
+    "pair": "P4",
+    "algorithm": "optimized",
+    "meanMs": 16.122733333333333,
+    "minMs": 12.5751,
+    "maxMs": 18.6678
+  },
+  {
+    "pair": "P5",
+    "algorithm": "optimized",
+    "meanMs": 26.9214,
+    "minMs": 26.3016,
+    "maxMs": 27.6638
+  },
+  {
+    "pair": "P6",
+    "algorithm": "optimized",
+    "meanMs": 23.828666666666667,
+    "minMs": 19.7174,
+    "maxMs": 26.8015
+  },
+  {
+    "pair": "P7",
+    "algorithm": "optimized",
+    "meanMs": 33.170566666666666,
+    "minMs": 32.2766,
+    "maxMs": 33.7856
+  },
+  {
+    "pair": "P8",
+    "algorithm": "optimized",
+    "meanMs": 24.406066666666668,
+    "minMs": 22.9838,
+    "maxMs": 26.5101
+  },
+  {
+    "pair": "P9",
+    "algorithm": "optimized",
+    "meanMs": 20.547933333333333,
+    "minMs": 20.3315,
+    "maxMs": 20.6888
+  },
+  {
+    "pair": "P10",
+    "algorithm": "optimized",
+    "meanMs": 29.5835,
+    "minMs": 29.0979,
+    "maxMs": 29.8493
+  }
+]

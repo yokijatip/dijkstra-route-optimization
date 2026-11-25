@@ -1,0 +1,1092 @@
+P0: OPTIMASI ALGORITMA DJIKSTRA UNTUK PENENTUAN JALUR TERPENDEK PADA SISTEM NAVIGASI CERDAS
+P2: SKRIPSI
+P4: Diajukan untuk memenuhi salah satu syarat kelulusan Program Sarjana Strata Satu (S1) pada Program Studi Teknik Informatika STMIK Mardira Indonesia
+P6: Oleh:
+P7: ZIA ULHAQ
+P8: 21110383
+P12: SEKOLAH TINGGI  MANAJEMEN INFORMATIKA DAN  KOMPUTER MARDIRA INDONESIA
+P13: 2025
+P17: Terakreditasi Menurut Keputusan Lembaga Akreditasi Mandiri Informatika Dan Komputer (LAM-INFOKOM)
+P18: Nomor SK : 109/SK/LAM-INFOKOM/Ak/S/VIII/2025
+P20: PERNYATAAN KEASLIAN
+P22: Dengan ini penulis menyatakan bahwa Laporan Skripsi dengan judul “OPTIMASI ALGORITMA DJIKSTRA UNTUK PENENTUAN JALUR TERPENDEK PADA SISTEM NAVIGASI CERDAS” ini beserta isinya adalah benar-benar karya penulis dan penulis tidak melakukan penjiplakan atau pengutipan dengan cara-cara yang tidak sesuai dengan etika keilmuan yang berlaku dalam masyarakat keilmuan.
+P23: Atas pernyataan ini, penulis siap menanggung risiko / sanksi yang dijatuhkan kepada penulis apabila kemudian ditemukan adanya pelanggaran terhadap etika keilmuan dalam karya penulis, atau ada klaim dari pihak lain terhadap keaslian karya penulis ini.
+P26: Bandung, …………………2026
+P27: TTD diatasMateraiRp 10.000TTD diatasMateraiRp 10.000
+P30: Zia Ulhaq
+P31: NIM.21110383
+P32: LEMBAR PERSETUJUAN
+P36:  LEMBAR PENGESAHAN
+P40: ABSTRAK
+P44: ABSTRACT
+P48: KATA PENGANTAR
+P52: DAFTAR ISI
+P54: PERNYATAAN KEASLIANi
+P55: LEMBAR PERSETUJUANii
+P56: LEMBAR PENGESAHANiii
+P57: ABSTRAKiv
+P58: ABSTRACTv
+P59: KATA PENGANTARvi
+P60: DAFTAR ISIvii
+P61: DAFTAR TABELxiv
+P62: DAFTAR SIMBOLxv
+P63: BAB 1PENDAHULUAN1
+P64: 1.1Latar Belakang Masalah1
+P65: 1.2Identifikasi Masalah4
+P66: 1.3Batasan Masalah5
+P67: 1.4Rumusan Masalah7
+P68: 1.5Tujuan dan Kegunaan Penelitian7
+P69: 1.5.1Tujuan Penelitian7
+P70: 1.5.2Kegunaan Penelitian8
+P71: 1.6Objek dan Waktu9
+P72: 1.6.1Object Penelitian9
+P73: 1.6.2Waktu Penelitian9
+P74: 1.7Metodologi Penelitian10
+P75: 1.7.1Metode Penelitian10
+P76: 1.7.2Teknik Pengembangan Sistem13
+P77: 1.8Sistematika Penulisan15
+P78: BAB 2LANDASAN TEORI18
+P79: 2.1Penelitian Terdahulu18
+P80: 2.1.1Analisis dan Kesimpulan Tinjauan Pustaka20
+P81: 2.2Konsep Dasar Graf dan Pencarian Jalur Terpendek22
+P82: 2.2.1Pengertian Graf22
+P83: 2.2.2Jenis-Jenis Graf yang Digunakan23
+P84: 2.2.3Representasi Graf24
+P85: 2.2.4Lintasan dan Bobot Lintasan25
+P86: 2.2.5Permasalahan Jalur Terpendek26
+P87: 2.2.6Pemodelan Jaringan Jalan sebagai Graf27
+P88: 2.3Sistem Navigasi Cerdas Berbasis Web28
+P89: 2.3.1Pengertian Sistem Navigasi28
+P90: 2.3.2Penentuan Rute Berbasis Algoritma29
+P91: 2.3.3Sistem Navigasi Berbasis Web29
+P92: 2.4Algoritma Dijkstra30
+P93: 2.4.1Pengertian dan Karakteristik Algoritma Dijkstra30
+P94: 2.4.2Prinsip Kerja dan Tahapan Algoritma Dijkstra30
+P95: 2.4.3Rekonstruksi Jalur dan Ketepatan Hasil31
+P96: 2.4.4Kompleksitas dan Keterbatasan Algoritma Dijkstra31
+P97: 2.5Teknik Optimasi Implementasi Dijkstra32
+P98: 2.5.1Pengertian Optimasi Algoritma32
+P99: 2.5.2Penggunaan Adjacency List32
+P100: 2.5.3Antrean Prioritas Berbasis Min-Heap33
+P101: 2.5.4Penghentian Dini33
+P102: 2.5.5Ketepatan Hasil dan Perbandingan Implementasi34
+P103: 2.6Evaluasi Kinerja dan Ketepatan Algoritma34
+P104: 2.6.1Metrik Kinerja Algoritma34
+P105: 2.6.2Validitas Jalur dan Kesetaraan Total Bobot35
+P106: 2.6.3Pengujian Berulang dan Statistik Deskriptif36
+P107: 2.6.4Persentase Perubahan Kinerja37
+P108: 2.6.5Pengendalian Kondisi Pengujian37
+P109: 2.7Metode Penelitian dan Pengembangan Sistem38
+P110: 2.7.1Penelitian Kuantitatif Eksperimental38
+P111: 2.7.2Perancangan Eksperimen Perbandingan Algoritma38
+P112: 2.7.3Model Pengembangan Waterfall39
+P113: 2.7.4Tahapan Pengembangan Sistem39
+P114: 2.8Pemodelan dan Perancangan Sistem40
+P115: 2.8.1Diagram Alir atau Flowchart40
+P116: 2.8.2Diagram Use Case41
+P117: 2.8.3Diagram Activity dan Sequence41
+P118: 2.8.4Perancangan Data dan Hubungan Antardata41
+P119: 2.8.5Perancangan Antarmuka Pengguna42
+P120: 2.9Teknologi Pendukung42
+P121: 2.9.1Arsitektur Client–Server dan API42
+P122: 2.9.2Nuxt dan TypeScript43
+P123: 2.9.3Python dan FastAPI43
+P124: 2.9.4Penyimpanan Data Eksperimen43
+P125: 2.9.5Pustaka Visualisasi Graf atau Peta44
+P126: 2.10Pengujian Perangkat Lunak44
+P127: 2.10.1Pengujian Fungsional45
+P128: 2.10.2Pengujian Unit Algoritma45
+P129: 2.10.3Pengujian Integrasi45
+P130: 2.10.4Pengujian Regresi dan Kasus Batas46
+P131: 2.11Kerangka Pemikiran46
+P132: BAB 3ANALISIS SISTEM48
+P133: 3.1Analisis Objek Penelitian48
+P134: 3.1.1Gambaran Umum Objek Penelitian48
+P135: 3.1.2Cakupan Wilayah dan Sumber Data49
+P136: 3.1.3Karakteristik Dataset Jaringan Jalan50
+P137: 3.1.4Pembentukan dan Validasi Graf51
+P138: 3.2Analisis Proses Pencarian Rute Standar51
+P139: 3.2.1Alur Pencarian Rute52
+P140: 3.2.2Karakteristik Implementasi Dijkstra Standa54
+P141: 3.2.3Analisis Potensi Keterbatasan54
+P142: 3.3Analisis Permasalahan55
+P143: 3.3.1Identifikasi Faktor yang Memengaruhi Kinerja55
+P144: 3.3.2Analisis Sebab Akibat56
+P145: 3.4Analisis Pemecahan Masalah57
+P146: 3.4.1Usulan Teknik Optimasi58
+P147: 3.4.2Simulasi Perhitungan Dijkstra58
+P148: 3.4.3Analisis Ketepatan Hasil60
+P149: 3.5Analisis Kebutuhan Sistem61
+P150: 3.5.1Kebutuhan Fungsional61
+P151: 3.5.2Kebuthan Non-Fungsional62
+P152: 3.6Rancangan Eksperimen63
+P153: 3.6.1Skenario dan Variabel Pengujian63
+P154: 3.6.2Prosedur Pelaksanaan Eksperimen63
+P155: 3.6.3Teknik Analisis Hasil64
+P156: 3.7Usulan Sistem65
+P157: 3.7.1Gambaran Umum Sistem Usulan65
+P158: 3.7.2Alur Penggunaan Sistem Usulan66
+P159: BAB 4PERANCANGAN SISTEM69
+P160: 4.1Kebutuhan Perangkat Keras69
+P161: 4.2Kebutuhan Perangkat Lunak69
+P162: 4.3Perancangan Sistem71
+P163: 4.3.1Perancangan Arsitektur Sistem71
+P164: 4.3.2Perancangan Use Case72
+P165: 4.3.3Perancangan Interaksi Komponen74
+P166: 4.3.4Perancangan Alur Dijkstra Optimasi75
+P167: 4.4Perancangan Data78
+P168: 4.4.1Struktur Dataset Jaringan Jalan78
+P169: 4.4.2Hubungan Antar Objek Data78
+P170: 4.4.3Struktur Penyimpanan Eksperimen80
+P171: 4.4.4Perancangan Identitas Unik81
+P172: 4.5Perancangan Struktur Menu82
+P173: 4.6Perancangan Antarmuka83
+P174: 4.6.1Perancangan Antarmuka Navigation Simulator83
+P175: 4.6.2Perancangan Antarmuka Comparison83
+P176: 4.6.3Perancangan Antarmuka Benchmark Lab84
+P177: 4.6.4Perancangan Antarmuka Experiment History84
+P178: BAB 5IMPLEMENTASI DAN PENGUJIAN SISTEM85
+P179: BAB 6PENUTUP86
+P180: DAFTAR PUSTAKA87
+P183: DAFTAR TABEL
+P185: Table 1.1 Waktu Penelitian10
+P186: Table 2.1 Tabel Penelitian Terdahulu18
+P187: Table 2.2 Komponen Pemodelan Jaringan Jalan27
+P188: Table 3.1 Karakteristik Dataset Jaringan Jalan Kota Bandung50
+P189: Table 3.2 Karakteristik Implementasi Dijkstra Standar54
+P190: Table 3.3 Perbandingan Mekanisme Implementasi Dijkstra58
+P191: Table 3.4 Sisi dan Bobot Graf Ilustrasi59
+P192: Table 3.5 Simulasi Pembaruan Jarak59
+P193: Table 3.6 Kebutuhan Fungsional Sistem61
+P194: Table 3.7 Kebutuhan Non-Fungsional Sistem62
+P195: Table 3.8 Variabel Eksperimen63
+P196: Table 4.1 Spesifikasi Perangkat Keras69
+P197: Table 4.2 Perangkat Lunak Pendukung Sistem70
+P198: Table 4.3 Komponen Arsitektur Sistem71
+P199: Table 4.4 Definisi Aktor73
+P200: Table 4.5 Definisi Use Case73
+P201: Table 4.6 Struktur Utama Dataset78
+P202: Table 4.7 Struktur Ringkasan Eksperimen80
+P203: Table 4.8 Struktur Hasil Eksekusi80
+P204: Table 4.9 Struktur Menu Aplikasi82
+P207: DAFTAR SIMBOL
+P211: PENDAHULUAN
+P213: Latar Belakang Masalah
+P214: Penentuan jalur terpendek merupakan salah satu permasalahan dalam pengembangan sistem navigasi. Dalam penelitian ini, jaringan jalan dimodelkan sebagai graf berbobot, dengan simpul mewakili lokasi atau persimpangan, sisi mewakili hubungan antarlokasi, dan bobot sisi merepresentasikan jarak tempuh. Berdasarkan pemodelan tersebut, pencarian rute dilakukan untuk memperoleh jalur dengan jumlah bobot terkecil dari titik awal menuju titik tujuan. Pendekatan ini memungkinkan alternatif perjalanan dibandingkan berdasarkan ukuran yang terdefinisi, yaitu total jarak pada jaringan yang dimodelkan.
+P215: Salah satu algoritma yang digunakan untuk menyelesaikan permasalahan tersebut adalah algoritma Dijkstra. Algoritma ini dapat menentukan jalur terpendek pada graf dengan bobot sisi nonnegatif. Proses pencarian dilakukan dengan memilih simpul yang memiliki jarak sementara terkecil, kemudian memperbarui jarak menuju simpul-simpul yang terhubung apabila ditemukan jalur dengan bobot lebih rendah. Karakteristik tersebut menjadikan Dijkstra relevan untuk pemodelan jaringan jalan yang menggunakan jarak sebagai bobot sisi (“Dijkstra’s Algorithm,” n.d.).
+P216: Selain ketepatan hasil, efisiensi komputasi menjadi aspek yang perlu diperhatikan dalam penerapan algoritma pencarian rute. Pemilihan struktur data dan cara pengelolaan simpul yang akan diproses memengaruhi pelaksanaan pencarian. Dokumentasi NetworkX menjelaskan bahwa implementasi Dijkstra menggunakan struktur binary heap, sedangkan dokumentasi SciPy juga menyediakan Dijkstra berbasis antrean prioritas atau priority queue. Hal tersebut menunjukkan bahwa pengelolaan prioritas simpul merupakan bagian penting dari implementasi algoritma yang dapat dikaji dalam penelitian kinerja (“Dijkstra’s Algorithm,” n.d.; “shortest_path,” n.d.).
+P217: Penelitian ini diarahkan pada jaringan jalan nyata di Kota Bandung sebagai konteks penerapan pencarian jalur terpendek. Data jaringan jalan diperoleh dari OpenStreetMap dan diolah menggunakan OSMnx menjadi graf berarah berbobot nonnegatif. Simpul merepresentasikan persimpangan, ujung jalan, atau titik penghubung yang dipertahankan dalam proses penyederhanaan jaringan, sedangkan sisi merepresentasikan hubungan perjalanan antarsimpul. Bobot sisi menggunakan panjang ruas dalam meter. Pengujian dibatasi pada jaringan dan bobot yang tersedia dalam dataset tanpa memasukkan perubahan kondisi lalu lintas secara waktu nyata.
+P218: Permasalahan yang hendak dikaji adalah sejauh mana perubahan implementasi Dijkstra dapat meningkatkan efisiensi pencarian dengan tetap mempertahankan ketepatan hasil. Pada rancangan awal penelitian, optimasi diarahkan pada penggunaan daftar ketetanggaan atau adjacency list, antrean prioritas berbasis min-heap, serta penghentian pencarian ketika jarak menuju simpul tujuan telah ditetapkan sebagai jarak final. Pengaruh penerapan teknik tersebut perlu dibuktikan melalui eksperimen. Peningkatan kinerja belum dapat ditetapkan sebelum pengujian dilakukan karena hasilnya perlu dinilai berdasarkan karakteristik graf dan pasangan titik awal–tujuan yang digunakan.
+P219: Untuk mengevaluasi pengaruh optimasi, penelitian ini merencanakan perbandingan antara implementasi Dijkstra standar sebagai acuan dan implementasi Dijkstra yang dioptimasi. Kedua implementasi akan dijalankan pada dataset serta pasangan titik awal dan tujuan yang sama. Parameter pengujian meliputi waktu eksekusi, jumlah simpul yang diproses, jumlah sisi yang diperiksa, dan total bobot jalur yang dihasilkan. Kesetaraan total bobot menjadi dasar pemeriksaan ketepatan hasil, sedangkan parameter komputasi digunakan untuk menilai perbedaan efisiensi. Apabila terdapat lebih dari satu jalur terpendek dengan bobot yang sama, perbedaan urutan simpul pada jalur tidak langsung dinyatakan sebagai kesalahan.
+P220: Pelaksanaan eksperimen memerlukan mekanisme pengukuran yang dapat ditelusuri dan diulang. Oleh karena itu, pengujian direncanakan menggunakan beberapa ukuran graf, sejumlah pasangan titik awal–tujuan, serta pengulangan pada setiap kasus uji. Waktu eksekusi akan diukur pada proses pencarian algoritma setelah graf tersedia di memori, sehingga tidak mencakup pemuatan dataset, komunikasi jaringan, penyimpanan hasil, maupun penampilan antarmuka. Hasil setiap pengujian akan disimpan sebagai data mentah dan diolah menjadi statistik untuk mendukung pembahasan perbandingan kinerja.
+P221: Sebagai sarana pelaksanaan penelitian, akan dikembangkan sistem navigasi cerdas berbasis web yang menyediakan pemilihan titik awal dan tujuan, visualisasi jalur, perbandingan hasil algoritma, serta pengujian secara berkelompok. Dalam penelitian ini, istilah cerdas merujuk pada kemampuan sistem menentukan jalur secara otomatis melalui pengolahan graf menggunakan algoritma. Aplikasi juga direncanakan menyediakan riwayat dan ekspor hasil eksperimen agar data pengujian dapat digunakan sebagai dasar analisis penelitian.
+P222: Berdasarkan uraian tersebut, penelitian berjudul “Optimasi Algoritma Dijkstra untuk Penentuan Jalur Terpendek pada Sistem Navigasi Cerdas” dilakukan untuk mengimplementasikan dan mengevaluasi optimasi Dijkstra pada simulasi jaringan jalan Kabupaten Bandung. Penelitian ini diharapkan menghasilkan bukti empiris mengenai perbedaan kinerja kedua implementasi serta menjelaskan kondisi pengujian ketika optimasi memberikan manfaat atau memiliki keterbatasan. Hasil penelitian selanjutnya dapat menjadi bahan pertimbangan dalam penerapan algoritma pencarian jalur terpendek yang mempertahankan ketepatan hasil dan memperhatikan efisiensi komputasi.
+P223: Identifikasi Masalah
+P224: Berdasarkan latar belakang yang telah diuraikan, permasalahan yang diidentifikasi dalam penelitian ini adalah sebagai berikut:
+P225: Pengaruh penggunaan struktur data dan mekanisme penghentian pencarian terhadap efisiensi algoritma Dijkstra pada simulasi jaringan jalan Kabupaten Bandung belum diketahui secara terukur.
+P226: Perbedaan kinerja antara Dijkstra standar dan Dijkstra yang dioptimasi belum dievaluasi pada dataset serta pasangan titik awal dan tujuan yang sama berdasarkan waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa.
+P227: Kesetaraan total bobot jalur terpendek yang dihasilkan oleh kedua implementasi belum diverifikasi pada berbagai kasus pengujian, sehingga ketepatan hasil setelah penerapan optimasi perlu dibuktikan.
+P228: Evaluasi kinerja algoritma memerlukan sarana pengujian yang mengintegrasikan visualisasi jalur, pengukuran waktu komputasi secara terpisah dari proses aplikasi lainnya, serta pencatatan hasil eksperimen agar dapat ditelusuri dan diulang.
+P229: Batasan Masalah
+P230: Agar penelitian terarah dan sesuai dengan tujuan yang ditetapkan, ruang lingkup penelitian dibatasi sebagai berikut:
+P231: Objek penelitian dibatasi pada jaringan jalan kendaraan di Kota Bandung yang tercatat dalam OpenStreetMap. Pengambilan data menggunakan batas administratif Kota Bandung dan filter jaringan kendaraan melalui OSMnx.
+P232: Dataset penelitian terdiri atas 27.172 simpul dan 61.630 sisi berarah. Bobot sisi merepresentasikan panjang ruas dalam meter dengan nilai nonnegatif, sedangkan arah perjalanan mengikuti representasi yang diperoleh dari data OpenStreetMap.
+P233: Hasil pencarian berlaku pada graf penelitian. Rute yang keluar dari cakupan wilayah kemudian kembali masuk tidak dijamin tercakup. Data yang digunakan tidak mencakup kondisi lalu lintas dan perubahan pembatasan jalan secara waktu nyata.
+P234: Pencarian jalur dilakukan dari satu titik awal menuju satu titik tujuan pada setiap kasus uji. Penelitian tidak mencakup penentuan urutan kunjungan ke banyak tujuan.
+P235: Data jaringan dan bobot jarak bersifat tetap selama pengujian. Penelitian tidak mempertimbangkan kondisi lalu lintas secara waktu nyata, perubahan penutupan jalan, cuaca, maupun faktor lain yang memengaruhi waktu perjalanan.
+P236: Evaluasi kinerja dibatasi pada waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa. Ketepatan hasil diperiksa melalui validitas jalur serta kesetaraan total bobot jalur terpendek yang dihasilkan kedua implementasi.
+P237: Perbandingan dilakukan menggunakan dataset, pasangan titik awal–tujuan, dan lingkungan pengujian yang sama. Pengujian mencakup variasi ukuran graf dan pengulangan kasus uji sesuai konfigurasi eksperimen yang ditetapkan.
+P238: Pengukuran waktu eksekusi hanya mencakup proses pencarian algoritma setelah graf tersedia di memori. Waktu pemuatan dataset, komunikasi jaringan, penyimpanan hasil, dan penampilan antarmuka tidak dimasukkan ke dalam pengukuran tersebut.
+P239: Sistem dikembangkan sebagai aplikasi berbasis web untuk simulasi, visualisasi jalur, perbandingan algoritma, serta penyimpanan dan ekspor hasil pengujian. Sistem tidak menyediakan navigasi GPS secara langsung maupun petunjuk perjalanan belokan demi belokan.
+P240: Istilah sistem navigasi cerdas dalam penelitian ini merujuk pada kemampuan menentukan jalur terpendek secara otomatis menggunakan algoritma Dijkstra. Penelitian tidak mencakup penerapan pembelajaran mesin, algoritma A*, maupun bidirectional Dijkstra.
+P241: Rumusan Masalah
+P242: Berdasarkan latar belakang, identifikasi masalah, dan batasan masalah yang telah diuraikan, rumusan masalah dalam penelitian ini adalah bagaimana menerapkan optimasi algoritma Dijkstra menggunakan adjacency list, antrean prioritas berbasis min-heap, dan penghentian pencarian ketika jarak tujuan telah final pada sistem navigasi cerdas berbasis web untuk jaringan jalan Kota Bandung, serta bagaimana perbandingan kinerjanya terhadap Dijkstra standar berdasarkan waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa dengan tetap menghasilkan jalur yang valid dan total bobot terpendek yang ekuivalen?
+P243: Tujuan dan Kegunaan Penelitian
+P244: Tujuan dan kegunaan penelitian ini disusun berdasarkan rumusan masalah yang telah ditetapkan, dengan berfokus pada penerapan dan evaluasi optimasi algoritma Dijkstra untuk penentuan jalur terpendek pada simulasi jaringan jalan Kabupaten Bandung.
+P245: Tujuan Penelitian
+P246: Tujuan penelitian ini adalah menerapkan optimasi algoritma Dijkstra menggunakan adjacency list, antrean prioritas berbasis min-heap, dan penghentian pencarian ketika jarak menuju simpul tujuan telah final dalam sistem navigasi cerdas berbasis web untuk jaringan jalan Kota Bandung. Penelitian ini juga bertujuan membandingkan kinerja Dijkstra standar dan Dijkstra yang dioptimasi berdasarkan waktu eksekusi, jumlah simpul yang diproses, serta jumlah sisi yang diperiksa pada kondisi pengujian yang sama. Selain itu, penelitian ini bertujuan memverifikasi bahwa penerapan optimasi tetap menghasilkan jalur yang valid dengan total bobot terpendek yang ekuivalen dengan hasil Dijkstra standar.
+P247: Kegunaan Penelitian
+P248: Penelitian ini diharapkan memberikan kegunaan sebagai berikut:
+P249: Bagi Peneliti
+P250: Menambah pemahaman dan keterampilan dalam pemodelan jaringan jalan sebagai graf, penerapan algoritma Dijkstra, pengembangan aplikasi berbasis web, serta pelaksanaan eksperimen untuk mengevaluasi ketepatan dan efisiensi algoritma.
+P251: Bagi Pengembangan Ilmu Pengetahuan
+P252: Menyediakan bukti empiris mengenai perbandingan kinerja Dijkstra standar dan Dijkstra yang dioptimasi pada kondisi pengujian yang terdokumentasi. Hasilnya diharapkan menjadi referensi bagi penelitian selanjutnya mengenai pencarian jalur terpendek dan optimasi algoritma pada graf berbobot nonnegatif.
+P253: Bagi Pengguna
+P254: Menyediakan sarana simulasi untuk memahami proses penentuan jalur terpendek melalui visualisasi rute dan perbandingan hasil algoritma. Sistem juga diharapkan membantu pengguna meninjau hubungan antara ketepatan hasil pencarian dan efisiensi komputasi.
+P255: Bagi Pengembangan Sistem
+P256: Memberikan bahan pertimbangan dalam memilih struktur data dan mekanisme pencarian untuk penerapan Dijkstra. Data pengujian yang dihasilkan diharapkan membantu pengembang menilai manfaat serta keterbatasan teknik optimasi sesuai karakteristik graf yang digunakan.
+P258: Objek dan Waktu
+P259: Objek dan waktu penelitian menjelaskan fokus kajian serta rencana pelaksanaan kegiatan penelitian, mulai dari analisis dan perancangan sistem hingga dokumentasi dan finalisasi hasil penelitian.
+P260: Object Penelitian
+P261: Objek penelitian ini adalah kinerja algoritma Dijkstra dalam menentukan jalur terpendek pada jaringan jalan nyata di Kota Bandung. Data jalan diperoleh dari OpenStreetMap dan diolah menggunakan OSMnx menjadi graf berarah berbobot nonnegatif. Dataset yang digunakan terdiri atas 27.172 simpul dan 61.630 sisi berarah dengan bobot panjang ruas dalam meter.
+P262: Penelitian difokuskan pada perbandingan Dijkstra standar dan Dijkstra yang dioptimasi menggunakan adjacency list, antrean prioritas berbasis min-heap, serta penghentian pencarian ketika jarak menuju simpul tujuan telah final. Aspek yang diteliti meliputi waktu eksekusi, jumlah simpul yang diproses, jumlah sisi yang diperiksa, serta validitas jalur dan kesetaraan total bobot. Pengujian dilakukan menggunakan dataset dan pasangan titik awal–tujuan yang sama.
+P263: Waktu Penelitian
+P264: Penelitian ini direncanakan berlangsung selama kurang lebih lima bulan, dimulai pada bulan Juni hingga Oktober 2026. Pelaksanaan penelitian mencakup analisis dan perancangan sistem, implementasi dan pengembangan algoritma, pengujian dan evaluasi, serta dokumentasi dan finalisasi. Adapun rincian tahapan kegiatan penelitian disusun dalam tabel berikut.
+P267: Table 1.1 Waktu Penelitian
+P269: Metodologi Penelitian
+P270: Metodologi penelitian menjelaskan pendekatan dan tahapan yang digunakan untuk mencapai tujuan penelitian. Penelitian ini menggunakan metode eksperimen dengan pendekatan kuantitatif untuk mengevaluasi kinerja algoritma Dijkstra, serta model Waterfall sebagai teknik pengembangan sistem navigasi cerdas berbasis web.
+P271: Metode Penelitian
+P272: Penelitian ini menggunakan metode eksperimen dengan pendekatan kuantitatif. Menurut NIST/SEMATECH, eksperimen dilakukan dengan mengubah satu atau beberapa faktor untuk mengamati pengaruhnya terhadap variabel respons melalui suatu rencana pengujian yang ditetapkan sebelumnya. Prinsip tersebut diterapkan dalam penelitian ini dengan membandingkan dua implementasi algoritma pada kondisi pengujian yang dikendalikan.(“ENGINEERING STATISTICS HANDBOOK,” n.d.)
+P273: Perlakuan yang dibandingkan adalah penggunaan Dijkstra standar dan Dijkstra yang dioptimasi menggunakan adjacency list, antrean prioritas berbasis min-heap, serta penghentian pencarian ketika jarak menuju simpul tujuan telah final. Variabel yang diukur meliputi waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa. Ketepatan hasil diperiksa melalui validitas jalur dan kesetaraan total bobot terpendek. Dataset, pasangan titik awal–tujuan, serta perangkat keras dan perangkat lunak dibuat sama untuk setiap perbandingan.
+P274: Tahapan Penelitian dan pengumpulan data yang dilakukan adalah sebagai berikut:
+P275: Studi Literatur
+P276: Mengkaji sumber ilmiah yang berkaitan dengan teori graf, algoritma Dijkstra, teknik optimasi, metode eksperimen, dan pengembangan sistem. Kajian digunakan untuk menyusun landasan teori, menetapkan implementasi pembanding, serta menentukan definisi metrik dan prosedur pengujian.
+P277: Penyiapan Dataset
+P278: Menyiapkan data jaringan jalan kendaraan di Kota Bandung dari OpenStreetMap melalui OSMnx. Data diambil berdasarkan batas administratif Kota Bandung, kemudian disederhanakan secara topologis menjadi graf berarah berbobot nonnegatif. Tahap ini mencakup pencatatan sumber dan tanggal pengambilan, pemeriksaan identitas simpul, hubungan sisi, bobot, serta keterhubungan jaringan. Dataset disimpan dalam format JSON untuk aplikasi, GraphML untuk mempertahankan atribut jaringan, dan CSV untuk pengolahan data pendukung.
+P279: Perancangan Eksperimen
+P280: Menetapkan variasi ukuran graf, pasangan titik awal–tujuan, jumlah pengulangan, dan lingkungan pengujian. Setiap kasus uji dijalankan menggunakan kedua implementasi dengan input yang identik. Urutan eksekusi algoritma diatur secara bergantian atau acak untuk mengurangi kemungkinan pengaruh urutan pengujian.
+P281: Pelaksanaan dan Pencatatan Pengujian
+P282: Menjalankan kedua implementasi dan mencatat hasil setiap pengulangan sebagai data mentah. Pengukuran waktu dilakukan setelah graf tersedia di memori dan hanya mencakup proses pencarian algoritma. Pemuatan dataset, komunikasi jaringan, penyimpanan hasil, dan penampilan antarmuka berada di luar interval pengukuran.
+P283: Validasi dan Analisis Data
+P284: Memeriksa validitas jalur serta kesetaraan total bobot yang dihasilkan kedua implementasi. Data kinerja kemudian dianalisis menggunakan statistik deskriptif berupa rata-rata, median, nilai minimum, nilai maksimum, dan simpangan baku waktu eksekusi, serta rata-rata jumlah simpul dan sisi yang diproses. Perbedaan kinerja disajikan melalui tabel, grafik, dan persentase perubahan.
+P285: Penarikan Kesimpulan
+P286: Menyusun kesimpulan berdasarkan hasil pengujian untuk menjawab rumusan masalah. Kesimpulan menjelaskan ketepatan hasil, perbedaan efisiensi, serta keterbatasan optimasi pada dataset dan lingkungan yang digunakan.
+P287: Teknik Pengembangan Sistem
+P288: Teknik pengembangan sistem yang digunakan adalah model Waterfall, dengan kegiatan pengembangan disusun secara berurutan dari analisis kebutuhan, perancangan, implementasi, pengujian, hingga pengoperasian dan pemeliharaan. Pembagian kegiatan tersebut mengacu pada tahapan siklus hidup perangkat lunak yang mencakup kebutuhan, desain, pengodean dan pengujian, serta rilis dan pemeliharaan sebagaimana dijelaskan dalam NASA Software Engineering Handbook.(Lee, 2023)
+P289: Model Waterfall dipilih karena ruang lingkup aplikasi dan kebutuhan eksperimen direncanakan untuk ditetapkan sebelum implementasi. Setiap tahapan menghasilkan dokumen atau perangkat lunak yang menjadi dasar pekerjaan berikutnya. Apabila ditemukan ketidaksesuaian, perbaikan dilakukan dengan memperbarui hasil tahap terkait agar kebutuhan, rancangan, dan implementasi tetap konsisten.
+P290: Penerapan tahapan pengembangan sistem dalam penelitian ini adalah sebagai berikut:
+P291: Analisis Kebutuhan
+P292: Mengidentifikasi kebutuhan fungsional dan nonfungsional sistem. Kebutuhan fungsional meliputi pemuatan dataset, pemilihan titik awal dan tujuan, pencarian serta visualisasi jalur, perbandingan algoritma, pengujian berkelompok, riwayat eksperimen, dan ekspor hasil. Kebutuhan nonfungsional mencakup ketepatan hasil, konsistensi pengukuran, keterulangan eksperimen, dan kemudahan penggunaan.
+P293: Perancangan Sistem
+P294: Menyusun arsitektur aplikasi, alur proses pencarian, struktur data graf, rancangan penyimpanan hasil eksperimen, serta rancangan antarmuka. Tahap ini juga menetapkan batas pengukuran waktu, format hasil algoritma, dan mekanisme pemeriksaan ketepatan hasil.
+P295: Implementasi Sistem
+P296: Menerjemahkan rancangan menjadi aplikasi berbasis web. Antarmuka dikembangkan menggunakan Nuxt dan TypeScript, sedangkan layanan pemrosesan algoritma menggunakan Python dan FastAPI. Implementasi mencakup Dijkstra standar, Dijkstra yang dioptimasi, pencatatan metrik, penyimpanan hasil eksperimen, dan ekspor data.
+P297: Pengujian Sistem
+P298: Melakukan pengujian fungsional untuk memeriksa kesesuaian fitur dengan kebutuhan, serta pengujian algoritma untuk memeriksa ketepatan jalur dan total bobot. Kasus uji mencakup titik awal yang sama dengan tujuan, jalur yang tidak tersedia, beberapa jalur dengan bobot minimum yang sama, dan penolakan bobot negatif. Setelah ketepatan sistem diperiksa, pengujian kinerja dilaksanakan sesuai rancangan eksperimen.
+P299: Pengoperasian dan Pemeliharaan
+P300: Mengoperasikan aplikasi untuk pelaksanaan eksperimen dan demonstrasi hasil penelitian. Pemeliharaan dibatasi pada perbaikan kesalahan serta penyesuaian yang mendukung kebutuhan penelitian. Apabila perbaikan mengubah proses algoritma atau pengukuran, versi implementasi dicatat dan pengujian terkait diulang.
+P302: Sistematika Penulisan
+P303: Sistematika penulisan skripsi ini disusun dalam enam bab yang saling berkaitan untuk menjelaskan proses penelitian, mulai dari perumusan masalah hingga penarikan kesimpulan. Uraian masing-masing bab adalah sebagai berikut.
+P304: BAB I PENDAHULUAN
+P305: Bab ini menguraikan latar belakang masalah, identifikasi masalah, batasan masalah, rumusan masalah, tujuan dan kegunaan penelitian, objek dan waktu penelitian, metodologi penelitian, serta sistematika penulisan. Pembahasan pada bab ini menjadi dasar pelaksanaan penelitian mengenai optimasi algoritma Dijkstra untuk penentuan jalur terpendek pada sistem navigasi cerdas berbasis web.
+P306: BAB II LANDASAN TEORI
+P307: Bab ini membahas penelitian terdahulu yang relevan serta teori yang mendukung penelitian, meliputi graf berbobot, jalur terpendek, algoritma Dijkstra, teknik optimasi, dan metrik pengukuran kinerja. Bab ini juga menjelaskan metode penelitian, teknik pengembangan sistem, serta teknologi dan perangkat pendukung yang digunakan sebagai dasar analisis, perancangan, implementasi, dan pengujian.
+P308: BAB III ANALISIS SISTEM
+P309: Bab ini menguraikan objek penelitian, karakteristik dataset simulasi jaringan jalan Kabupaten Bandung, serta analisis proses pencarian jalur menggunakan Dijkstra standar. Pembahasan mencakup analisis permasalahan, kebutuhan sistem, dan usulan pemecahan masalah melalui optimasi algoritma Dijkstra. Simulasi perhitungan algoritma disajikan untuk menjelaskan proses penentuan jalur terpendek.
+P310: BAB IV PERANCANGAN SISTEM
+P311: Bab ini menjelaskan kebutuhan perangkat keras dan perangkat lunak, perancangan arsitektur sistem, alur proses, struktur data graf, serta penyimpanan hasil eksperimen. Pembahasan juga mencakup perancangan struktur menu dan antarmuka aplikasi yang mendukung simulasi navigasi, perbandingan algoritma, serta pelaksanaan pengujian.
+P312: BAB V IMPLEMENTASI DAN PENGUJIAN SISTEM
+P313: Bab ini membahas penerapan hasil perancangan menjadi aplikasi berbasis web, meliputi implementasi perangkat pendukung, penyimpanan data, algoritma, dan antarmuka. Pengujian mencakup kesesuaian fungsi sistem, validitas jalur, kesetaraan total bobot, serta perbandingan kinerja Dijkstra standar dan Dijkstra yang dioptimasi. Hasil eksperimen disajikan dalam bentuk tabel dan grafik, kemudian dianalisis berdasarkan waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa.
+P314: BAB VI PENUTUP
+P315: Bab ini memuat kesimpulan yang disusun berdasarkan hasil pengujian dan analisis untuk menjawab rumusan masalah serta menilai ketercapaian tujuan penelitian. Bab ini juga menyajikan saran untuk penelitian lanjutan dan pengembangan sistem berdasarkan keterbatasan yang ditemukan selama penelitian
+P318: LANDASAN TEORI
+P320: Penelitian Terdahulu
+P321: Penelitian terdahulu digunakan sebagai dasar untuk memahami penerapan algoritma Dijkstra, pendekatan optimasi yang telah dikaji, serta metode evaluasi yang relevan dengan penelitian ini. Tinjauan pustaka difokuskan pada penelitian tentang penentuan jalur terpendek, pengembangan aplikasi navigasi berbasis web, dan peningkatan efisiensi pencarian pada jaringan jalan. Melalui tinjauan tersebut, persamaan dan perbedaan penelitian dapat diidentifikasi untuk memperjelas posisi penelitian yang dilakukan.
+P322: Ringkasan penelitian terdahulu disajikan pada Tabel 2.1. Relevansi setiap penelitian ditinjau berdasarkan objek, metode, dan hubungannya dengan perbandingan Dijkstra standar serta Dijkstra yang dioptimasi.
+P323: Table 2.1 Tabel Penelitian Terdahulu
+P325: Analisis dan Kesimpulan Tinjauan Pustaka
+P326: Penelitian yang ditinjau memperlihatkan penerapan algoritma Dijkstra pada beberapa konteks pencarian rute. (Yovi & Sekarwati, 2024) menerapkannya pada navigasi supermarket berbasis web, (Kurniawan & Atmojo, 2025) menggunakannya untuk pencarian rute kunjungan wisata, sedangkan (Pramestiana & Anwar, 2025) menerapkannya pada pengiriman kendaraan bermotor. Ketiga penelitian tersebut memberikan dasar penerapan Dijkstra untuk menentukan jalur berdasarkan hubungan antarlokasi dan bobot yang digunakan. 
+P327: Dari sisi pengembangan aplikasi, penelitian (Yovi & Sekarwati, 2024) menjadi rujukan untuk penyajian hasil pencarian melalui antarmuka web. Penelitian ini mengadaptasi konteks penyajian tersebut dengan menyediakan visualisasi jaringan dan jalur hasil pencarian. Selain mendukung simulasi navigasi, aplikasi yang direncanakan juga digunakan untuk menjalankan eksperimen serta menampilkan perbandingan metrik kedua implementasi algoritma.
+P328: Dari sisi optimasi, (Tian et al., 2025) menunjukkan bahwa strategi pencarian dan pengelolaan jaringan jalan dapat dikembangkan untuk meningkatkan efisiensi perencanaan rute. Namun, hasil percepatan yang dilaporkan berlaku pada metode, dataset, dan lingkungan eksperimen penelitian tersebut. Hasilnya tidak dapat langsung dijadikan perkiraan peningkatan kinerja dalam penelitian ini karena teknik optimasi yang digunakan berbeda.
+P329: Berdasarkan cakupan penelitian yang ditinjau, penelitian ini diarahkan pada evaluasi perubahan implementasi Dijkstra secara terukur dalam simulasi jaringan jalan Kabupaten Bandung. Perbandingan dilakukan menggunakan dataset dan pasangan titik awal–tujuan yang sama, dengan parameter waktu eksekusi, jumlah simpul yang diproses, serta jumlah sisi yang diperiksa. Validitas jalur dan kesetaraan total bobot juga diperiksa untuk memastikan bahwa perubahan implementasi tetap mempertahankan ketepatan hasil.
+P330: Dengan demikian, kontribusi yang dituju adalah penyediaan bukti empiris mengenai kinerja Dijkstra standar dan Dijkstra yang dioptimasi pada kondisi eksperimen yang terdokumentasi. Aplikasi berbasis web digunakan sebagai sarana visualisasi, pelaksanaan pengujian, serta pencatatan hasil. Penelitian ini diharapkan dapat menjelaskan manfaat dan keterbatasan optimasi yang diterapkan berdasarkan hasil pengujian, tanpa mengasumsikan bahwa versi optimasi selalu lebih cepat pada seluruh kasus.
+P334: Konsep Dasar Graf dan Pencarian Jalur Terpendek
+P335: Graf digunakan untuk merepresentasikan hubungan antarlokasi dalam sistem navigasi. Pemodelan tersebut memungkinkan jaringan jalan diolah menjadi struktur data yang dapat diproses oleh algoritma pencarian jalur. Konsep yang mendasari penelitian ini meliputi pengertian graf, jenis graf, representasi graf, bobot lintasan, permasalahan jalur terpendek, dan pemodelan jaringan jalan.
+P336: Pengertian Graf
+P337: (Maurer & Ralston, 2020)menjelaskan graf sebagai struktur yang terdiri atas sekumpulan simpul dan hubungan antarsimpul yang disebut sisi. Simpul merepresentasikan objek, sedangkan sisi merepresentasikan hubungan antara dua objek tersebut. Secara matematis, graf dapat dinyatakan sebagai:
+P339: Keterangan:
+P340: G = graf;
+P341: V = himpunan simpul atau vertices;
+P342: E = himpunan sisi atau edges;
+P343: Dalam konteks jaringan jalan, objek yang direpresentasikan dapat berupa persimpangan, sedangkan hubungan antarpersimpangan berupa ruas jalan. (Maurer & Ralston, 2020)
+P344: Dokumentasi NetworkX menjelaskan bahwa graf dapat menyimpan atribut pada simpul maupun sisi. Atribut tersebut memungkinkan objek graf dilengkapi informasi yang diperlukan dalam pemodelan. Sebagai contoh, simpul dapat memiliki identitas lokasi, sedangkan sisi dapat memiliki atribut bobot. (“Dijkstra’s Algorithm,” n.d.)
+P345: Dalam penelitian ini, graf dipahami sebagai model hubungan antarlokasi yang menjadi masukan bagi kedua implementasi Dijkstra. Identitas simpul, hubungan sisi, dan bobotnya harus sama pada setiap perbandingan agar hasil pengujian berasal dari permasalahan pencarian yang identik.
+P346: Jenis-Jenis Graf yang Digunakan
+P347: Graf dapat dibedakan berdasarkan arah hubungan dan keberadaan bobot pada sisinya. Pada graf tidak berarah, hubungan antara dua simpul bersifat timbal balik. Pada graf berarah, sisi mempunyai arah tertentu sehingga hubungan dari simpul  menuju simpul  tidak otomatis menyatakan adanya hubungan dari  menuju 
+P348: Jenis graf yang relevan dengan penelitian ini adalah sebagai berikut:
+P349: Graf Tidak Berarah
+P350: Graf tidak berarah dapat digunakan untuk menyatakan hubungan jalan yang dapat dilalui dalam kedua arah dengan bobot yang sama. Sebagai contoh, hubungan antara lokasi A dan B memungkinkan perjalanan dari A menuju B maupun sebaliknya.
+P351: Graf Berarah
+P352: Graf berarah dapat digunakan untuk memodelkan jalan satu arah. Apabila terdapat sisi A menuju B, perjalanan dari B menuju A hanya dapat dilakukan apabila tersedia sisi atau lintasan lain yang mendukung arah tersebut.
+P353: Graf Berbobot
+P354: Graf berbobot memberikan nilai pada setiap sisi. Nilai tersebut menjadi dasar perhitungan biaya lintasan. Dalam penelitian ini, bobot ditetapkan sebagai jarak ruas jalan dengan satuan yang konsisten.
+P355: Graf Berbobot Nonnegatif
+P356: Graf berbobot nonnegatif memiliki nilai bobot lebih besar atau sama dengan nol. Batasan ini diperlukan dalam penggunaan Dijkstra untuk pencarian jalur terpendek.
+P357: Berdasarkan uraian tersebut, pemilihan graf berarah atau tidak berarah harus mengikuti karakteristik dataset. Dalam penelitian ini, arah hubungan dan bobot merupakan bagian dari definisi data yang harus ditetapkan sebelum eksperimen dilakukan.
+P358: Representasi Graf
+P359: Representasi graf merupakan cara menyimpan informasi simpul dan sisi agar dapat diproses oleh program. Dua bentuk representasi yang dibahas adalah matriks ketetanggaan dan daftar ketetanggaan.
+P360: Matriks Ketetanggaan
+P361: Matriks ketetanggaan atau adjacency matrix menyimpan hubungan antarsimpul dalam susunan baris dan kolom. Untuk graf dengan  simpul, matriks memiliki ukuran  Pada graf berbobot, setiap elemen dapat menyatakan bobot sisi yang menghubungkan pasangan simpul.
+P362: Penanda tidak adanya sisi harus dibedakan dari bobot nol apabila graf mengizinkan sisi berbobot nol. Dokumentasi SciPy membahas penggunaan representasi matriks padat, matriks bertopeng, dan matriks jarang untuk membedakan hubungan yang tersedia dengan hubungan yang tidak tersedia. (“shortest_path,” n.d.)
+P363: Daftar Ketetanggaan 
+P364: Daftar ketetanggaan atau adjacency list menyimpan daftar tetangga untuk setiap simpul. Pada graf berbobot, setiap entri juga memuat bobot hubungan. NetworkX menggunakan struktur berbasis kamus untuk menyimpan ketetanggaan dan atribut sisi. (“Dijkstra’s Algorithm,” n.d.)
+P365: Lintasan dan Bobot Lintasan
+P366: Lintasan menyatakan urutan simpul yang dihubungkan oleh sisi. Dalam pembahasan ini, lintasan sederhana tidak mengulangi simpul. Pada graf berarah, setiap perpindahan harus mengikuti arah sisi yang tersedia. Bobot lintasan diperoleh dengan menjumlahkan bobot sisi yang dilalui.
+P367: Untuk Lintasan:
+P369: Total bobotnya dinyatakan sebagai:
+P371: Keterangan:
+P372: P = Lintasan yang dilalui;
+P373: W (P) = total bobot lintasan;
+P374:  = bobot sisi dari simpul  menuju   ;
+P375:  = jumlah sisi dalam lintasan.
+P376: Menggunakan ilustrasi pada Tabel 2.2, lintasan A–B–C memiliki total bobot (4+2=6), sedangkan lintasan langsung A–C memiliki bobot 7. Dengan demikian, lintasan yang melalui lebih banyak sisi dapat memiliki total bobot lebih kecil.
+P377: Dalam penelitian ini, panjang lintasan dibedakan dari total bobot lintasan. Panjang lintasan dinyatakan sebagai jumlah sisi, sedangkan total bobot menyatakan akumulasi jarak yang menjadi dasar penentuan jalur terpendek.
+P378: Permasalahan Jalur Terpendek
+P379: Permasalahan jalur terpendek bertujuan memperoleh lintasan dengan total bobot minimum. Pada graf tanpa bobot, pencarian dapat didasarkan pada jumlah sisi, sedangkan pada graf berbobot pencarian menggunakan penjumlahan bobot sisi. Pencarian dapat dilakukan untuk satu pasangan simpul, satu sumber menuju berbagai tujuan, atau seluruh pasangan simpul.
+P380: Penelitian ini menggunakan pencarian satu titik awal menuju satu titik tujuan. Secara matematis, jarak terpendek dapat dinyatakan sebagai:
+P382: Keterangan:
+P383:  = total bobot minimum dari simpul  menuju  ;
+P384:  = himpunan lintasan yang menghubungkan  dan  ;
+P385:  = total bobot lintasan P
+P386: Untuk kebutuhan pengujian penelitian ini, beberapa kondisi ditetapkan secara eksplisit. Apabila titik awal sama dengan tujuan, hasil yang diharapkan berupa lintasan berisi satu simpul dengan biaya nol. Apabila tidak tersedia lintasan, sistem mengembalikan status tidak terjangkau. Apabila beberapa lintasan memiliki bobot minimum yang sama, perbedaan urutan simpul dapat diterima selama lintasan valid dan total bobotnya ekuivalen.
+P387: Berdasarkan pengertian tersebut, evaluasi hasil penelitian tidak cukup dilakukan dengan membandingkan urutan simpul. Pemeriksaan harus mencakup keterhubungan lintasan, kesesuaian arah sisi, dan total bobot minimum yang dihasilkan.
+P388: Pemodelan Jaringan Jalan sebagai Graf
+P389: Pemodelan jaringan jalan merupakan proses mengubah informasi jalan menjadi simpul, sisi, dan bobot. Penerapan pemodelan tersebut dapat ditemukan pada penelitian (Kurniawan & Atmojo, 2025) ,yang menggunakan graf berbobot jarak untuk pencarian rute kunjungan wisata.
+P390: Penelitian (Pramestiana & Anwar, 2025) juga menggunakan Dijkstra untuk menentukan rute pengiriman antarlokasi. Sementara itu, (Tian et al., 2025) memperlihatkan bahwa model jaringan jalan dapat dikembangkan dengan beberapa lapisan dan pembatasan perjalanan sesuai kebutuhan penggunaannya.
+P391: Dalam penelitian ini, komponen pemodelan direncanakan sebagai berikut.
+P392: Table 2.2 Komponen Pemodelan Jaringan Jalan
+P394: Pemodelan perlu membedakan perpotongan visual dengan keterhubungan jalan. Dalam rancangan dataset, dua ruas yang tampak bersilangan tidak otomatis diberi simpul penghubung apabila perjalanan tidak dapat berpindah di antara keduanya. Selain itu, bobot jarak perlu mengikuti definisi pengukuran yang ditetapkan, sehingga interpretasi hasil pencarian tetap konsisten.
+P395: Berdasarkan uraian tersebut, graf penelitian merupakan penyederhanaan jaringan jalan sesuai cakupan dataset. Jalur yang dihasilkan harus dipahami sebagai jalur terpendek pada model tersebut. Sumber data, proses pembentukan graf, arah perjalanan, dan satuan bobot perlu didokumentasikan agar hasil eksperimen dapat ditelusuri.
+P396: Sistem Navigasi Cerdas Berbasis Web
+P397: Sistem navigasi cerdas berbasis web dalam penelitian ini merupakan aplikasi yang menentukan jalur terpendek secara otomatis dan menyajikan hasilnya melalui peramban. Pembahasannya mencakup fungsi navigasi, penerapan algoritma, serta visualisasi hasil pencarian.
+P398: Pengertian Sistem Navigasi
+P399: Sistem navigasi membantu pengguna menentukan rute dari titik awal menuju tujuan. (Yovi & Sekarwati, 2024)menerapkan fungsi tersebut dalam aplikasi navigasi supermarket, sedangkan (Kurniawan & Atmojo, 2025) menggunakannya untuk menentukan rute kunjungan wisata (Pramestiana & Anwar, 2025). menerapkan pencarian rute pada pengiriman kendaraan bermotor. Ketiga penelitian tersebut menunjukkan penggunaan algoritma untuk menentukan jalur dalam konteks perjalanan yang berbeda.
+P400: Berdasarkan penerapan tersebut, sistem navigasi dalam penelitian ini dipahami sebagai sarana penentuan rute pada jaringan yang dimodelkan. Hasilnya berupa jalur yang menghubungkan titik awal dan tujuan beserta total bobot jaraknya.
+P401: Penentuan Rute Berbasis Algoritma
+P402: Penentuan rute berbasis algoritma dilakukan dengan mengolah hubungan antarsimpul dan bobot sisi. Penelitian (Kurniawan & Atmojo, 2025)serta (Pramestiana & Anwar, 2025)menggunakan Dijkstra untuk pencarian rute berbobot jarak. (Tian et al., 2025)mengembangkan pendekatan Dijkstra dua arah yang diparalelkan untuk meningkatkan efisiensi perencanaan rute kendaraan khusus.
+P403: Dalam penelitian ini, istilah “cerdas” dibatasi pada kemampuan sistem menentukan jalur secara otomatis menggunakan Dijkstra. Proses tersebut menggunakan bobot jarak tetap dan tidak melibatkan pembelajaran mesin maupun kondisi lalu lintas secara waktu nyata.
+P404: Sistem Navigasi Berbasis Web
+P405: (Yovi & Sekarwati, 2024)mengembangkan aplikasi navigasi berbasis web menggunakan JavaScript dan React. Aplikasi tersebut menyediakan rute terpendek dan diuji pada berbagai perangkat serta resolusi layar. Penelitian ini menjadi contoh penerapan fungsi pencarian jalur dalam antarmuka web.
+P406: Pada penelitian ini, antarmuka web dirancang untuk menerima pilihan titik awal dan tujuan, menampilkan jalur, serta menyajikan metrik kedua implementasi Dijkstra. Visualisasi membedakan jalur hasil pencarian dari bagian jaringan lainnya agar hasil mudah diperiksa. Dengan demikian, aplikasi berfungsi sebagai sarana simulasi navigasi sekaligus penyajian hasil eksperimen.
+P408: Algoritma Dijkstra
+P409: Pengertian dan Karakteristik Algoritma Dijkstra
+P410: Algoritma Dijkstra merupakan algoritma pencarian jalur terpendek pada graf berbobot nonnegatif. Algoritma ini menentukan jarak minimum dari simpul awal menuju simpul lain melalui pemilihan simpul berjarak sementara terkecil dan pembaruan jarak menuju tetangganya. (Lewis, 2023) membahas implementasi Dijkstra menggunakan beberapa struktur antrean, sedangkan (Kurniawan & Atmojo, 2025) serta (Pramestiana & Anwar, 2025) menerapkannya untuk menentukan rute perjalanan.
+P411: Berdasarkan uraian tersebut, Dijkstra digunakan dalam penelitian ini karena sesuai dengan model jaringan jalan berbobot jarak nonnegatif. Ketepatan jalur dan total bobotnya menjadi dasar evaluasi sebelum membandingkan efisiensi kedua implementasi.
+P412: Prinsip Kerja dan Tahapan Algoritma Dijkstra
+P413: Dijkstra bekerja dengan menyimpan jarak sementara dari titik awal menuju setiap simpul. Jarak titik awal diatur menjadi nol, sedangkan simpul lainnya bernilai tak hingga. Selanjutnya, simpul yang belum diproses dengan jarak sementara terkecil dipilih untuk memeriksa kemungkinan perbaikan jarak menuju tetangganya. Proses pembaruan tersebut disebut relaksasi.
+P414: Relaksasi sisi dari simpul  menuju simpul  mengikuti kondisi:
+P416: Apabila kondisi tersebut terpenuhi, jarak diperbarui menjadi:
+P418: Keterangan:  dan  merupakan jarak sementara dari titik awal, sedangkan  merupakan bobot sisi penghubung.
+P419: Secara ringkas, tahapan algoritma meliputi inisialisasi jarak, pemilihan simpul berjarak terkecil, relaksasi sisi, dan pengulangan proses. Untuk pencarian satu tujuan dengan penghentian dini, pencarian dapat dihentikan ketika simpul tujuan dipilih sebagai simpul berjarak minimum dan jaraknya telah final. Pencarian tidak dihentikan hanya karena tujuan pertama kali ditemukan.
+P420: Dalam penelitian ini, tahapan tersebut menjadi dasar kedua implementasi. Perbedaannya terletak pada struktur data dan mekanisme pelaksanaan pencarian yang ditetapkan dalam rancangan eksperimen.
+P421: Rekonstruksi Jalur dan Ketepatan Hasil
+P422: Selain menyimpan jarak, implementasi Dijkstra dapat mencatat simpul pendahulu setiap kali terjadi perbaikan jarak. Jalur diperoleh dengan menelusuri pendahulu dari simpul tujuan menuju titik awal, kemudian membalik urutannya. Implementasi rujukan NetworkX menyediakan hasil jarak dan jalur melalui pencarian Dijkstra.(“Dijkstra’s Algorithm,” n.d.)
+P423: Dalam penelitian ini, jalur dinyatakan valid apabila dimulai dari sumber, berakhir pada tujuan, dan seluruh pasangan simpul berurutan terhubung sesuai arah sisi. Penjumlahan bobot sisi harus sesuai dengan biaya yang dilaporkan. Dua hasil dapat memiliki urutan simpul berbeda apabila keduanya merupakan jalur terpendek dengan total bobot ekuivalen.
+P424: Kompleksitas dan Keterbatasan Algoritma Dijkstra
+P425: Efisiensi Dijkstra dipengaruhi oleh struktur data yang digunakan. Pemilihan simpul minimum melalui pencarian linear umumnya menghasilkan kompleksitas waktu  , sedangkan implementasi berbasis daftar ketetanggaan dan binary heap lazim dinyatakan memiliki kompleksitas . (Lewis, 2023) menunjukkan bahwa keunggulan kompleksitas teoretis tidak selalu sejalan dengan waktu eksekusi tercepat dalam eksperimen.
+P426: Dijkstra memiliki keterbatasan pada penggunaan bobot negatif. Selain itu, hasilnya mengikuti bobot dan hubungan yang tersedia dalam graf. Dalam penelitian ini, jalur terpendek berdasarkan jarak tidak diartikan sebagai jalur dengan waktu perjalanan tercepat karena kondisi lalu lintas tidak dimodelkan.
+P427: Berdasarkan karakteristik tersebut, evaluasi dilakukan melalui pengujian langsung pada dataset yang ditetapkan. Analisis kompleksitas digunakan sebagai landasan untuk menjelaskan hasil, sedangkan besarnya perbedaan kinerja ditentukan berdasarkan data eksperimen.
+P428: Teknik Optimasi Implementasi Dijkstra
+P429: Pengertian Optimasi Algoritma
+P430: Optimasi algoritma merupakan upaya meningkatkan efisiensi pelaksanaan komputasi dengan tetap mempertahankan ketepatan hasil. Pada Dijkstra, optimasi dapat dilakukan melalui pemilihan struktur data dan pengaturan proses pencarian. (Lewis, 2023) membandingkan penggunaan beberapa struktur antrean dan menunjukkan bahwa kinerja aktual perlu dievaluasi melalui eksperimen, bukan hanya berdasarkan kompleksitas teoretis.
+P431: Dalam penelitian ini, optimasi diarahkan pada penggunaan adjacency list, antrean prioritas berbasis min-heap, dan penghentian dini. Pengaruhnya dinilai melalui perbandingan dengan implementasi baseline yang didefinisikan secara jelas.
+P432: Penggunaan Adjacency List
+P433: Adjacency list menyimpan daftar simpul tetangga beserta bobot hubungan untuk setiap simpul. Representasi ini memungkinkan proses pencarian mengakses sisi yang terhubung dengan simpul yang sedang diproses. Dokumentasi NetworkX menjelaskan penggunaan struktur ketetanggaan berbasis kamus untuk menyimpan hubungan dan atribut sisi. (“Dijkstra’s Algorithm,” n.d.).
+P434: Dalam penelitian ini, adjacency list digunakan untuk menyediakan pasangan simpul tujuan dan bobot ketika relaksasi dilakukan. Pemilihan representasi tersebut tetap mempertahankan hubungan dan bobot yang terdapat pada dataset.
+P435: Antrean Prioritas Berbasis Min-Heap
+P436: Antrean prioritas mengatur elemen berdasarkan nilai prioritas tertentu. Pada Dijkstra, prioritas ditentukan oleh jarak sementara dari titik awal. Struktur min-heap memungkinkan elemen dengan nilai jarak terkecil ditempatkan pada akar sehingga dapat dipilih untuk diproses berikutnya. Penggunaan binary heap merupakan salah satu implementasi antrean yang dibahas oleh (Lewis, 2023).
+P437: Ketika ditemukan jarak yang lebih kecil menuju suatu simpul, informasi antrean perlu diperbarui. Pada implementasi yang memasukkan entri baru tanpa menghapus entri lama, entri yang tidak lagi sesuai dengan jarak terbaik harus dilewati. Dalam penelitian ini, entri lama tersebut tidak dihitung sebagai simpul yang benar-benar diproses.
+P438: Penghentian Dini
+P439: Penghentian dini atau early termination membatasi pencarian pada kebutuhan satu titik tujuan. Pencarian dihentikan ketika simpul tujuan diambil sebagai simpul dengan jarak minimum yang sah dan jaraknya telah final. Implementasi Dijkstra pada NetworkX menyediakan penghentian pencarian ketika tujuan telah ditetapkan dalam proses tersebut. (“Dijkstra’s Algorithm,” n.d.).
+P440: Penghentian tidak dilakukan saat tujuan pertama kali ditemukan sebagai tetangga karena jaraknya masih mungkin diperbaiki. Dalam penelitian ini, mekanisme tersebut digunakan untuk menghindari pemrosesan lanjutan setelah jawaban untuk tujuan telah diperoleh.
+P441: Ketepatan Hasil dan Perbandingan Implementasi
+P442: Penerapan optimasi harus mempertahankan ketentuan graf berbobot nonnegatif serta proses relaksasi yang benar. Penggunaan struktur data yang berbeda tidak mengubah tujuan pencarian, yaitu memperoleh jalur dengan total bobot minimum.
+P443: Perbandingan penelitian ini dilakukan pada dataset dan pasangan titik awal–tujuan yang sama. Kedua implementasi menggunakan definisi metrik yang konsisten, yaitu simpul yang benar-benar diproses dan sisi yang diperiksa. Jalur hasil diperiksa validitasnya, kemudian total bobot dibandingkan dengan toleransi numerik yang ditetapkan apabila menggunakan bilangan pecahan.
+P444: Dengan demikian, keberhasilan optimasi dinilai dari ketepatan hasil dan perubahan kinerja yang terukur. Kesamaan jalur secara persis tidak diwajibkan apabila terdapat beberapa jalur terpendek dengan total bobot ekuivalen.
+P445: Evaluasi Kinerja dan Ketepatan Algoritma
+P446: Evaluasi dilakukan untuk mengetahui ketepatan hasil serta efisiensi kedua implementasi Dijkstra. Ketepatan diperiksa melalui validitas jalur dan total bobot, sedangkan efisiensi diukur berdasarkan waktu eksekusi serta jumlah simpul dan sisi yang diproses.
+P447: Metrik Kinerja Algoritma
+P448: Perbandingan implementasi algoritma memerlukan pengukuran empiris karena kompleksitas teoretis tidak selalu mencerminkan waktu eksekusi aktual. (Lewis, 2023) menunjukkan perbedaan tersebut melalui eksperimen Dijkstra dengan beberapa struktur antrean.
+P449: Dalam penelitian ini, metrik kinerja didefinisikan sebagai berikut:
+P450: Waktu Eksekusi
+P451: Durasi pelaksanaan pencarian jalur setelah graf tersedia di memori. Pengukuran tidak mencakup pemuatan dataset, komunikasi jaringan, penyimpanan hasil, dan penampilan antarmuka.
+P452: Jumlah Simpul yang Diproses
+P453: Jumlah simpul yang dipilih dengan jarak minimum yang sah dan diproses oleh algoritma. Entri antrean yang sudah tidak berlaku tidak dihitung sebagai simpul yang diproses.
+P454: Jumlah Sisi yang Diperiksa
+P455: Jumlah sisi yang diperiksa ketika algoritma mengevaluasi kemungkinan perbaikan jarak. Pemeriksaan tetap dihitung meskipun tidak menghasilkan pembaruan jarak.
+P456: Ketiga metrik tersebut digunakan secara bersamaan agar evaluasi dapat menjelaskan durasi komputasi dan banyaknya pekerjaan pencarian yang dilakukan.
+P457: Validitas Jalur dan Kesetaraan Total Bobot
+P458: Pemeriksaan ketepatan diperlukan untuk memastikan bahwa optimasi tetap menghasilkan solusi yang sesuai. Dalam penelitian ini, jalur dinyatakan valid apabila dimulai dari simpul sumber, berakhir pada simpul tujuan, dan setiap perpindahan mengikuti sisi serta arah yang tersedia. Jumlah bobot sisi pada jalur juga harus sesuai dengan biaya yang dilaporkan.
+P459: Hasil kedua implementasi dibandingkan berdasarkan total bobot minimum. Untuk bobot bilangan bulat, perbandingan dapat dilakukan secara langsung. Apabila menggunakan bilangan pecahan, toleransi numerik ditetapkan untuk mengakomodasi keterbatasan representasi bilangan pada komputer.
+P460: Kesamaan total bobot antara dua implementasi belum menjadi satu-satunya bukti kebenaran. Oleh karena itu, pengujian juga menggunakan graf sederhana yang hasil terpendeknya telah diketahui. Perbedaan urutan simpul dapat diterima apabila kedua jalur valid dan memiliki total bobot minimum yang ekuivalen.
+P461: Pengujian Berulang dan Statistik Deskriptif
+P462: Pengujian waktu eksekusi dilakukan berulang pada setiap kasus uji untuk mengamati variasi hasil pengukuran. Seluruh hasil pengulangan disimpan sebagai data mentah sebelum dihitung statistiknya. Pendekatan ini menjadi bagian dari rancangan eksperimen yang menetapkan faktor dan respons pengujian secara terencana.(“ENGINEERING STATISTICS HANDBOOK,” n.d.)
+P463: Statistik yang digunakan meliputi rata-rata, median, nilai minimum, nilai maksimum, dan simpangan baku. Rata-rata waktu eksekusi dihitung menggunakan:
+P465: Simpangan baku sampel untuk  dihitung menggunakan.
+P467: Keterangan:  adalah waktu eksekusi pengulangan ke- ,  adalah adalah rata-rata waktu, dan  adalah jumlah pengulangan.
+P468: Dalam penelitian ini, statistik dihitung terlebih dahulu untuk kasus uji yang sama. Ringkasan antar-kasus disajikan secara terpisah agar variasi waktu pengulangan tidak tercampur dengan perbedaan karakteristik rute.
+P469: Persentase Perubahan Kinerja
+P470: Persentase perubahan digunakan untuk menunjukkan perbedaan metrik antara implementasi standar dan optimasi. Untuk metrik yang lebih kecil lebih baik, rumus yang digunakan adalah:
+P472: Keterangan:  adalah persentase perubahan,  adalah nilai metrik implementasi standar, dan  adalah nilai metrik implementasi optimasi.
+P473: Nilai positif menunjukkan penurunan metrik pada implementasi optimasi, sedangkan nilai negatif menunjukkan peningkatan metrik. Nilai nol menunjukkan tidak terdapat perubahan. Apabila nilai baseline sama dengan nol, persentase tidak dihitung dan hasil disajikan sebagai selisih absolut. Perbandingan menggunakan jenis statistik yang sama, misalnya median waktu standar terhadap median waktu optimasi.
+P474: Pengendalian Kondisi Pengujian
+P475: Rancangan eksperimen perlu menetapkan kondisi pengujian agar perbedaan hasil dapat dianalisis berdasarkan perlakuan yang dibandingkan. (“ENGINEERING STATISTICS HANDBOOK,” n.d.) menjelaskan bahwa eksperimen direncanakan untuk mengamati pengaruh perubahan faktor terhadap respons yang diukur.
+P476: Dalam penelitian ini, pengendalian dilakukan melalui penggunaan dataset, pasangan titik awal–tujuan, perangkat keras, dan lingkungan perangkat lunak yang sama. Urutan eksekusi kedua algoritma diatur bergantian atau acak, sedangkan kegiatan komputasi lain diupayakan tetap minimum selama pengujian. Jika digunakan pemanasan awal, hasilnya dipisahkan dari data utama.
+P477: Versi dataset, versi algoritma, jumlah pengulangan, dan konfigurasi pengujian dicatat agar eksperimen dapat ditelusuri dan dijalankan kembali. Dengan pengendalian tersebut, kesimpulan dibatasi pada kondisi eksperimen yang benar-benar diuji.
+P478: Metode Penelitian dan Pengembangan Sistem
+P479: Metode penelitian digunakan untuk memperoleh dan menganalisis bukti mengenai kinerja algoritma, sedangkan teknik pengembangan sistem mengatur proses pembuatan aplikasi pendukung eksperimen. Penelitian ini menggunakan pendekatan kuantitatif eksperimental dan model pengembangan Waterfall.
+P480: Penelitian Kuantitatif Eksperimental
+P481: Eksperimen dilakukan dengan mengubah faktor tertentu untuk mengamati pengaruhnya terhadap respons yang diukur. (“How do you select an experimental design?,” n.d.)menjelaskan bahwa eksperimen memerlukan rencana yang menetapkan faktor, respons, dan prosedur pelaksanaannya sebelum pengujian dilakukan.
+P482: Pendekatan kuantitatif dalam penelitian ini diwujudkan melalui pengumpulan data numerik berupa waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa. Perlakuan yang dibandingkan adalah implementasi Dijkstra standar dan Dijkstra yang dioptimasi. Dengan demikian, kesimpulan diperoleh berdasarkan hasil pengukuran, bukan perkiraan peningkatan kinerja.
+P483: Perancangan Eksperimen Perbandingan Algoritma
+P484: Eksperimen komparatif digunakan untuk menilai perbedaan respons akibat faktor yang menjadi perhatian penelitian. Pemilihan rancangan perlu disesuaikan dengan tujuan perbandingan dan faktor lain yang dapat memengaruhi hasil.(“How do you select an experimental design?,” n.d.)
+P485: Dalam penelitian ini, satu kasus uji berupa kombinasi dataset, titik awal, dan titik tujuan yang dijalankan menggunakan kedua implementasi. Pengulangan dilakukan pada lingkungan yang sama, disertai pencatatan konfigurasi dan pemeriksaan ketepatan hasil.
+P486: Perbandingan dua implementasi tersebut menilai pengaruh gabungan teknik optimasi yang diterapkan. Hasilnya tidak digunakan untuk menyatakan kontribusi masing-masing teknik secara terpisah karena hal tersebut memerlukan eksperimen tambahan.
+P487: Model Pengembangan Waterfall
+P488: Waterfall merupakan model pengembangan perangkat lunak yang menyusun tahapan secara berurutan. Setiap tahap menghasilkan keluaran yang menjadi dasar tahap berikutnya. Dalam siklus pengembangan perangkat lunak, kegiatan tersebut mencakup perencanaan, analisis, perancangan, pengodean, pengujian, penerapan, dan pemeliharaan.(Gita Jackson, n.d.)
+P489: Model ini digunakan dalam penelitian untuk menjaga keterkaitan antara kebutuhan eksperimen, rancangan aplikasi, implementasi, dan pengujian. Kebutuhan utama ditetapkan sebelum pengodean, sedangkan perubahan yang diperlukan didokumentasikan agar rancangan dan implementasi tetap konsisten.
+P490: Tahapan Pengembangan Sistem
+P491: Mengacu pada kegiatan dalam siklus pengembangan perangkat lunak, tahapan penelitian ini dikelompokkan menjadi lima bagian berikut.(Gita Jackson, n.d.)
+P492: Analisis kebutuhan, yaitu menetapkan fungsi aplikasi, karakteristik dataset, dan kebutuhan pengukuran algoritma.
+P493: Perancangan sistem, yaitu menyusun arsitektur, alur algoritma, struktur data, penyimpanan hasil, dan antarmuka.
+P494: Implementasi, yaitu menerjemahkan rancangan menjadi aplikasi beserta kedua implementasi Dijkstra.
+P495: Pengujian, yaitu memeriksa fungsi aplikasi, ketepatan hasil algoritma, dan kesesuaian mekanisme pengukuran.
+P496: Pengoperasian dan pemeliharaan, yaitu menjalankan aplikasi untuk eksperimen serta memperbaiki kesalahan yang ditemukan.
+P497: Pembagian tersebut menjadi dasar pelaksanaan pengembangan. Rincian rancangan disajikan pada Bab IV, sedangkan implementasi dan hasil pengujian dibahas pada Bab V.
+P498: Pemodelan dan Perancangan Sistem
+P499: Pemodelan sistem digunakan untuk menjelaskan kebutuhan, alur proses, interaksi komponen, dan struktur data sebelum implementasi. Dalam penelitian ini, pemodelan menjadi dasar perancangan aplikasi navigasi dan pengujian algoritma Dijkstra.
+P500: Diagram Alir atau Flowchart
+P501: Diagram alir atau flowchart merupakan representasi grafis dari urutan langkah suatu proses. Simbol dan garis penghubung digunakan untuk menunjukkan kegiatan, keputusan, serta arah pelaksanaan proses.
+P502: Dalam penelitian ini, diagram alir digunakan untuk menggambarkan tahapan Dijkstra standar dan optimasi, mulai dari inisialisasi, pemilihan simpul, relaksasi sisi, hingga penghentian pencarian. Diagram tersebut membantu memperjelas perbedaan mekanisme kedua implementasi.
+P503: Diagram Use Case
+P504: Diagram use case menggambarkan fungsi yang disediakan sistem dan hubungan fungsi tersebut dengan aktor. Setiap use case menyatakan tindakan atau layanan sistem yang berkaitan dengan kebutuhan pengguna.
+P505: Dalam penelitian ini, diagram use case digunakan untuk memodelkan kegiatan memilih dataset, mencari rute, membandingkan algoritma, menjalankan pengujian, dan mengekspor hasil. Dengan demikian, diagram memberikan gambaran ruang lingkup fungsi aplikasi dari sudut pandang pengguna.
+P506: Diagram Activity dan Sequence
+P507: Diagram activity menggambarkan alur kegiatan, termasuk percabangan dan urutan tindakan. Diagram sequence menjelaskan pertukaran pesan antarkomponen berdasarkan urutan interaksi. Keduanya digunakan untuk memperinci perilaku sistem.
+P508: Dalam penelitian ini, diagram activity digunakan untuk menjelaskan alur pencarian rute dan pelaksanaan eksperimen. Diagram sequence digunakan untuk menggambarkan interaksi antara pengguna, antarmuka web, layanan backend, mesin algoritma, dan penyimpanan hasil.
+P509: Perancangan Data dan Hubungan Antardata
+P510: Perancangan data menetapkan objek data, atribut, dan hubungan yang diperlukan sistem. Entity Relationship Diagram atau ERD dapat digunakan untuk menggambarkan entitas beserta hubungan antardata secara visual.
+P511: Dalam penelitian ini, rancangan data mencakup dataset, simpul, sisi, eksperimen, dan hasil setiap pengujian. Apabila penyimpanan menggunakan Firestore, rancangan fisiknya disesuaikan menjadi koleksi dan dokumen. Hubungan konseptual tetap dijelaskan agar keterkaitan hasil eksperimen dengan dataset dan versi algoritma dapat ditelusuri.
+P512: Perancangan Antarmuka Pengguna
+P513: Perancangan antarmuka mengatur penyajian informasi dan kontrol yang digunakan untuk berinteraksi dengan aplikasi. ((WAI), n.d.) menekankan penggunaan label yang jelas, navigasi yang mudah dikenali, serta umpan balik atas tindakan pengguna.
+P514: Dalam penelitian ini, antarmuka dirancang untuk menyediakan pemilihan titik awal–tujuan, visualisasi jalur, tabel perbandingan, dan hasil eksperimen. Informasi status pencarian, kesalahan input, serta kondisi jalur tidak tersedia ditampilkan secara jelas. Rancangan tersebut menjadi acuan implementasi antarmuka pada Bab V.
+P515: Teknologi Pendukung
+P516: Teknologi pendukung digunakan untuk membangun antarmuka, menjalankan algoritma, serta mengelola hasil eksperimen. Sistem dirancang dengan memisahkan fungsi tampilan dan pemrosesan agar pengukuran kinerja algoritma dapat dilakukan secara terisolasi.
+P517: Arsitektur Client–Server dan API
+P518: Arsitektur client–server membagi sistem menjadi bagian yang mengirimkan permintaan dan bagian yang memproses permintaan tersebut. Dalam aplikasi ini, peramban bertindak sebagai klien, sedangkan backend menyediakan layanan pengolahan data dan pencarian jalur melalui Application Programming Interface atau API.
+P519: Klien mengirimkan identitas dataset, titik awal, dan titik tujuan kepada backend. Backend menjalankan algoritma dan mengembalikan jalur serta metrik pengujian untuk ditampilkan. Waktu komunikasi API dipisahkan dari waktu eksekusi algoritma.
+P520: Nuxt dan TypeScript
+P521: Nuxt merupakan kerangka kerja berbasis Vue untuk pengembangan aplikasi web. TypeScript menyediakan pemeriksaan tipe pada kode JavaScript sehingga struktur data dapat didefinisikan secara eksplisit. Rujukan teknis tersedia melalui (“Introduction · Get Started with Nuxt v4,” n.d.) dan (“Handbook - The TypeScript Handbook,” n.d.)
+P522: Dalam penelitian ini, Nuxt digunakan untuk membangun halaman simulasi, perbandingan, dan riwayat eksperimen. TypeScript digunakan untuk mendefinisikan struktur data simpul, sisi, permintaan pencarian, dan hasil pengujian agar pengolahan data pada antarmuka lebih konsisten.
+P523: Python dan FastAPI
+P524: Python digunakan untuk mengimplementasikan Dijkstra standar, Dijkstra yang dioptimasi, serta proses pengujian. Modul heapq menyediakan operasi antrean berbasis min-heap yang dapat digunakan dalam implementasi optimasi. FastAPI digunakan untuk menyediakan layanan API yang menghubungkan antarmuka dengan proses algoritma. Rujukan tersedia pada (“heapq — Heap queue algorithm,” n.d.) dan (“FastAPI¶,” n.d.)
+P525: Pemisahan layanan API dan mesin algoritma memungkinkan pengukuran dilakukan pada fungsi pencarian setelah graf tersedia di memori. Hasil komputasi kemudian diteruskan untuk penyimpanan dan penampilan.
+P526: Penyimpanan Data Eksperimen
+P527: Penyimpanan data eksperimen diperlukan untuk mempertahankan hasil pengujian agar dapat ditinjau dan dianalisis kembali. Data yang disimpan mencakup identitas dataset, versi algoritma, pasangan titik awal–tujuan, konfigurasi pengulangan, hasil setiap eksekusi, dan statistik ringkasan.
+P528: Firestore merupakan salah satu pilihan penyimpanan berbasis dokumen yang mengorganisasikan data dalam koleksi. Penggunaannya perlu mengikuti struktur data eksperimen yang dirancang. (“Model data Cloud Firestore  |  Firebase,” n.d.)
+P529: Dalam penelitian ini, penyimpanan ditempatkan setelah proses pengukuran selesai. Dengan demikian, durasi penulisan data tidak menjadi bagian dari waktu eksekusi algoritma. Pemilihan penyimpanan final disesuaikan dengan implementasi sistem.
+P530: Pustaka Visualisasi Graf atau Peta
+P531: Visualisasi digunakan untuk menampilkan hubungan antarsimpul dan jalur hasil pencarian. Apabila dataset memiliki koordinat geografis, pustaka peta seperti Leaflet dapat digunakan untuk menampilkan lokasi serta garis penghubung.
+P532: Dalam penelitian ini, jalur hasil pencarian ditampilkan dengan penanda yang berbeda agar mudah dibedakan dari jaringan lainnya. Metrik kedua implementasi disajikan dalam tabel atau grafik perbandingan.
+P533: Hasil eksperimen juga disediakan dalam format Comma-Separated Values atau CSV. Format ini memungkinkan data berbentuk baris dan kolom diekspor untuk pengolahan lanjutan. Python menyediakan modul csv untuk membaca dan menulis format tersebut.
+P534: Pengujian Perangkat Lunak
+P535: Pengujian perangkat lunak dilakukan untuk memeriksa kesesuaian perilaku sistem dengan kebutuhan yang ditetapkan. Dalam penelitian ini, pengujian mencakup fungsi aplikasi, ketepatan algoritma, hubungan antarkomponen, dan kestabilan hasil setelah perubahan kode.
+P536: Pengujian Fungsional
+P537: Pengujian fungsional dengan pendekatan black box memeriksa keluaran sistem berdasarkan masukan dan hasil yang diharapkan, tanpa menelaah struktur internal kode.
+P538: Dalam penelitian ini, pengujian meliputi pemilihan dataset, penentuan titik awal–tujuan, penampilan jalur, perbandingan algoritma, penyimpanan riwayat, dan ekspor CSV. Setiap kasus uji memuat masukan, hasil yang diharapkan, hasil aktual, serta status keberhasilan.
+P539: Pengujian Unit Algoritma
+P540: Pengujian unit memeriksa bagian program secara terpisah. Pada mesin Dijkstra, pengujian menggunakan graf sederhana dengan jalur dan total bobot minimum yang telah diketahui.
+P541: Kasus pengujian mencakup jalur tunggal, beberapa jalur dengan bobot minimum yang sama, titik awal sama dengan tujuan, tujuan tidak terjangkau, sisi berbobot nol, dan penolakan bobot negatif. Pengujian tersebut digunakan untuk memeriksa ketepatan setiap implementasi sebelum eksperimen kinerja dilakukan.
+P542: Pengujian Integrasi
+P543: Pengujian integrasi memeriksa pertukaran data dan kerja sama antarkomponen. Dalam penelitian ini, pengujian mencakup alur permintaan dari antarmuka menuju API, pemrosesan algoritma, penyimpanan hasil, dan penampilan kembali data eksperimen.
+P544: Pemeriksaan dilakukan untuk memastikan bahwa identitas dataset, titik awal–tujuan, jalur, dan metrik diteruskan secara konsisten. Kegagalan penyimpanan juga perlu ditangani tanpa mengubah hasil pengukuran algoritma yang telah selesai.
+P545: Pengujian Regresi dan Kasus Batas
+P546: Pengujian regresi dilakukan dengan menjalankan kembali kasus uji setelah perubahan kode untuk mendeteksi perubahan perilaku yang tidak diharapkan.
+P547: Dalam penelitian ini, kasus uji yang sebelumnya berhasil digunakan kembali setelah perbaikan atau optimasi. Pemeriksaan mencakup validitas jalur, kesesuaian total bobot dengan hasil acuan, serta konsistensi definisi metrik. Dengan demikian, peningkatan efisiensi tetap disertai pemeriksaan ketepatan hasil.
+P548: Kerangka Pemikiran
+P549: Kerangka pemikiran menjelaskan hubungan antara permasalahan, landasan teori, dan tahapan penyelesaian yang digunakan dalam penelitian. Penelitian ini berangkat dari kebutuhan untuk mengevaluasi efisiensi algoritma Dijkstra dalam menentukan jalur terpendek pada simulasi jaringan jalan Kabupaten Bandung.
+P550: Jaringan jalan dimodelkan sebagai graf berbobot nonnegatif, kemudian diproses menggunakan Dijkstra standar dan Dijkstra yang dioptimasi. Optimasi diterapkan melalui penggunaan adjacency list, antrean prioritas berbasis min-heap, serta penghentian pencarian ketika jarak menuju simpul tujuan telah final. Aplikasi berbasis web digunakan sebagai sarana visualisasi dan pelaksanaan eksperimen.
+P551: Kedua implementasi diuji menggunakan dataset dan pasangan titik awal–tujuan yang sama. Validitas jalur dan kesetaraan total bobot diperiksa terlebih dahulu, kemudian kinerjanya dibandingkan berdasarkan waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa. Hasil pengujian berulang dianalisis untuk menjelaskan manfaat serta keterbatasan optimasi pada kondisi eksperimen yang ditetapkan.
+P552: Alur kerangka pemikiran penelitian dirangkum sebagai berikut:
+P554: Gambar 2.1 Kerangka Pemikiran Penelitian
+P556: ANALISIS SISTEM
+P558: Analisis Objek Penelitian
+P559: Objek penelitian ini adalah kinerja algoritma Dijkstra dalam menentukan jalur terpendek pada jaringan jalan nyata di Kota Bandung. Data jalan direpresentasikan sebagai graf berarah berbobot nonnegatif dan digunakan sebagai masukan bagi implementasi Dijkstra standar serta Dijkstra yang dioptimasi.
+P560: Analisis objek penelitian mencakup cakupan wilayah, sumber data, karakteristik dataset, serta proses pembentukan dan validasi graf. Analisis tersebut diperlukan agar data yang digunakan sesuai dengan tujuan penelitian dan dapat mendukung eksperimen yang dapat ditelusuri.
+P561: Gambaran Umum Objek Penelitian
+P562: Jaringan jalan yang dikaji merupakan jaringan kendaraan di wilayah Kota Bandung yang tercatat dalam OpenStreetMap. Jaringan tersebut memuat hubungan antartitik, arah perjalanan, dan panjang ruas jalan. Dalam model graf, simpul merepresentasikan persimpangan, ujung jalan, atau titik yang dipertahankan oleh proses penyederhanaan topologi. Sisi merepresentasikan hubungan perjalanan antarsimpul dengan bobot panjang ruas dalam meter.
+P563: Penelitian difokuskan pada proses komputasi pencarian jalur. Kondisi lalu lintas, cuaca, dan perubahan penutupan jalan secara waktu nyata tidak dimasukkan ke dalam model. Oleh karena itu, hasil pencarian menunjukkan jalur dengan total jarak minimum berdasarkan hubungan dan bobot yang tersedia dalam dataset.
+P564: Kedua implementasi Dijkstra dijalankan pada input yang sama. Hasil pencarian diperiksa ketepatannya, kemudian dibandingkan berdasarkan waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa.
+P565: Cakupan Wilayah dan Sumber Data
+P566: Cakupan penelitian meliputi jaringan jalan kendaraan dalam batas administratif Kota Bandung, Jawa Barat. Sumber data yang digunakan adalah OpenStreetMap, dengan pengambilan dan pengolahan jaringan melalui OSMnx versi 2.1.1. Batas wilayah menggunakan objek relation OpenStreetMap bernomor 13290062 yang dikenali sebagai Bandung City.
+P567: Pengambilan jaringan menggunakan filter drive untuk memperoleh jaringan jalan kendaraan. Penyederhanaan topologi diterapkan untuk mengurangi titik perantara yang tidak diperlukan sebagai simpul pencarian, dengan tetap mempertahankan informasi panjang ruas. Seluruh komponen jaringan dipertahankan, termasuk bagian yang tidak saling terhubung.
+P568: Berdasarkan metadata, proses ekstraksi dataset selesai pada 16 September 2026 waktu Indonesia bagian barat. Tanggal tersebut merupakan waktu penyelesaian ekstraksi, bukan tanggal pembaruan setiap ruas jalan dalam OpenStreetMap. Sumber data, versi perangkat pengolahan, parameter ekstraksi, dan identitas batas wilayah dicatat untuk mendukung penelusuran dataset.
+P569: Hasil pencarian berlaku pada graf yang diekstrak. Rute yang melewati wilayah di luar cakupan graf tidak dijamin tercakup. Selain itu, data OpenStreetMap tidak dianggap sebagai jaminan kelengkapan seluruh jalan maupun ketepatan seluruh pembatasan kendaraan di lapangan.
+P570: Karakteristik Dataset Jaringan Jalan
+P571: Dataset hasil pengolahan berbentuk graf berarah berbobot nonnegatif. Ringkasan karakteristiknya disajikan pada Tabel 3.1.
+P572: Table 3.1 Karakteristik Dataset Jaringan Jalan Kota Bandung
+P574: Jumlah sisi berarah tidak sama dengan jumlah ruas jalan fisik. Jalan yang dapat dilalui dalam kedua arah umumnya direpresentasikan oleh dua sisi dengan arah berlawanan. Selain itu, tidak setiap simpul merupakan satu persimpangan fisik karena simpul juga dapat berupa ujung jalan atau titik lain yang dipertahankan selama penyederhanaan.
+P575: Komponen terhubung lemah menunjukkan kelompok simpul yang terhubung apabila arah sisi diabaikan. Komponen terhubung kuat menunjukkan kelompok simpul yang setiap anggotanya dapat saling dijangkau dengan mengikuti arah sisi. Keberadaan beberapa komponen memungkinkan pasangan titik awal–tujuan tertentu tidak memiliki jalur yang tersedia.
+P576: Pembentukan dan Validasi Graf
+P577: Pembentukan graf dimulai dengan penetapan batas administratif Kota Bandung, kemudian dilanjutkan dengan pengambilan jaringan kendaraan menggunakan OSMnx. Jaringan disederhanakan secara topologis dan seluruh komponennya dipertahankan. Arah sisi mengikuti hasil pengolahan data jalan, sedangkan panjang ruas digunakan sebagai bobot pencarian.
+P578: Hasil pengolahan disimpan dalam format GraphML untuk mempertahankan atribut dan geometri jaringan. Data kemudian dikonversi menjadi JSON yang memuat metadata, simpul, dan sisi untuk digunakan oleh aplikasi. Tabel simpul serta sisi juga diekspor ke CSV sebagai data pendukung analisis.
+P579: Validasi dilakukan terhadap struktur dataset, keunikan identitas simpul, keberadaan simpul yang dirujuk setiap sisi, serta nilai bobot yang harus berhingga dan nonnegatif. Dataset dinyatakan lolos pemeriksaan tersebut dan berhasil dimuat oleh backend dengan jumlah 27.172 simpul serta 61.630 sisi berarah.
+P580: Validasi struktur tidak menggantikan pemeriksaan kesesuaian kondisi jalan di lapangan. Oleh karena itu, hasil penelitian diinterpretasikan berdasarkan kualitas dan cakupan data yang digunakan. Pemeriksaan ketepatan algoritma dilakukan secara terpisah melalui kasus uji dan perbandingan hasil pencarian.
+P581: Analisis Proses Pencarian Rute Standar
+P582: Proses pencarian rute standar digunakan sebagai baseline untuk mengevaluasi implementasi Dijkstra yang dioptimasi. Baseline merupakan implementasi pembanding dalam penelitian, bukan sistem navigasi milik suatu instansi. Analisis mencakup alur pencarian, karakteristik implementasi, dan potensi keterbatasan komputasinya.
+P583: Alur Pencarian Rute
+P584: Proses dimulai dengan pemilihan titik awal dan tujuan pada dataset jaringan jalan Kota Bandung. Sistem memeriksa keberadaan kedua titik sebelum menjalankan algoritma. Graf telah tersedia di memori dalam bentuk adjacency list.
+P585: Jarak titik awal ditetapkan sebesar nol, sedangkan jarak simpul lainnya bernilai tak hingga. Algoritma kemudian memilih simpul dengan jarak sementara terkecil dari himpunan simpul yang belum diproses. Sisi keluar dari simpul tersebut diperiksa untuk menentukan kemungkinan perbaikan jarak menuju simpul tetangga. Apabila ditemukan jarak yang lebih kecil, sistem memperbarui jarak dan mencatat simpul pendahulunya.
+P586: Proses diulang hingga seluruh simpul telah diproses atau jarak terkecil pada himpunan yang tersisa bernilai tak hingga. Setelah pencarian selesai, jalur menuju tujuan dibentuk melalui penelusuran simpul pendahulu. Apabila tujuan tidak terjangkau, sistem mengembalikan status tidak tersedia jalur.
+P588: Gambar 3.1 Flowchart Proses Pencarian Rute Standar
+P589: Karakteristik Implementasi Dijkstra Standa
+P590: Karakteristik baseline yang digunakan dalam penelitian disajikan pada Tabel 3.2.
+P591: Table 3.2 Karakteristik Implementasi Dijkstra Standar
+P593: Baseline menghitung jarak menuju seluruh simpul yang dapat dijangkau dari sumber, meskipun keluaran aplikasi hanya menampilkan rute menuju tujuan yang dipilih. Karakteristik tersebut menjadi pembeda terhadap implementasi optimasi yang menghentikan pencarian ketika jarak tujuan telah final.
+P594: Pada implementasi saat ini, pengukuran waktu mencakup inisialisasi struktur pencarian dan proses iterasi algoritma. Validasi titik awal–tujuan, pembentukan graf, rekonstruksi jalur, serta penyusunan respons berada di luar interval pengukuran. Batas pengukuran yang sama digunakan pada kedua implementasi.
+P595: Analisis Potensi Keterbatasan
+P596: Pemindaian linear mengharuskan algoritma memeriksa jarak simpul yang belum diproses setiap kali memilih simpul minimum. Pada graf berukuran besar, pekerjaan pemilihan tersebut berpotensi meningkatkan waktu komputasi.
+P597: Selain itu, baseline tetap melanjutkan pencarian setelah jarak menuju tujuan telah final. Untuk kebutuhan satu titik awal–tujuan, proses lanjutan ini dapat menyebabkan lebih banyak simpul dan sisi diperiksa dibandingkan pencarian yang menerapkan penghentian dini.
+P598: Kedua aspek tersebut menjadi dasar pengujian penggunaan min-heap dan penghentian dini. Perbedaan kinerja yang diperoleh akan mencerminkan pengaruh gabungan perubahan struktur pemilihan simpul dan cakupan penghentian pencarian. Besarnya perubahan belum disimpulkan pada tahap analisis karena harus didasarkan pada hasil eksperimen.
+P599: Analisis Permasalahan
+P600: Analisis permasalahan dilakukan untuk mengidentifikasi faktor yang berpotensi memengaruhi kinerja pencarian jalur pada jaringan jalan Kota Bandung. Analisis didasarkan pada karakteristik dataset dan implementasi Dijkstra standar yang digunakan sebagai baseline. Faktor yang diidentifikasi menjadi dasar perancangan optimasi dan pengendalian eksperimen.
+P601: Identifikasi Faktor yang Memengaruhi Kinerja
+P602: Berdasarkan pemeriksaan implementasi, terdapat beberapa faktor yang perlu diperhatikan sebagai berikut:
+P603: Mekanisme Pemilihan Simpul
+P604: Baseline memilih simpul berjarak minimum melalui pemindaian linear terhadap himpunan simpul yang belum diproses. Pemindaian berulang berpotensi meningkatkan pekerjaan komputasi ketika jumlah simpul bertambah.
+P605: Kondisi Penghentian Pencarian
+P606: Baseline tetap memproses simpul yang dapat dijangkau meskipun jarak tujuan telah final. Untuk pencarian satu titik awal–tujuan, proses lanjutan tersebut berpotensi menambah jumlah simpul dan sisi yang diperiksa.
+P607: Karakteristik Graf dan Pemasangan Rute
+P608: Dataset memiliki 27.172 simpul dan 61.630 sisi berarah. Jumlah sisi keluar, arah jalan, keterhubungan jaringan, serta posisi sumber dan tujuan dapat memengaruhi pekerjaan pencarian. Jarak geografis yang dekat tidak selalu berarti kedua titik mudah dijangkau melalui jaringan jalan.
+P609: Kondisi Pelaksanaan Pengujian
+P610: Beban perangkat, urutan eksekusi, dan batas pengukuran dapat memengaruhi waktu yang tercatat. Oleh karena itu, kondisi pengujian perlu dikendalikan agar perbedaan waktu dapat diinterpretasikan secara tepat.
+P611: Kedua implementasi menggunakan adjacency list yang sama. Dengan demikian, penelitian ini mengevaluasi perubahan mekanisme pemilihan simpul dan penghentian pencarian, bukan perbedaan representasi graf.
+P612: Analisis Sebab Akibat
+P613: Analisis sebab–akibat disajikan menggunakan diagram fishbone untuk mengelompokkan faktor yang berpotensi memengaruhi kinerja Dijkstra. Faktor tersebut dibagi menjadi mekanisme pencarian, karakteristik graf, karakteristik pasangan rute, dan kondisi pengujian.
+P616: Gambar 3.2 Analisis Faktor yang Berpotensi Memengaruhi Kinerja Dijkstra
+P618: Berdasarkan pengelompokan tersebut, pemecahan masalah difokuskan pada penggunaan min-heap untuk pemilihan simpul minimum dan penghentian dini ketika jarak tujuan telah final. Karakteristik graf serta pasangan rute digunakan sebagai bagian dari skenario pengujian, sedangkan kondisi pelaksanaan dikendalikan untuk mengurangi gangguan terhadap pengukuran.
+P619: Diagram tersebut merupakan hasil analisis awal, bukan bukti bahwa seluruh faktor telah menyebabkan penurunan kinerja. Pengaruh perubahan implementasi akan dinilai melalui eksperimen dengan tetap memeriksa validitas jalur dan kesetaraan total bobot.
+P620: Analisis Pemecahan Masalah
+P621: Pemecahan masalah diarahkan pada perubahan mekanisme pemilihan simpul dan penghentian pencarian. Implementasi optimasi menggunakan antrean prioritas berbasis min-heap serta penghentian dini ketika jarak tujuan telah final. Kedua implementasi tetap menggunakan graf yang sama dalam bentuk adjacency list agar perbandingan dilakukan pada hubungan jalan dan bobot yang identik.
+P622: Usulan Teknik Optimasi
+P623: Penggunaan min-heap menggantikan pemindaian linear untuk memilih simpul dengan jarak sementara terkecil. Ketika relaksasi menghasilkan jarak yang lebih rendah, informasi jarak dan simpul dimasukkan ke antrean. Entri yang sudah tidak sesuai dengan jarak terbaik atau mengacu pada simpul yang telah diproses dilewati.
+P624: Penghentian dini diterapkan ketika simpul tujuan dikeluarkan dari antrean sebagai entri minimum yang sah. Pada kondisi tersebut, jarak tujuan telah final sehingga pencarian tidak perlu dilanjutkan ke simpul lainnya. Perbedaan kedua implementasi dirangkum pada Tabel 3.3.
+P625: Table 3.3 Perbandingan Mekanisme Implementasi Dijkstra
+P627: Simulasi Perhitungan Dijkstra
+P628: Simulasi berikut menggunakan graf ilustrasi, bukan potongan dataset Kota Bandung. Contoh sederhana digunakan untuk memperlihatkan perbedaan proses pencarian tanpa menganggapnya sebagai hasil eksperimen penelitian.
+P629: Graf terdiri atas lima simpul, yaitu A, B, C, D, dan E. Titik awal ditetapkan pada A dan tujuan pada D. Seluruh sisi pada contoh ini berarah sesuai Tabel 3.4.
+P630: Table 3.4 Sisi dan Bobot Graf Ilustrasi
+P633: Gambar 3.3 Graf Ilustrasi Perhitungan Dijkstra
+P635: Pada tahap awal, jarak A bernilai nol dan simpul lainnya bernilai tak hingga. Hasil pembaruan jarak ditunjukkan pada Tabel 3.5.
+P636: Table 3.5 Simulasi Pembaruan Jarak
+P638: Kedua implementasi menghasilkan jalur A → B → C → D dengan total bobot:
+P640: Baseline memproses lima simpul dan memeriksa enam sisi. Implementasi optimasi memproses empat simpul dan memeriksa lima sisi karena pencarian berhenti sebelum memeriksa sisi keluar D. Entri heap yang sudah tidak berlaku dilewati dan tidak dihitung sebagai simpul yang diproses.
+P641: Contoh ini memperlihatkan pengurangan pekerjaan pencarian pada satu kasus. Besarnya perubahan waktu eksekusi tetap harus diukur melalui eksperimen pada dataset penelitian.
+P642: Analisis Ketepatan Hasil
+P643: Ketepatan hasil diperiksa dengan memastikan bahwa jalur dimulai dari sumber, berakhir pada tujuan, dan seluruh perpindahan mengikuti sisi yang tersedia. Total bobot dihitung dari sisi yang dilalui dan dibandingkan dengan biaya yang dilaporkan algoritma.
+P644: Pada simulasi tersebut, kedua implementasi menghasilkan biaya minimum sebesar tujuh. Penghentian pada versi optimasi dilakukan setelah jarak D final, sehingga simpul E tidak perlu diproses untuk menjawab pencarian A menuju D.
+P645: Pengujian selanjutnya juga mencakup tujuan tidak terjangkau, sumber sama dengan tujuan, serta beberapa jalur dengan bobot minimum yang sama. Kesamaan total bobot antarkedua implementasi diperiksa bersama hasil acuan pada graf sederhana agar kesalahan yang mungkin terjadi pada keduanya tidak terlewat.
+P646: Analisis Kebutuhan Sistem
+P647: Analisis kebutuhan sistem dilakukan untuk menetapkan fungsi dan karakteristik aplikasi yang mendukung pencarian jalur serta perbandingan kinerja algoritma Dijkstra. Kebutuhan dibagi menjadi kebutuhan fungsional dan nonfungsional.
+P648: Kebutuhan Fungsional
+P649: Kebutuhan fungsional menjelaskan layanan yang harus disediakan aplikasi. Rinciannya disajikan pada Tabel 3.6.
+P650: Table 3.6 Kebutuhan Fungsional Sistem
+P652: Kebutuhan tersebut menjadi dasar perancangan fungsi aplikasi dan penyusunan kasus pengujian. Pemenuhannya diperiksa pada tahap implementasi dan pengujian sistem.
+P653: Kebuthan Non-Fungsional
+P654: Kebutuhan nonfungsional menjelaskan kualitas dan batasan operasional yang harus dipenuhi sistem. Rinciannya disajikan pada Tabel 3.7.
+P655: Table 3.7 Kebutuhan Non-Fungsional Sistem
+P657: Kebutuhan nonfungsional tersebut mendukung pengujian yang dapat dipertanggungjawabkan. Keberhasilan sistem dinilai berdasarkan ketepatan fungsi dan konsistensi pelaksanaan eksperimen, tanpa menetapkan besarnya peningkatan performa sebelum pengujian dilakukan.
+P658: Rancangan Eksperimen
+P659: Eksperimen dirancang untuk membandingkan kinerja Dijkstra standar dan Dijkstra optimasi pada jaringan jalan Kota Bandung. Pengujian menggunakan input yang sama, pengulangan terkontrol, dan pemeriksaan ketepatan hasil sebelum dilakukan analisis kinerja.
+P660: Skenario dan Variabel Pengujian
+P661: Dataset utama terdiri atas 27.172 simpul dan 61.630 sisi berarah. Kasus pengujian mencakup pasangan rute yang dapat dijangkau, pasangan yang tidak dapat dijangkau, serta titik awal yang sama dengan tujuan. Untuk pasangan yang dapat dijangkau, variasi lokasi sumber dan tujuan digunakan agar pengujian tidak terbatas pada satu bagian jaringan.
+P662: Table 3.8 Variabel Eksperimen
+P664: Daftar pasangan rute, jumlah pengulangan, serta nilai seed untuk pemilihan acak ditetapkan dan disimpan sebelum eksperimen final. Jika digunakan beberapa ukuran graf, setiap subset dibentuk dari dataset utama dan didokumentasikan jumlah simpul, sisi, serta cara pembentukannya.
+P665: Prosedur Pelaksanaan Eksperimen
+P666: Pelaksanaan eksperimen direncanakan melalui tahapan berikut:
+P667: Memuat dan memvalidasi dataset sebelum pengukuran dimulai.
+P668: Menetapkan pasangan titik awal–tujuan serta konfigurasi pengulangan.
+P669: Melakukan pemanasan awal yang hasilnya tidak dimasukkan ke data utama.
+P670: Menjalankan kedua implementasi secara bergantian atau dalam urutan acak pada kasus yang sama, tanpa menjalankan keduanya secara bersamaan.
+P671: Mengukur waktu inisialisasi dan iterasi pencarian serta mencatat jumlah simpul dan sisi yang diproses.
+P672: Memeriksa hasil pencarian setelah interval pengukuran selesai.
+P673: Menyimpan seluruh hasil pengulangan beserta konfigurasi dan status pengujiannya.
+P674: Menghitung statistik dan mengekspor data untuk analisis.
+P675: Aktivitas komputasi lain diupayakan tetap minimum selama eksperimen. Apabila terdapat kesalahan, hasilnya dicatat sebagai kasus gagal dan tidak diperlakukan sebagai waktu eksekusi yang berhasil.
+P676: Teknik Analisis Hasil
+P677: Analisis diawali dengan pemeriksaan validitas jalur, kesetaraan total bobot, dan kesesuaian status keterjangkauan. Kasus yang menghasilkan ketidaksesuaian dipisahkan untuk ditelusuri sebelum digunakan sebagai dasar kesimpulan kinerja.
+P678: Waktu eksekusi dianalisis menggunakan rata-rata, median, minimum, maksimum, dan simpangan baku untuk setiap pasangan rute. Jumlah simpul serta sisi yang diproses dibandingkan pada input yang sama. Hasil kemudian disajikan dalam tabel, grafik, dan persentase perubahan terhadap baseline.
+P679: Kasus rute terjangkau, tidak terjangkau, dan sumber sama dengan tujuan dianalisis secara terpisah karena memiliki karakteristik pencarian berbeda. Perbandingan antarukuran graf hanya dilakukan apabila subset pengujian telah dibentuk dan didokumentasikan.
+P680: Kesimpulan dibatasi pada dataset dan lingkungan eksperimen yang digunakan. Perubahan kinerja diinterpretasikan sebagai pengaruh gabungan penggunaan min-heap dan penghentian dini, bukan kontribusi masing-masing teknik secara terpisah.
+P681: Usulan Sistem
+P682: Sistem yang diusulkan merupakan aplikasi navigasi berbasis web untuk menentukan jalur terpendek dan membandingkan kinerja dua implementasi Dijkstra pada jaringan jalan Kota Bandung. Aplikasi mengintegrasikan pemilihan rute, visualisasi hasil, pengukuran kinerja, serta pengelolaan data eksperimen.
+P683: Gambaran Umum Sistem Usulan
+P684: Sistem terdiri atas antarmuka pengguna, layanan API, mesin algoritma, dan penyimpanan hasil eksperimen. Antarmuka digunakan untuk memilih dataset, menentukan titik awal–tujuan, menjalankan pencarian, serta meninjau hasil pengujian. Layanan API menghubungkan permintaan pengguna dengan proses pada backend.
+P685: Mesin algoritma menyediakan Dijkstra standar dengan pemilihan simpul secara linear dan Dijkstra optimasi berbasis min-heap serta penghentian dini. Keduanya menggunakan graf yang sama dalam bentuk adjacency list. Dataset dimuat ke memori sebelum pencarian dilakukan agar waktu pemuatan tidak memengaruhi pengukuran algoritma.
+P686: Hasil pencarian mencakup jalur, total bobot, waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa. Pada mode perbandingan, sistem menampilkan hasil kedua implementasi beserta status kesetaraan biaya. Pada mode eksperimen, sistem mencatat konfigurasi, hasil setiap pengulangan, dan statistik ringkasan untuk ditinjau serta diekspor.
+P687: Alur Penggunaan Sistem Usulan
+P688: Alur penggunaan sistem untuk pencarian dan perbandingan rute adalah sebagai berikut:
+P689: Pengguna memilih dataset jaringan jalan.
+P690: Sistem menampilkan informasi dataset dan jaringan pada antarmuka.
+P691: Pengguna menentukan titik awal, titik tujuan, serta mode pencarian.
+P692: Sistem memvalidasi masukan dan menjalankan algoritma sesuai mode yang dipilih.
+P693: Sistem menampilkan jalur, total bobot, status pencarian, serta metrik kinerja.
+P694: Pada mode perbandingan, sistem menyajikan hasil kedua implementasi dan menandai ketidaksesuaian yang ditemukan.
+P695: Untuk eksperimen berkelompok, pengguna menetapkan pasangan rute dan jumlah pengulangan. Sistem menjalankan pengujian pada input yang sama, memeriksa ketepatan hasil, serta menyimpan data mentah dan statistik. Pengguna kemudian dapat membuka riwayat dan mengekspor hasil dalam format CSV.
+P696: Usulan sistem ini menjadi dasar perancangan pada Bab IV. Diagram interaksi, arsitektur, struktur penyimpanan, dan antarmuka dijabarkan lebih lanjut agar implementasi dapat ditelusuri terhadap kebutuhan yang telah ditetapkan.
+P698: Gambar 3.4 Activity Diagram Pencarian dan Perbandingan Rute
+P700: PERANCANGAN SISTEM
+P702: Kebutuhan Perangkat Keras
+P703: Perangkat keras digunakan untuk pengolahan dataset jaringan jalan, pengembangan aplikasi, dan pelaksanaan eksperimen algoritma Dijkstra. Spesifikasi komputer yang digunakan dalam lingkungan pengembangan saat ini disajikan pada Tabel 4.1.
+P704: Table 4.1 Spesifikasi Perangkat Keras
+P706: Prosesor digunakan untuk menjalankan layanan backend dan perhitungan algoritma. Memori utama digunakan untuk menampung graf, struktur pencarian, serta data sementara selama eksperimen. Penyimpanan digunakan untuk menyimpan aplikasi, dataset, dan hasil pengujian.
+P707: Perbandingan Dijkstra standar dan Dijkstra optimasi direncanakan menggunakan perangkat yang sama. Kedua implementasi dijalankan secara bergantian, dengan aktivitas aplikasi lain diupayakan tetap minimum untuk mengurangi gangguan terhadap pengukuran waktu. Spesifikasi perangkat pada pelaksanaan eksperimen final dicatat kembali pada Bab V.
+P708: Kebutuhan Perangkat Lunak
+P709: Perangkat lunak digunakan untuk membangun antarmuka, menyediakan layanan API, mengolah dataset, dan menjalankan eksperimen algoritma. Perangkat lunak utama yang tersedia pada lingkungan pengembangan disajikan pada Tabel 4.2.
+P710: Table 4.2 Perangkat Lunak Pendukung Sistem
+P712: Nuxt dan TypeScript digunakan untuk membangun antarmuka pemilihan rute, perbandingan algoritma, serta peninjauan hasil eksperimen. Python digunakan sebagai mesin komputasi, sedangkan FastAPI dan Uvicorn menyediakan layanan yang menghubungkan antarmuka dengan backend.
+P713: OSMnx digunakan pada tahap penyiapan dataset sebelum eksperimen. Pencarian rute pada aplikasi dilakukan oleh implementasi Dijkstra milik sistem, sehingga proses pengambilan data OpenStreetMap tidak masuk ke dalam pengukuran waktu algoritma. Leaflet digunakan untuk menyajikan jaringan dan jalur pada peta.
+P714: Penyimpanan hasil eksperimen dirancang menggunakan Firestore melalui Firebase Admin SDK. Aktivasi dan koneksi layanan tersebut perlu diverifikasi pada tahap implementasi. Versi perangkat lunak yang digunakan dalam eksperimen final dicatat kembali agar lingkungan pengujian dapat ditelusuri.
+P715: Perancangan Sistem
+P716: Perancangan sistem menjelaskan susunan komponen, interaksi pengguna, dan alur pemrosesan aplikasi. Rancangan disusun berdasarkan kebutuhan pada Bab III dengan memisahkan antarmuka, layanan API, mesin algoritma, dan penyimpanan hasil eksperimen.
+P717: Perancangan Arsitektur Sistem
+P718: Sistem menggunakan arsitektur client–server. Antarmuka berbasis Nuxt menerima masukan pengguna dan mengirimkan permintaan kepada backend FastAPI. Backend memvalidasi permintaan, mengakses graf yang tersedia di memori, dan menjalankan algoritma sesuai mode yang dipilih.
+P719: Hasil pencarian dikembalikan kepada antarmuka untuk ditampilkan sebagai jalur dan metrik. Pada pengujian berkelompok, backend mengelola pengulangan, menyusun statistik, serta menyimpan hasil eksperimen. Pembagian komponen disajikan pada Tabel 4.3.
+P720: Table 4.3 Komponen Arsitektur Sistem
+P722: Pengambilan data OpenStreetMap dilakukan secara terpisah sebelum aplikasi menjalankan eksperimen. Penyimpanan hasil dan komunikasi antarkomponen ditempatkan di luar interval pengukuran algoritma.
+P724: Gambar 4.1 Arsitektur Sistem
+P726: Perancangan Use Case
+P727: Diagram use case dirancang untuk menunjukkan fungsi aplikasi berdasarkan kebutuhan pengguna. Aktor dibedakan menjadi pengguna demo dan peneliti berdasarkan aktivitasnya. Pembagian tersebut belum berarti sistem menerapkan autentikasi atau pembatasan akses.
+P728: Table 4.4 Definisi Aktor
+P730: Table 4.5 Definisi Use Case
+P733: Gambar 4.2 Use Case Diagram
+P735: Perancangan Interaksi Komponen
+P736: Interaksi pencarian rute dimulai ketika pengguna mengirimkan pilihan dataset, sumber, tujuan, dan mode melalui antarmuka. Layanan API memvalidasi masukan dan meminta graf kepada layanan dataset. Mesin algoritma kemudian menjalankan pencarian serta menghasilkan jalur, biaya, status, dan metrik.
+P737: Pada mode perbandingan, Dijkstra standar dan optimasi dijalankan secara berurutan menggunakan input yang sama. Setelah kedua proses selesai, hasil dibandingkan dan dikembalikan kepada antarmuka. Pada eksperimen berkelompok, hasil setiap pengulangan dikumpulkan untuk penyusunan statistik dan penyimpanan.
+P738: Interaksi tersebut digambarkan melalui sequence diagram. Alur aktivitas pengguna secara umum mengacu pada diagram yang telah disajikan dalam Bab III.
+P740: Gambar 4.3 Sequence Diagram
+P742: Perancangan Alur Dijkstra Optimasi
+P743: Dijkstra optimasi menggunakan adjacency list yang sama dengan baseline. Proses diawali dengan inisialisasi jarak, pendahulu, himpunan simpul yang telah diproses, dan antrean min-heap. Titik awal dimasukkan ke antrean dengan jarak nol.
+P744: Pada setiap iterasi, algoritma mengambil entri berjarak terkecil. Entri dilewati apabila simpulnya telah diproses atau jaraknya tidak lagi sesuai dengan jarak terbaik. Simpul yang sah kemudian ditandai sebagai telah diproses dan dihitung dalam metrik simpul.
+P745: Apabila simpul tersebut merupakan tujuan, pencarian dihentikan sebelum memeriksa sisi keluarnya. Jika belum mencapai tujuan, algoritma memeriksa sisi keluar dan memperbarui jarak serta pendahulu ketika ditemukan jalur yang lebih pendek. Entri baru dimasukkan ke antrean untuk diproses pada iterasi berikutnya.
+P746: Pencarian berakhir ketika tujuan telah final atau antrean habis. Timer dihentikan sebelum rekonstruksi jalur dan penyusunan respons. Dengan rancangan tersebut, perbedaan terhadap baseline terletak pada mekanisme pemilihan simpul dan penghentian pencarian.
+P748: Gambar 4.4 Flowchart Djikstra
+P750: Perancangan Data
+P751: Perancangan data dibagi menjadi dataset jaringan jalan dan data hasil eksperimen. Dataset disimpan dalam file JSON dan dimuat ke memori saat digunakan. Hasil eksperimen dirancang untuk disimpan pada Firestore agar konfigurasi dan hasil pengujian dapat ditinjau kembali.
+P752: Struktur Dataset Jaringan Jalan
+P753: Dataset memuat metadata, simpul, dan sisi. Metadata menjelaskan identitas serta sumber jaringan, sedangkan simpul dan sisi membentuk graf untuk pencarian jalur.
+P754: Table 4.6 Struktur Utama Dataset
+P756: Setiap simpul memiliki atribut id, name, latitude, dan longitude. Setiap sisi memiliki atribut from, to, weight, dan bidirectional. Pada dataset Kota Bandung, perjalanan dua arah direpresentasikan melalui sisi berlawanan sehingga atribut bidirectional bernilai false.
+P757: Identitas simpul harus unik dalam dataset. Atribut from dan to harus merujuk pada simpul yang tersedia, sedangkan bobot harus berhingga dan nonnegatif.
+P758: Hubungan Antar Objek Data
+P759: Hubungan konseptual data sistem dirancang sebagai berikut:
+P760: Satu dataset memiliki banyak simpul dan sisi.
+P761: Setiap sisi menghubungkan satu simpul asal dengan satu simpul tujuan.
+P762: Satu dataset dapat digunakan dalam banyak eksperimen.
+P763: Satu eksperimen memiliki banyak hasil eksekusi algoritma.
+P764: Setiap hasil eksekusi mencatat dataset, versi algoritma, sumber, dan tujuan yang digunakan.
+P765: Hubungan eksperimen dengan dataset ditelusuri melalui datasetId dan datasetVersion. Hubungan tersebut merupakan referensi yang dikelola aplikasi karena dataset graf disimpan dalam file, bukan sebagai tabel di Firestore.
+P767: Gambar 4.5 Model Hubungan Data Konseptual
+P768: Struktur Penyimpanan Eksperimen
+P769: Penyimpanan Firestore menggunakan koleksi experiments. Setiap dokumen eksperimen memuat ringkasan pengujian dan memiliki subkoleksi runs untuk menyimpan hasil setiap eksekusi.
+P770: Table 4.7 Struktur Ringkasan Eksperimen
+P772: Table 4.8 Struktur Hasil Eksekusi
+P774: Data hasil eksekusi disimpan terpisah dari ringkasan agar setiap pengukuran dapat diperiksa kembali. Penulisan ke penyimpanan dilakukan di luar interval pengukuran algoritma.
+P776: Gambar 4.6 Struktur Koleksi Firestore
+P778: Perancangan Identitas Unik
+P779: Identitas dataset menggunakan nama deskriptif, seperti kota-bandung-osm-drive, disertai nomor versi. Identitas simpul mempertahankan ID dari hasil pengolahan OpenStreetMap dan disimpan sebagai string.
+P780: Identitas eksperimen dibuat menggunakan UUID versi 4 dalam bentuk heksadesimal. Identitas setiap hasil eksekusi dibentuk dengan menggabungkan identitas eksperimen dan nomor urut, menggunakan pola:
+P781: {experimentId}-run-{nomorUrut}
+P782: Pola tersebut memungkinkan setiap hasil ditelusuri ke eksperimen induknya. Perubahan dataset atau algoritma harus disertai pencatatan versi agar hasil dari konfigurasi berbeda tidak dianggap sebagai pengujian yang identik.
+P783: Perancangan Struktur Menu
+P784: Struktur menu dirancang untuk memudahkan pengguna mengakses fungsi pencarian rute, perbandingan algoritma, dan pengelolaan eksperimen. Aplikasi memiliki empat menu utama yang mengarahkan pengguna ke bagian terkait dalam satu halaman. Susunan menu disajikan pada Tabel 4.9.
+P785: Table 4.9 Struktur Menu Aplikasi
+P787: Menu utama ditempatkan pada panel navigasi yang konsisten. Pengguna dapat memulai pencarian melalui Navigation Simulator, kemudian meninjau hasil kedua implementasi pada bagian Comparison. Untuk pengujian berulang, pengguna mengakses Benchmark Lab dan menetapkan konfigurasi eksperimen.
+P788: Bagian Experiment History menyediakan akses terhadap hasil yang telah disimpan. Ekspor CSV ditempatkan pada bagian hasil eksperimen sebagai tindakan pendukung. Pemilihan dataset tersedia pada simulator dan benchmark sehingga tidak memerlukan menu utama tersendiri.
+P789: Perancangan Antarmuka
+P790: Perancangan antarmuka disajikan dalam bentuk wireframe untuk menggambarkan susunan komponen sebelum implementasi. Rancangan mengikuti struktur menu dan mengutamakan kejelasan masukan, hasil pencarian, serta informasi pengujian. Setiap bagian menggunakan panel navigasi yang konsisten.
+P791: Perancangan Antarmuka Navigation Simulator
+P792: Antarmuka Navigation Simulator dirancang untuk menerima masukan pencarian dan menampilkan jalur pada peta. Komponen utama meliputi pilihan dataset, titik awal, titik tujuan, mode algoritma, dan tombol menjalankan pencarian.
+P793: Area peta digunakan untuk menampilkan posisi titik serta jalur hasil pencarian. Informasi dataset dan status proses disajikan agar pengguna mengetahui data yang digunakan serta keberhasilan pencarian. Apabila masukan tidak valid atau tujuan tidak terjangkau, sistem menampilkan pesan yang sesuai.
+P795: Gambar 4.7 Rancangan Antarmuka Navigation Simulator
+P797: Perancangan Antarmuka Comparison
+P798: Antarmuka Comparison dirancang untuk menyajikan hasil Dijkstra standar dan Dijkstra optimasi secara berdampingan. Komponen utama berupa ringkasan masing-masing algoritma dan tabel perbandingan metrik.
+P799: Informasi yang ditampilkan mencakup total bobot, waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa. Status kesetaraan hasil dan persentase perubahan metrik disajikan untuk membantu pengguna menilai ketepatan serta perbedaan kinerja.
+P801: Gambar 4.8 Rancangan Antarmuka Comparison
+P803: Perancangan Antarmuka Benchmark Lab
+P804: Antarmuka Benchmark Lab menyediakan formulir konfigurasi eksperimen yang meliputi dataset, jumlah kasus uji, mode pasangan rute, jumlah pengulangan, pemanasan awal, dan nilai seed. Tombol pelaksanaan digunakan untuk memulai pengujian setelah konfigurasi ditetapkan.
+P805: Bagian hasil menampilkan statistik kedua algoritma, jumlah ketidaksesuaian, serta tabel hasil eksekusi. Status proses ditampilkan selama pengujian berlangsung. Tombol ekspor CSV disediakan agar hasil dapat digunakan untuk analisis lanjutan.
+P807: Gambar 4.9 Rancangan Antarmuka Benchmark Lab
+P809: Perancangan Antarmuka Experiment History
+P810: Antarmuka Experiment History dirancang untuk menampilkan daftar eksperimen yang telah disimpan. Informasi utama meliputi identitas eksperimen, dataset, waktu pelaksanaan, jumlah kasus uji, jumlah pengulangan, dan jumlah ketidaksesuaian hasil.
+P811: Setiap entri menyediakan tindakan untuk membuka detail eksperimen. Hasil yang dipilih ditampilkan kembali pada bagian benchmark agar pengguna dapat memeriksa konfigurasi, statistik, dan data eksekusinya. Apabila belum terdapat riwayat, sistem menampilkan keterangan bahwa data eksperimen belum tersedia.
+P813: Gambar 4.10 Rancangan Antarmuka Experiment History
+P815: IMPLEMENTASI DAN PENGUJIAN SISTEM
+P817: Bab ini membahas implementasi sistem pencarian rute dan pengujian algoritma Dijkstra standar serta Dijkstra optimasi pada jaringan jalan Kota Bandung. Pembahasan meliputi perangkat yang digunakan, pengelolaan data, implementasi algoritma dan antarmuka, serta hasil pengujian fungsional, ketepatan, dan kinerja.
+P818: Implementasi Perangkat Keras
+P819: Implementasi dan pengujian dilakukan pada sebuah komputer dengan spesifikasi sebagaimana ditunjukkan pada Tabel 5.1. Spesifikasi tersebut merupakan kondisi perangkat yang digunakan dalam penelitian, bukan persyaratan minimum sistem.
+P820: Table 5.1 Perangkat Keras Pengujian
+P822: Kedua algoritma dijalankan secara berurutan pada perangkat yang sama. Untuk pengujian ulang, disarankan menggunakan perangkat dengan kapasitas setara atau lebih tinggi dan mengurangi aktivitas aplikasi lain agar variasi waktu eksekusi lebih terkendali.
+P823: Implementasi Perangkat Lunak
+P824: Sistem menggunakan antarmuka berbasis web dan layanan backend untuk pemrosesan graf. Konfigurasi perangkat lunak yang digunakan ditunjukkan pada Tabel 5.2.
+P827: Table 5.2 Perangkat Lunak Implementasi
+P829: Backend dijalankan secara lokal melalui alamat `http://127.0.0.1:8000`, sedangkan antarmuka diakses melalui `http://127.0.0.1:3000`. Data graf dimuat sebelum pengukuran waktu algoritma. NetworkX digunakan dalam skrip pemeriksaan hasil eksperimen dan tidak menjadi mesin pencarian rute pada aplikasi. Untuk reproduksi, versi dependensi dan dataset perlu dipertahankan sesuai catatan eksperimen.
+P830: Implementasi Database dan Penyimpanan Data
+P831: Implementasi Dataset Jaringan Jalan
+P832: Dataset jaringan jalan Kota Bandung bersumber dari OpenStreetMap dan diproses menggunakan OSMnx dengan tipe jaringan drive. Data diekstraksi pada 16 September 2026 pukul 00.02 WIB. Dataset versi 1.0.0 memuat 27.172 simpul dan 61.630 sisi berarah. Bobot sisi menyatakan panjang ruas dalam meter. Jumlah sisi berarah tidak identik dengan jumlah jalan fisik karena arah perjalanan dan sisi paralel tetap direpresentasikan dalam graf.
+P833: Dataset disimpan dalam berkas JSON dengan identitas kota-bandung-osm-drive. Setiap simpul menyimpan identitas, nama, lintang, dan bujur. Setiap sisi menyimpan identitas simpul asal, simpul tujuan, bobot, dan penanda dua arah. Sebelum digunakan, sistem memeriksa keunikan identitas simpul, keberadaan simpul yang dirujuk sisi, serta bobot yang berhingga dan tidak negatif. Dataset kemudian dikonversi menjadi adjacency list untuk digunakan oleh kedua algoritma.
+P834: Table 5.3 Implementasi Struktur Data
+P836: Implementasi Penyimpanan Hasil Eksperimen
+P837: Sistem memiliki integrasi opsional dengan Firestore melalui koleksi experiments dan subkoleksi runs. Namun, sesi pengujian pada bab ini menggunakan mode penyimpanan dalam memori. Riwayat pada aplikasi tersedia selama proses backend masih berjalan. Hasil eksperimen penelitian juga diarsipkan sebagai JSON dan CSV agar dapat dianalisis kembali.
+P838: Dengan demikian, struktur objek hasil eksperimen telah diterapkan, tetapi persistensi Firestore yang dirancang pada BAB IV belum diverifikasi melalui pengujian ini. Arsip lokal tidak dianggap sebagai bukti keberhasilan penyimpanan pada Firestore. Penyimpanan hasil dilakukan setelah pengukuran algoritma sehingga tidak masuk ke dalam waktu eksekusi yang dibandingkan.
+P839: Implementasi Sistem
+P840: Implementasi Algoritma Dijkstra Standar
+P841: Dijkstra standar diimplementasikan menggunakan adjacency list dan himpunan simpul yang belum diselesaikan. Jarak awal seluruh simpul diatur menjadi tak hingga, sedangkan jarak simpul asal diatur menjadi nol. Pada setiap iterasi, algoritma memilih simpul dengan jarak sementara terkecil melalui pencarian linear, kemudian melakukan relaksasi terhadap sisi keluar simpul tersebut.
+P842: Pada implementasi baseline ini, pencarian dilanjutkan hingga semua simpul yang dapat dijangkau dari asal selesai diproses. Algoritma berhenti ketika tidak ada simpul tersisa atau jarak minimum berikutnya masih tak hingga. Rekonstruksi rute dilakukan dengan menelusuri pendahulu dari tujuan menuju asal. Versi algoritma dicatat sebagai standard-v1-linear-scan.
+P843: Implementasi Algoritma Dijkstra Optimasi
+P844: Dijkstra optimasi menggunakan adjacency list yang sama, dengan min-heap sebagai struktur pemilihan simpul berjarak minimum. Ketika ditemukan jarak yang lebih kecil, pasangan jarak dan identitas simpul dimasukkan ke heap. Entri yang sudah usang atau mengacu pada simpul yang telah diselesaikan dilewati.
+P845: Pencarian dihentikan ketika simpul tujuan dikeluarkan dari heap sebagai entri yang valid dan telah diselesaikan. Versi algoritma dicatat sebagai optimized-v1-min-heap-early-termination. Perbandingan ini mengukur gabungan perubahan pemilihan simpul dan penghentian dini; pengaruh masing-masing teknik belum dipisahkan melalui eksperimen tersendiri.
+P846: Implementasi Antarmuka Navigation Simulator
+P847: Antarmuka Navigation Simulator menyediakan pemilihan dataset, titik asal, titik tujuan, dan mode algoritma. Pengguna dapat memilih titik melalui daftar simpul atau peta. Sistem menampilkan status pencarian, total bobot jarak, jumlah sisi pada rute, dan visualisasi rute yang diperoleh.
+P849: Gambar 5.1 Implementasi Navigation Simulator pada Dataset Kota Bandung
+P851: Gambar 5.1 menunjukkan pencarian menggunakan Dijkstra optimasi dari simpul 8123304877 menuju simpul 2477129890. Total jarak yang ditampilkan adalah 9.156,48 meter dengan 95 sisi. Garis pada peta menghubungkan koordinat simpul sepanjang rute; karena geometri lengkap ruas tidak disertakan dalam JSON aplikasi, tampilan garis tidak selalu mengikuti seluruh kelengkungan jalan.
+P852: Implementasi Antarmuka Comparison
+P853: Antarmuka Comparison menyajikan hasil kedua algoritma dalam satu tampilan. Informasi yang ditampilkan meliputi waktu eksekusi, jumlah simpul yang diproses, jumlah sisi yang diperiksa, total bobot rute, dan kesesuaian hasil. Persentase perubahan membantu pengguna melihat perbedaan metrik antara kedua implementasi.
+P855: Gambar 5.2 Implementasi Antarmuka Comparison pada Pengujian Fungsional Dataset Demo
+P857: Gambar 5.2 menggunakan dataset small-demo untuk memperlihatkan fungsi antarmuka. Angka pada gambar tersebut tidak digunakan sebagai hasil eksperimen kinerja Kota Bandung. Hasil penelitian pada dataset Kota Bandung disajikan pada Subbab 5.5.
+P858: Implementasi Antarmuka Benchmark Lab
+P859: Benchmark Lab menyediakan pengaturan jumlah pasangan titik, metode pemilihan pasangan, jumlah pemanasan, jumlah pengulangan, dan random seed. Hasilnya berupa ringkasan waktu eksekusi, jumlah simpul dan sisi yang diproses, jumlah ketidaksesuaian, serta rincian eksekusi yang dapat diekspor melalui tombol Download CSV.
+P861: Gambar 5.3 Implementasi Benchmark Lab pada Pengujian Fungsional Dataset Demo
+P863: Tangkapan layar memperlihatkan pengujian fungsi dengan dua pasangan dan satu pengulangan tanpa pemanasan. Konfigurasi tersebut berbeda dari eksperimen kinerja penelitian yang menggunakan sepuluh pasangan pada dataset Kota Bandung.
+P864: Implementasi Antarmuka Experiment History
+P865: Experiment History menampilkan identitas eksperimen, waktu pelaksanaan, dataset, dan status kesesuaian hasil. Pengguna dapat memilih riwayat untuk memuat kembali hasil pada bagian Benchmark Lab. Pada mode memori, riwayat tidak bertahan setelah proses backend dihentikan.
+P867: Gambar 5.4 Implementasi Experiment History pada Mode Memori\
+P869: Pengujian Sistem
+P870: Lingkungan dan Skenario Pengujian
+P871: Pengujian dilaksanakan pada 17 September 2026 menggunakan lingkungan sebagaimana dijelaskan pada Subbab 5.1 dan 5.2. Pengujian fungsional memakai dataset demo dan Kota Bandung sesuai kebutuhan skenario. Pengujian kinerja menggunakan graf Kota Bandung secara utuh, bukan potongan graf dari sepuluh pasangan titik.
+P872: Table 5.4 Konfigurasi Eksperimen Kinerja
+P874: Waktu diukur sejak inisialisasi struktur pencarian hingga iterasi algoritma berakhir. Validasi titik, pemuatan dataset, rekonstruksi rute, komunikasi API, penyimpanan hasil, dan penggambaran antarmuka tidak termasuk dalam pengukuran. Simpul yang diproses adalah simpul yang diselesaikan, sedangkan sisi yang diperiksa adalah setiap entri adjacency yang dilalui saat relaksasi, termasuk sisi paralel.
+P875: Pengujian Fungsional Sistem
+P876: Pengujian fungsional dilakukan dengan memberikan masukan dan memeriksa keluaran API serta antarmuka. Pengujian algoritma pada graf kecil melengkapi pemeriksaan terhadap kondisi khusus.
+P877: Table 5.5 Hasil Pengujian Fungsional
+P879: Sebanyak sembilan tes otomatis backend dan enam pemeriksaan alur antarmuka selesai dengan hasil lulus. Jumlah pada tabel merupakan pengelompokan skenario, bukan penjumlahan jumlah fungsi tes. Pengujian tidak mencakup persistensi Firestore atau audit aksesibilitas menyeluruh. Pada tingkat fungsi algoritma, asal yang sama dengan tujuan dapat menghasilkan biaya nol; antarmuka simulasi menerapkan aturan tambahan agar kedua titik berbeda.
+P880: Pengujian Ketepatan Hasil Pencarian Rute
+P881: Ketepatan diperiksa melalui kesesuaian status dan jarak antara kedua algoritma, serta pembandingan dengan hasil NetworkX pada graf berbobot yang sama. Untuk setiap rute, pemeriksaan juga mencakup simpul awal dan akhir, keberadaan sisi antar-simpul, dan jumlah bobot sepanjang rute. Apabila terdapat sisi paralel, bobot minimum antar-simpul digunakan dalam pemeriksaan biaya rute yang direpresentasikan sebagai urutan simpul.
+P882: Table 5.6 Hasil Pemeriksaan Ketepatan Rute
+P883: Sebanyak 10 dari 10 pasangan memiliki rute yang dapat dijangkau. Seluruh 60 hasil eksekusi sesuai dengan pemeriksaan status, biaya, dan validitas rute. Tidak ditemukan pasangan yang mengalami ketidaksesuaian antara kedua algoritma pada toleransi yang ditetapkan. Jarak pada tabel dibulatkan untuk penyajian; pemeriksaan dilakukan menggunakan nilai tanpa pembulatan. Hasil ini menunjukkan kesesuaian pada sampel yang diuji, bukan bukti empiris untuk seluruh kemungkinan pasangan simpul.
+P884: Kesamaan jarak tidak mensyaratkan kesamaan urutan simpul apabila tersedia beberapa rute dengan bobot minimum yang sama. Pemeriksaan NetworkX memberi pembanding implementasi tambahan, tetapi tidak memvalidasi kelengkapan data jalan atau kondisi lalu lintas di lapangan.
+P886: Pengujian Kinerja Algoritma
+P887: Statistik dihitung dari 30 eksekusi terukur untuk setiap algoritma. Rata-rata merangkum seluruh pasangan dan pengulangan; median, minimum, maksimum, dan simpangan baku populasi menunjukkan variasi pengamatan. Pengulangan pada pasangan yang sama bukan pasangan rute independen yang baru.
+P888: Table 5.7 Perbandingan Kinerja Algoritma
+P890: Persentase pengurangan dihitung dengan rumus:
+P891: Pengurangan (%) = ((nilai standar − nilai optimasi) / nilai standar) × 100%.
+P892: Pada sesi pengujian ini, rata-rata waktu Dijkstra standar adalah 78.697,65 ms, sedangkan Dijkstra optimasi adalah 25,88 ms. Pengurangan rata-rata waktu mencapai 99,97%, dengan rasio waktu standar terhadap optimasi sebesar 3.041,08 kali. Rata-rata jumlah simpul yang diproses berkurang 48,91% dan jumlah sisi yang diperiksa berkurang 48,62%. Persentase dihitung sebelum pembulatan nilai pada tabel.
+P894: Gambar 5.5 Rata-rata Waktu Eksekusi per Pasangan Titik
+P896: Grafik menggunakan skala logaritmik pada sumbu waktu agar kedua implementasi tetap dapat dibandingkan ketika besar waktunya berbeda jauh. Titik pada grafik merupakan rata-rata tiga pengulangan setiap pasangan.
+P897: Pembahasan Hasil Pengujian
+P898: Hasil pengujian menunjukkan bahwa Dijkstra optimasi mempertahankan jarak minimum pada sepuluh pasangan yang diperiksa sekaligus membutuhkan waktu eksekusi lebih rendah secara agregat. Baseline menggunakan pencarian minimum linear dan menyelesaikan seluruh simpul yang dapat dijangkau dari asal. Pada sampel ini, baseline memproses rata-rata 25.610 simpul per eksekusi. Optimasi menggunakan min-heap dan berhenti ketika tujuan diselesaikan, dengan rata-rata 13.084,30 simpul per eksekusi.
+P899: Besarnya rasio waktu harus ditafsirkan terhadap baseline yang digunakan. Hasil tersebut tidak berarti bahwa setiap implementasi Dijkstra akan memperoleh percepatan yang sama. Pengujian belum membandingkan min-heap tanpa penghentian dini atau pencarian linear dengan penghentian dini, sehingga kontribusi masing-masing perubahan tidak dapat dinyatakan secara terpisah.
+P900: Perbedaan jumlah sisi berkaitan dengan simpul yang diselesaikan sebelum pencarian dihentikan. Pada implementasi optimasi, sisi keluar tujuan tidak diperiksa setelah tujuan diselesaikan. Sebaliknya, baseline tetap memproses simpul lain yang dapat dijangkau. Oleh karena itu, jumlah simpul dan sisi membantu menjelaskan besarnya pekerjaan pencarian, tetapi tidak langsung setara dengan penggunaan memori atau keseluruhan waktu respons aplikasi.
+P901: Keterbatasan Sistem dan Pengujian
+P902: Eksperimen menggunakan satu dataset, satu perangkat, dan sepuluh pasangan acak yang seluruhnya dapat dijangkau. Hasilnya belum mewakili seluruh pasangan titik di Kota Bandung. Pengujian kondisi tidak terjangkau hanya dilakukan sebagai pemeriksaan fungsional pada graf kecil. Kualitas hasil rute tetap bergantung pada kelengkapan dan ketepatan data OpenStreetMap serta batas wilayah ekstraksi.
+P903: Bobot yang digunakan hanya jarak, sehingga rute terpendek belum tentu memiliki waktu perjalanan tercepat. Kemacetan, perubahan akses, dan kondisi jalan secara waktu nyata belum dimodelkan. Tampilan peta menghubungkan koordinat simpul dan belum menggunakan geometri lengkap setiap ruas jalan.
+P904: Urutan eksekusi selalu standar kemudian optimasi, sehingga potensi pengaruh urutan, cache, beban sistem, dan perubahan frekuensi prosesor belum dieliminasi. Sebagian pemeriksaan aplikasi dan penyiapan lingkungan juga berlangsung pada perangkat yang sama selama sesi eksperimen. Karena itu, hasil waktu merupakan pengukuran pada kondisi sesi ini, bukan hasil laboratorium dengan beban sistem sepenuhnya dikendalikan. Penelitian belum melakukan pengujian signifikansi statistik atau eksperimen terpisah untuk mengukur kontribusi min-heap dan penghentian dini.
+P905: Selain itu, penyimpanan permanen melalui Firestore belum diverifikasi dan pengujian antarmuka belum mencakup seluruh variasi peramban, ukuran layar, maupun aksesibilitas. Pemeriksaan pada lingkungan pengembangan menampilkan peringatan kontras warna pada sejumlah teks antarmuka, sehingga kelulusan pengujian fungsi tidak berarti seluruh kriteria aksesibilitas telah terpenuhi. Batasan tersebut menjadi dasar pengembangan dan pengujian lanjutan.
+P906: PENUTUP
+P908: Kesimpulan
+P909: Berdasarkan hasil implementasi dan pengujian sistem pencarian rute pada jaringan jalan Kota Bandung, diperoleh kesimpulan sebagai berikut.
+P910: Sistem pencarian rute berhasil diimplementasikan dalam bentuk aplikasi berbasis web yang menyediakan fitur simulasi pencarian rute, perbandingan algoritma, pengujian berulang, serta riwayat dan ekspor hasil eksperimen. Sistem menggunakan dataset jaringan jalan OpenStreetMap yang terdiri atas 27.172 simpul dan 61.630 sisi berarah, dengan bobot berupa panjang ruas jalan dalam meter.
+P911: Penerapan min-heap dan penghentian dini pada Dijkstra optimasi mempertahankan ketepatan hasil pada sampel pengujian. Pengujian terhadap 10 pasangan titik dengan tiga pengulangan untuk setiap algoritma menghasilkan 60 hasil eksekusi tanpa ketidaksesuaian jarak maupun validitas rute. Hasil tersebut juga sesuai dengan pemeriksaan menggunakan NetworkX pada graf yang sama.
+P912: Dijkstra optimasi menunjukkan rata-rata waktu eksekusi lebih rendah dibandingkan implementasi Dijkstra standar yang diuji. Rata-rata waktu eksekusi berkurang dari 78.697,65 ms menjadi 25,88 ms, atau sekitar 99,97%. Rata-rata jumlah simpul yang diproses berkurang dari 25.610 menjadi 13.084,30, sedangkan rata-rata jumlah sisi yang diperiksa berkurang dari 59.072 menjadi 30.351,80. Hasil ini berlaku pada kondisi eksperimen dan pasangan titik yang diuji. Perbedaan tersebut mencerminkan gabungan penggunaan min-heap dan penghentian dini terhadap baseline yang menggunakan pencarian minimum linear serta memproses seluruh simpul yang dapat dijangkau.
+P913: Saran
+P914: Berdasarkan hasil penelitian dan keterbatasan pengujian, saran untuk pengembangan selanjutnya adalah sebagai berikut.
+P915: Pengujian perlu diperluas dengan lebih banyak pasangan titik, variasi jarak, kondisi tujuan tidak terjangkau, dan dataset wilayah lain agar karakteristik kinerja kedua algoritma dapat dipahami secara lebih menyeluruh.
+P916: Pengujian lanjutan perlu memisahkan pengaruh penggunaan min-heap dan penghentian dini. Perbandingan dapat dilakukan melalui beberapa kombinasi implementasi, disertai pengaturan urutan eksekusi yang seimbang atau acak serta pengendalian beban perangkat untuk mengurangi potensi bias pengukuran.
+P917: Sistem dapat dikembangkan dengan bobot waktu perjalanan dan informasi kondisi lalu lintas agar pencarian tidak hanya mempertimbangkan jarak terpendek. Visualisasi rute juga dapat menggunakan geometri lengkap ruas jalan agar garis yang ditampilkan lebih sesuai dengan bentuk jalan.
+P918: Penyimpanan permanen melalui Firestore perlu diuji untuk memastikan hasil eksperimen tetap tersedia setelah backend dihentikan. Pengujian antarmuka juga perlu diperluas pada berbagai perangkat dan peramban, termasuk perbaikan kontras warna untuk meningkatkan keterbacaan.
+P919: DAFTAR PUSTAKA
+P921: (WAI), W. W. A. I. (n.d.). Designing for Web Accessibility – Tips for Getting Started.
+P922: Dijkstra’s Algorithm. (n.d.). Retrieved September 13, 2026, from https://networkx.org/documentation/latest/reference/algorithms/shortest_paths/dijkstra.html
+P923: ENGINEERING STATISTICS HANDBOOK. (n.d.). Retrieved September 14, 2026, from https://itl.nist.gov/div898/handbook/pri/section1/pri11.htm
+P924: FastAPI¶. (n.d.).
+P925: Gita Jackson, M. K. (n.d.). What is the Software Development Lifecycle (SDLC)? | IBM.
+P926: Handbook - The TypeScript Handbook. (n.d.).
+P927: heapq — Heap queue algorithm. (n.d.).
+P928: How do you select an experimental design? (n.d.). Retrieved September 15, 2026, from https://www.itl.nist.gov/div898/handbook/pri/section3/pri33.htm
+P929: Introduction · Get Started with Nuxt v4. (n.d.).
+P930: Kurniawan, E. K., & Atmojo, W. T. (2025). Penerapan Algoritma Dijkstra Dalam Penentuan Rute. ZONAsi: Jurnal Sistem Informasi, 7(2), 445–454.
+P931: Lee, J. (2023). SOFTWARE ENGINEERING HANDBOOK. Retrieved September 14, 2026, from https://swehb.nasa.gov/spaces/7150/pages/16449735/SWE-019%2B-%2BSoftware%2BLife%2BCycle
+P932: Lewis, R. (2023). A Comparison of Dijkstra’s Algorithm Using Fibonacci Heaps, Binary Heaps, and Self-Balancing Binary Trees.
+P933: Maurer, S. B., & Ralston, A. (2020). Graphs and Trees. Discrete Algorithmic Mathematics, 247–350. https://doi.org/10.1201/b13782-13
+P934: Model data Cloud Firestore  |  Firebase. (n.d.).
+P935: Pramestiana, I., & Anwar, A. (2025). Penentuan Rute Terpendek pada Pengiriman Kendaraan Motor menggunakan Algoritma Djikstra di PT Pos Logistik Indonesia. Jurnal Logic: Logistics & Supply Chain Center, 3, 69–77. https://doi.org/10.33197/jlscc.v3i2.2480
+P936: shortest_path. (n.d.). Retrieved September 13, 2026, from https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.shortest_path.html
+P937: Tian, T., Wu, H., Wei, H., Wu, F., & Xu, M. (2025). An Efficient Route Planning Algorithm for Special Vehicles with Large-Scale Road Network Data. ISPRS International Journal of Geo-Information, 14. https://doi.org/10.3390/ijgi14020071
+P938: Yovi, M., & Sekarwati, K. A. (2024). Aplikasi Navigasi Supermarket Berbasis Web Menggunakan Algoritma Dijkstra. Jurnal Ilmiah Komputasi, 23(4 SE-Sistem Informasi), 505–512. https://doi.org/10.32409/jikstik.23.4.3606
+
+TABLE 1
+Waktu | Juni | Juli | Agustus | September | Oktober
+Kegiatan | 1 | 2 | 3 | 4 | 1 | 2 | 3 | 4 | 1 | 2 | 3 | 4 | 1 | 2 | 3 | 4 | 1 | 2 | 3 | 4
+Analisis dan perancangan sistem |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Implementasi dan Pengembangan Algoritma |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Pengujian Evaluasi |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Dokumentasi dan Finalisasi |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+
+TABLE 2
+Peneliti dan Tahun | Judul Penelitian | Metode | Hasil | Relevansi
+(Yovi & Sekarwati, 2024) | Aplikasi Navigasi Supermarket Berbasis Web Menggunakan Algoritma Dijkstra. Jurnal Ilmiah Komputasi, 23(4), 505–512, STMIK Jakarta STI&K. | Penerapan Dijkstra dalam aplikasi web menggunakan JavaScript dan React. Pengembangan mengikuti tahapan SDLC berupa perencanaan, desain, implementasi, dan uji coba. | Aplikasi mampu menyediakan rute terpendek dalam supermarket. Pengujian terhadap 25 responden melaporkan bahwa aplikasi dapat berjalan pada berbagai perangkat dan resolusi layar. | Memiliki persamaan dalam penerapan Dijkstra dan penyajian navigasi melalui web. Perbedaannya terletak pada objek penelitian dan fokus evaluasi. Penelitian ini menggunakan simulasi jaringan jalan Kabupaten Bandung serta membandingkan kinerja dua implementasi Dijkstra.
+(Kurniawan & Atmojo, 2025) | Penerapan Algoritma Dijkstra dalam Penentuan Rute Terpendek Kunjungan Wisata Jakarta. ZONAsi: Jurnal Sistem Informasi, 7(2), Universitas Lancang Kuning. | Pemodelan jaringan jalan sebagai graf berbobot berdasarkan jarak yang diperoleh dari Google Maps, kemudian dilakukan pencarian jalur menggunakan Dijkstra. | Penelitian melaporkan penentuan lintasan terpendek dari Bandara Internasional Soekarno-Hatta menuju Dunia Fantasi Ancol melalui proses perhitungan Dijkstra. | Mendukung penggunaan graf berbobot jarak untuk memodelkan jaringan jalan. Penelitian ini memperluas fokus pengujian pada perbandingan waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa.
+(Pramestiana & Anwar, 2025) | Penentuan Rute Terpendek pada Pengiriman Kendaraan Motor menggunakan Algoritma Dijkstra di PT X. Jurnal Logic: Logistics & Supply Chain Center, 3(2), 69–77, Universitas Widyatama. | Penerapan Dijkstra untuk menentukan rute pengiriman kendaraan bermotor dari Bandung menuju gudang logistik di Jakarta Timur. | Diperoleh rute melalui Padalarang, Cipatat, Purwakarta, Karawang, dan Bekasi dengan total jarak 179,3 km. | Memberikan contoh penerapan Dijkstra pada rute perjalanan antarlokasi. Perbedaannya terletak pada cakupan jaringan dan tujuan penelitian, yaitu evaluasi efisiensi implementasi algoritma dalam simulasi jaringan jalan Kabupaten Bandung.
+(Tian, Wu, Wei, Wu, & Xu, 2025) | An Efficient Route Planning Algorithm for Special Vehicles with Large-Scale Road Network Data. ISPRS International Journal of Geo-Information, 14(2), 71, MDPI. | Pengembangan model jaringan jalan dua lapis, pengelolaan data berbasis grid, dan penerapan parallelized bidirectional Dijkstra untuk perencanaan rute kendaraan khusus. | Abstrak penelitian melaporkan percepatan perencanaan rute sebesar 3,75 kali melalui penerapan Dijkstra dua arah yang diparalelkan pada eksperimen yang dilakukan. | Mendukung kajian peningkatan efisiensi pencarian rute melalui perubahan strategi pencarian dan pengelolaan data. Teknik optimasinya berbeda karena penelitian ini dibatasi pada adjacency list, min-heap, dan penghentian dini.
+
+TABLE 3
+Komponen | Representasi dalam Penelitian
+Simpul | Lokasi atau persimpangan dengan identitas unik
+Sisi | Hubungan jalan yang dapat dilalui antarsimpul
+Arah Sisi | Ketentuan arah perjalanan sesuai dataset
+Bobot Sisi | Jarak ruas jalan dengan satuan yang konsisten
+Titik Awal | Simpul tempat pencarian dimulai
+Titik Tujuan | Simpul yang menjadi tujuan pencarian
+Koordinat | Informasi posisi untuk visualisasi, apabila tersedia
+
+TABLE 4
+Karakteristik | Keterangan
+Identitas dataset | kota-bandung-osm-drive
+Wilayah | Kota Bandung, Jawa Barat
+Sumber data | OpenStreetMap
+Perangkat pengolahan | OSMnx 2.1.1
+Jenis jaringan | Jaringan kendaraan dengan filter drive
+Representasi Graf | Graf berarah berbobot nonnegatif
+Jumlah simpul | 27.172
+Jumlah sisi berarah | 61.630
+Bobot sisi | Panjang ruas dalam meter
+Komponen Terhubung lemah | 396
+Komponen terhubung kuat | 534
+Versi dataset | 1.0.0
+Tanggal selesai ekstrasi | 16 September 2026
+Format data | JSON, GraphML, dan CSV
+
+TABLE 5
+Aspek | Implementasi
+Representasi graf | Adjacency list
+Penyimpanan jarak | Pemetaan ID simpul terhadap jarak sementara
+Simpul yang belum diproses | Himpunan simpul
+Pemilihan simpul minimum | Pemindaian linear terhadap himpunan simpul yang tersisa
+Penanganan jarak sama | Pemilihan berdasarkan ID simpul
+Pembaruan jarak | Relaksasi sisi keluar dari simpul terpilih
+Kondisi penghentian | Himpunan kosong atau jarak minimum yang tersisa bernilai tak hingga
+Penghentian saat tujuan final | Tidak diterapkan
+Pembentukan jalur | Penelusuran simpul pendahulu
+
+TABLE 6
+Aspek | Dijkstra Standar | Dijkstra Optimasi
+Representasi graf | Adjacency list | Adjacency list
+Pemilihan simpul minimum | Pemindaian linear | Antrean min-heap
+Cakupan pencarian | Seluruh simpul yang dapat dijangkau | Hingga tujuan final atau antrean habis
+Entri antrean tidak berlaku | Tidak menggunakan heap | Dilewati
+Pemeriksaan sisi keluar tujuan | Tetap dilakukan | Tidak dilakukan setelah tujuan final
+Tujuan hasil | Jalur dengan total bobot minimum | Jalur dengan total bobot minimum
+
+TABLE 7
+Simpul Asal | Simpul Tujuan | Bobot
+A | B | 4
+A | C | 7
+B | C | 2
+B | D | 5
+C | D | 1
+D | E | 3
+
+TABLE 8
+Tahap | Simpul Diproses | Jarak A | Jarak B | Jarak C | Jarak D | Jarak E
+Inisialisasi | — | 0 | ∞ | ∞ | ∞ | ∞
+1 | A | 0 | 4 | 7 | ∞ | ∞
+2 | B | 0 | 4 | 6 | 9 | ∞
+3 | C | 0 | 4 | 6 | 7 | ∞
+4 — standar | D | 0 | 4 | 6 | 7 | 10
+5 — standar | E | 0 | 4 | 6 | 7 | 10
+4 — optimasi | D, kemudian berhenti | 0 | 4 | 6 | 7 | ∞
+
+TABLE 9
+Kode | Kebutuhan | Deskripsi
+KF-01 | Memuat dataset | Sistem memuat graf jaringan jalan dan menampilkan informasi sumber, versi, jumlah simpul, serta jumlah sisi.
+KF-02 | Memilih titik pencarian | Pengguna dapat memilih titik awal dan tujuan dari simpul yang tersedia.
+KF-03 | Menjalankan algoritma | Sistem menyediakan pencarian menggunakan Dijkstra standar dan Dijkstra optimasi.
+KF-04 | Membandingkan hasil | Sistem menjalankan kedua implementasi pada input yang sama dan menampilkan metrik secara berdampingan.
+KF-05 | Menampilkan jalur | Sistem menampilkan jalur hasil pencarian, total bobot, dan status keterjangkauan tujuan.
+KF-06 | Memeriksa ketepatan | Sistem memeriksa validitas jalur dan menandai ketidaksesuaian total bobot kedua implementasi.
+KF-07 | Menjalankan eksperimen | Pengguna dapat menjalankan beberapa pasangan rute dengan jumlah pengulangan yang ditetapkan.
+KF-08 | Mengolah hasil pengujian | Sistem menyimpan hasil setiap eksekusi dan menghitung statistik ringkasan.
+KF-09 | Menyediakan riwayat | Pengguna dapat meninjau konfigurasi dan hasil eksperimen yang telah disimpan.
+KF-10 | Mengekspor data | Sistem menyediakan ekspor hasil eksperimen dalam format CSV.
+
+TABLE 10
+Kode | Aspek | Deskripsi
+KNF-01 | Ketepatan | Implementasi menghasilkan jalur dan biaya yang benar pada graf berbobot nonnegatif serta menangani kondisi tidak terjangkau.
+KNF-02 | Validasi data | Sistem menolak identitas simpul duplikat, referensi simpul yang tidak tersedia, serta bobot negatif atau tidak berhingga.
+KNF-03 | Konsistensi pengukuran | Kedua implementasi menggunakan definisi metrik dan batas pengukuran waktu yang sama.
+KNF-04 | Isolasi waktu | Pengukuran mencakup inisialisasi dan iterasi pencarian, tanpa pemuatan graf, komunikasi jaringan, rekonstruksi jalur, penyimpanan, atau penampilan hasil.
+KNF-05 | Keterulangan | Dataset, versi algoritma, pasangan rute, jumlah pengulangan, dan lingkungan pengujian terdokumentasi.
+KNF-06 | Keandalan | Kegagalan suatu kasus uji dicatat dan tidak menghilangkan hasil kasus lain yang telah selesai.
+KNF-07 | Kemudahan penggunaan | Antarmuka menyediakan label, status proses, dan pesan kesalahan yang jelas.
+KNF-08 | Pemeliharaan | Mesin algoritma, layanan API, penyimpanan, dan antarmuka dipisahkan agar perubahan dapat ditelusuri.
+
+TABLE 11
+Jenis Variabel | Komponen
+Variabel bebas | Implementasi Dijkstra standar dan Dijkstra optimasi
+Variabel terikat | Waktu eksekusi, jumlah simpul yang diproses, dan jumlah sisi yang diperiksa
+Variabel kontrol | Dataset, pasangan sumber–tujuan, perangkat keras, lingkungan perangkat lunak, dan definisi metrik
+Pemeriksaan ketepatan | Validitas jalur, total bobot, dan status keterjangkauan
+
+TABLE 12
+No. | Komponen | Spesifikasi
+1 | Prosesor | Intel Core i5-1240P Generasi ke-12
+2 | Jumlah inti prosesor | 12 inti dan 16 prosesor logis
+3 | Memori utama | Sekitar 7,71 GiB terdeteksi oleh sistem
+4 | Jenis penyimpanan | Solid State Drive (SSD)
+5 | Kapasitas penyimpanan | Sekitar 476,94 GiB terdeteksi oleh sistem
+
+TABLE 13
+No. | Perangkat Lunak | Versi | Kegunaan
+1 | Windows 11 | Build 26200 | Sistem operasi lingkungan pengembangan
+2 | Node.js | 22.20.0 | Menjalankan perangkat pengembangan aplikasi web
+3 | Nuxt | 4.5.2 | Membangun antarmuka dan halaman aplikasi
+4 | TypeScript | 6.0.3 | Mendefinisikan tipe data pada kode antarmuka
+5 | Python | 3.13.7 | Mengimplementasikan algoritma dan pengolahan data
+6 | FastAPI | 0.141.1 | Menyediakan layanan API pada backend
+7 | Uvicorn | 0.52.4 | Menjalankan layanan FastAPI
+8 | OSMnx | 2.1.1 | Mengambil dan membentuk dataset jaringan jalan
+9 | Leaflet | 1.9.4 | Menampilkan peta dan jalur pencarian
+10 | Firebase Admin SDK | 7.5.0 | Menghubungkan backend dengan layanan Firestore apabila diaktifkan
+
+TABLE 14
+Komponen | Tanggung Jawab
+Antarmuka pengguna | Menerima pilihan dataset dan rute serta menampilkan hasil
+Layanan API | Memvalidasi permintaan dan mengatur pemanggilan layanan backend
+Layanan dataset | Memuat dan memvalidasi graf dari file JSON
+Mesin algoritma | Menjalankan Dijkstra standar dan Dijkstra optimasi
+Pengelola eksperimen | Mengatur kasus uji, pengulangan, dan pengolahan statistik
+Penyimpanan eksperimen | Menyimpan konfigurasi, hasil setiap eksekusi, dan ringkasan
+Layanan ekspor | Menyediakan hasil pengujian dalam format CSV
+
+TABLE 15
+Aktor | Deskripsi
+Pengguna demo | Memilih dataset dan rute, menjalankan pencarian, serta melihat perbandingan hasil
+Peneliti | Melakukan aktivitas pengguna demo serta menjalankan eksperimen, meninjau riwayat, dan mengekspor hasil
+
+TABLE 16
+Kode | Use Case | Aktor
+UC-01 | Melihat informasi dataset | Pengguna demo, peneliti
+UC-02 | Menentukan titik awal dan tujuan | Pengguna demo, peneliti
+UC-03 | Menjalankan pencarian rute | Pengguna demo, peneliti
+UC-04 | Membandingkan hasil algoritma | Pengguna demo, peneliti
+UC-05 | Menjalankan eksperimen berkelompok | Peneliti
+UC-06 | Melihat riwayat dan detail eksperimen | Peneliti
+UC-07 | Mengekspor hasil eksperimen | Peneliti
+
+TABLE 17
+Atribut | Tipe Data | Keterangan
+id | String | Identitas dataset
+name | String | Nama dataset
+version | String | Versi dataset
+source | String | Sumber data
+region | String | Wilayah jaringan jalan
+networkType | String | Jenis jaringan
+weightUnit | String | Satuan bobot
+extractedAt | Tanggal dan waktu | Waktu selesai ekstraksi
+nodes | Array objek | Daftar simpul
+edges | Array objek | Daftar sisi
+
+TABLE 18
+Atribut | Tipe Data | Keterangan
+experimentId | String | Identitas eksperimen
+datasetId, datasetVersion | String | Identitas dan versi dataset
+testCaseCount | Integer | Jumlah kasus uji
+repeatCount | Integer | Jumlah pengulangan
+warmupRuns | Integer | Jumlah pemanasan awal
+pairMode | String | Cara penentuan pasangan rute
+randomSeed | Integer/null | Nilai awal pengacakan
+correctnessMismatchCount | Integer | Jumlah ketidaksesuaian hasil
+standard, optimized | Objek | Statistik masing-masing algoritma
+improvement | Objek | Persentase perubahan metrik
+createdAt | Tanggal dan waktu | Waktu pembuatan ringkasan
+
+TABLE 19
+Atribut | Tipe Data | Keterangan
+id, experimentId | String | Identitas eksekusi dan eksperimen induk
+datasetId, datasetVersion | String | Dataset yang digunakan
+sourceId, destinationId | String | Titik awal dan tujuan
+algorithm, algorithmVersion | String | Nama dan versi algoritma
+executionTimeNs | Integer | Waktu eksekusi dalam nanodetik
+executionTimeMs | Float | Waktu eksekusi dalam milidetik
+visitedNodes | Integer | Jumlah simpul yang diproses
+processedEdges | Integer | Jumlah sisi yang diperiksa
+totalCost | Float/null | Total bobot jalur
+path | Array string | Urutan identitas simpul pada jalur
+pathLength | Integer | Jumlah sisi pada jalur
+status | String | Berhasil, tidak terjangkau, atau kesalahan
+createdAt | Tanggal dan waktu | Waktu pencatatan hasil
+
+TABLE 20
+No. | Menu | Fungsi
+1 | Navigation Simulator | Memilih dataset, titik awal, titik tujuan, dan mode algoritma, serta menampilkan jalur pada peta
+2 | Comparison | Menampilkan perbandingan biaya, waktu eksekusi, jumlah simpul, jumlah sisi, dan status kesetaraan hasil
+3 | Benchmark Lab | Mengatur serta menjalankan eksperimen berkelompok dan menampilkan hasil pengujian
+4 | Experiment History | Menampilkan daftar eksperimen tersimpan dan membuka kembali detail hasilnya
+
+TABLE 21
+Komponen | Spesifikasi
+Prosesor | Intel Core i5-1240P generasi ke-12
+Jumlah inti dan prosesor logis | 12 inti dan 16 prosesor logis
+RAM terdeteksi | 8.276.021.248 byte, sekitar 7,71 GiB
+
+TABLE 22
+Perangkat lunak | Versi | Fungsi
+Windows 11 | Build 26200 | Sistem operasi
+Python |  3.13.7 | Eksekusi algoritma dan backend
+FastAPI |  0.141.1 | Penyedia layanan API
+Uvicorn | 0.52.4 | Server aplikasi backend
+Nuxt | 4.5.2 | Kerangka kerja antarmuka
+Vue | 3.5.40 | Komponen antarmuka
+Leaflet | 1.9.4 | Penyajian peta dan rute
+OSMnx | 2.1.1 | Pengambilan dan pengolahan awal data jaringan jalan
+NetworkX | 3.6.1 | Pemeriksaan hasil jarak pada eksperimen
+
+TABLE 23
+Kelompok data | Atribut utama | Media penyimpanan pada pengujian
+Metadata dataset | id, version, source, region, networkType, weightUnit, extractedAt | JSON lokal
+Simpul | id, name, latitude, longitude | JSON dan graf dalam memori
+Sisi | from, to, weight, bidirectional | JSON dan adjacency list
+Ringkasan eksperimen | experimentId, datasetId, testCaseCount, repeatCount, statistik, mismatch | Memori proses dan arsip JSON lokal
+Hasil setiap eksekusi | algoritma, pasangan titik, waktu, simpul, sisi, jarak, rute, status | Memori proses, JSON, dan CSV lokal
+
+TABLE 24
+Parameter | Nilai
+Dataset | kota-bandung-osm-drive, versi 1.0.0
+Jumlah simpul dan sisi berarah | 27.172 dan 61.630
+Pemilihan pasangan | Acak, pasangan asal–tujuan berbeda dan tidak berulang
+Jumlah pasangan | 10
+Random seed | 42
+Pemanasan | 1 kali per algoritma per pasangan
+Pengulangan terukur | 3 kali per algoritma per pasangan
+Jumlah eksekusi terukur | 60, terdiri atas 30 standar dan 30 optimasi
+Jumlah eksekusi pemanasan | 20, tidak masuk statistik
+Urutan | Standar kemudian optimasi pada setiap pengulangan
+Toleransi selisih jarak | 10⁻⁹ meter
+Pengukur waktu | perf_counter_ns
+
+TABLE 25
+No. | Skenario | Hasil yang diharapkan | Hasil aktual | Status
+1 | Memeriksa layanan backend | API health memberikan status aktif | HTTP 200 dan status ok | Lulus
+2 | Memuat daftar dataset | Dataset demo dan Kota Bandung tersedia | Dataset dapat dipilih; graf Bandung memuat 27.172 simpul | Lulus
+3 | Membandingkan rute pada dataset demo | Jarak kedua algoritma sesuai | Jarak 9,2 satuan bobot pada kedua algoritma | Lulus
+4 | Mengirim identitas simpul tidak dikenal | Permintaan ditolak | API mengembalikan HTTP 422 | Lulus
+5 | Memilih asal dan tujuan sama pada antarmuka | Simulasi ditolak dengan pesan | Pesan titik harus berbeda ditampilkan | Lulus
+6 | Menjalankan benchmark demo | Ringkasan dan hasil tiap eksekusi tersedia | Dua pasangan menghasilkan empat hasil terukur dan nol mismatch | Lulus
+7 | Membuka riwayat eksperimen | Detail hasil dapat dimuat | Riwayat tersedia dan pemuatan detail berhasil | Lulus
+8 | Mengekspor hasil | CSV memuat metrik pengujian | HTTP 200; kolom executionTimeNs tersedia | Lulus
+9 | Menghitung rute optimasi Kota Bandung melalui antarmuka | Rute valid ditampilkan | Status success dan rute ditampilkan pada peta | Lulus
+10 | Memberikan bobot negatif pada model dataset | Dataset ditolak | ValidationError | Lulus
+11 | Mencari tujuan terputus pada graf uji | Tidak menghasilkan rute | Status unreachable, rute kosong, dan biaya null | Lulus
+
+TABLE 26
+Pasangan | Simpul asal | Simpul tujuan | Jarak acuan (meter) | Kesesuaian seluruh pengulangan
+P1 | 8123304877 | 2477129890 | 9.156,48 | Sesuai
+P2 | 1014721789 | 10187071456 | 9.990,07 | Sesuai
+P3 | 4681200983 | 4123963951 | 4.477,10 | Sesuai
+P4 | 4054910693 | 3115195211 | 7.827,67 | Sesuai
+P5 | 10143074316 | 2255972227 | 11.578,81 | Sesuai
+P6 | 9148177736 | 10184426411 | 8.304,95 | Sesuai
+P7 | 5866940448 | 1966222861 | 10.900,28 | Sesuai
+P8 | 6453694935 | 5447158256 | 10.937,08 | Sesuai
+P9 | 1387999365 | 1381753714 | 10.817,82 | Sesuai
+P10 | 2093775898 | 3959677853 | 10.145,44 | Sesuai
+
+TABLE 27
+Metrik | Dijkstra standar | Dijkstra optimasi
+Rata-rata waktu (ms) | 78.697,65 | 25,88
+Median waktu (ms) | 77.896,86 | 26,65
+Waktu minimum (ms) | 77.125,11 | 7,13
+Waktu maksimum (ms) | 86.962,58 | 40,11
+Simpangan baku populasi waktu (ms) | 2.176,87 | 8,91
+Rata-rata simpul diproses | 25.610,00 | 13.084,30
+Rata-rata sisi diperiksa | 59.072,00 | 30.351,80

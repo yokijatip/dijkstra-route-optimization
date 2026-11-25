@@ -1,0 +1,2 @@
+# Optional dependency used only by scripts/build_osm_dataset.py.
+osmnx==2.1.1

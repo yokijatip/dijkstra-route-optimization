@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<title>Graf Ilustrasi Perhitungan Dijkstra</title>
+<desc>Graf berarah: A ke B berbobot 4, A ke C 7, B ke C 2, B ke D 5, C ke D 1, D ke E 3. Jalur terpendek A ke D adalah A-B-C-D dengan total bobot 7. Graf ilustrasi, bukan data jalan Kota Bandung.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="black"/></marker>
+</defs>
+<rect width="1200" height="620" fill="white"/>
+<g fill="none" stroke="black" marker-end="url(#arrow)">
+<path d="M173 284 L395 169" stroke-width="5"/>
+<path d="M177 325 L388 439" stroke-width="2.5"/>
+<path d="M430 192 L430 401" stroke-width="5"/>
+<path d="M468 167 L706 284" stroke-width="2.5"/>
+<path d="M468 440 L710 323" stroke-width="5"/>
+<path d="M792 305 H1000" stroke-width="2.5"/>
+</g>
+<g fill="white" stroke="black" stroke-width="2.5">
+<circle cx="135" cy="305" r="42"/>
+<circle cx="430" cy="150" r="42"/>
+<circle cx="430" cy="460" r="42"/>
+<circle cx="750" cy="305" r="42"/>
+<circle cx="1050" cy="305" r="42"/>
+</g>
+<g font-family="Times New Roman,Times,serif" fill="black" text-anchor="middle">
+<g font-size="38"><text x="135" y="318">A</text><text x="430" y="163">B</text><text x="430" y="473">C</text><text x="750" y="318">D</text><text x="1050" y="318">E</text></g>
+<g font-size="32"><text x="267" y="205">4</text><text x="267" y="421">7</text><text x="395" y="315">2</text><text x="600" y="205">5</text><text x="603" y="420">1</text><text x="898" y="280">3</text></g>
+<g font-size="25"><text x="135" y="380">Titik awal</text><text x="750" y="380">Tujuan</text></g>
+<text x="600" y="562" font-size="28">Garis tebal: jalur A → B → C → D, total bobot = 7</text>
+<text x="600" y="602" font-size="23">Ilustrasi perhitungan — bukan dataset jaringan jalan Kota Bandung</text>
+</g>
+</svg>

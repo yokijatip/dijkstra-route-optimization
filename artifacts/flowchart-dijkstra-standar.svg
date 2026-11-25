@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="2050" viewBox="0 0 1100 2050">
+<title>Flowchart Proses Pencarian Rute Standar</title>
+<desc>Baseline Dijkstra dengan pemilihan minimum linear, tanpa penghentian dini pada tujuan.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="black"/></marker></defs>
+<rect width="1100" height="2050" fill="white"/>
+<g stroke="black" stroke-width="2" fill="white">
+<rect x="425" y="25" width="250" height="60" rx="30"/>
+<text x="550" y="63" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Mulai</tspan>
+</text>
+<rect x="310" y="115" width="480" height="90"/>
+<text x="550" y="152.0" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Graf tersedia di memori;</tspan>
+<tspan x="550" dy="32">masukan titik awal dan tujuan</tspan>
+</text>
+<path d="M550,235 L790,300 L550,365 L310,300 Z"/>
+<text x="550" y="292" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Kedua titik tersedia</tspan>
+<tspan x="550" dy="32">dalam graf?</tspan>
+</text>
+<rect x="825" y="255" width="250" height="90"/>
+<text x="950" y="308" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="22">
+<tspan x="950" dy="0">Kembalikan error</tspan>
+</text>
+<rect x="310" y="400" width="480" height="120"/>
+<text x="550" y="436.0" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Mulai timer; inisialisasi jarak,</tspan>
+<tspan x="550" dy="32">pendahulu, simpul belum diproses,</tspan>
+<tspan x="550" dy="32">dan penghitung metrik</tspan>
+</text>
+<path d="M550,565 L790,630 L550,695 L310,630 Z"/>
+<text x="550" y="622" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Masih ada simpul</tspan>
+<tspan x="550" dy="32">belum diproses?</tspan>
+</text>
+<rect x="310" y="735" width="480" height="90"/>
+<text x="550" y="772.0" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Pilih simpul u berjarak minimum</tspan>
+<tspan x="550" dy="32">melalui pemindaian linear</tspan>
+</text>
+<path d="M550,865 L790,930 L550,995 L310,930 Z"/>
+<text x="550" y="938" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Jarak u = tak hingga?</tspan>
+</text>
+<rect x="310" y="1030" width="480" height="90"/>
+<text x="550" y="1067.0" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Hapus u dari himpunan;</tspan>
+<tspan x="550" dy="32">tambah jumlah simpul diproses</tspan>
+</text>
+<rect x="310" y="1160" width="480" height="120"/>
+<text x="550" y="1196.0" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Periksa seluruh sisi keluar u;</tspan>
+<tspan x="550" dy="32">hitung sisi yang diperiksa;</tspan>
+<tspan x="550" dy="32">relaksasi dan perbarui pendahulu</tspan>
+</text>
+<rect x="310" y="1350" width="480" height="90"/>
+<text x="550" y="1387.0" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Hentikan timer;</tspan>
+<tspan x="550" dy="32">catat durasi pencarian</tspan>
+</text>
+<path d="M550,1480 L790,1545 L550,1610 L310,1545 Z"/>
+<text x="550" y="1553" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Jarak tujuan berhingga?</tspan>
+</text>
+<rect x="65" y="1660" width="400" height="100"/>
+<text x="265" y="1702" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="265" dy="0">Rekonstruksi jalur;</tspan>
+<tspan x="265" dy="32">status berhasil</tspan>
+</text>
+<rect x="635" y="1660" width="400" height="100"/>
+<text x="835" y="1702" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="835" dy="0">Jalur kosong; biaya null;</tspan>
+<tspan x="835" dy="32">status tidak terjangkau</tspan>
+</text>
+<rect x="310" y="1820" width="480" height="90"/>
+<text x="550" y="1873.0" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Kembalikan hasil dan metrik</tspan>
+</text>
+<rect x="425" y="1960" width="250" height="60" rx="30"/>
+<text x="550" y="1998" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="25">
+<tspan x="550" dy="0">Selesai</tspan>
+</text>
+<path d="M550,85 V115" fill="none" marker-end="url(#a)"/>
+<path d="M550,205 V235" fill="none" marker-end="url(#a)"/>
+<path d="M550,365 V400" fill="none" marker-end="url(#a)"/>
+<path d="M550,520 V565" fill="none" marker-end="url(#a)"/>
+<path d="M550,695 V735" fill="none" marker-end="url(#a)"/>
+<path d="M550,825 V865" fill="none" marker-end="url(#a)"/>
+<path d="M550,995 V1030" fill="none" marker-end="url(#a)"/>
+<path d="M550,1120 V1160" fill="none" marker-end="url(#a)"/>
+<path d="M550,1440 V1480" fill="none" marker-end="url(#a)"/>
+<path d="M550,1910 V1960" fill="none" marker-end="url(#a)"/>
+<text x="585" y="393" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="21">
+<tspan x="585" dy="0">Ya</tspan>
+</text>
+<text x="585" y="723" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="21">
+<tspan x="585" dy="0">Ya</tspan>
+</text>
+<text x="595" y="1018" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="21">
+<tspan x="595" dy="0">Tidak</tspan>
+</text>
+<path d="M790,300 H825" fill="none" marker-end="url(#a)"/>
+<text x="807" y="285" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="20">
+<tspan x="807" dy="0">Tidak</tspan>
+</text>
+<path d="M950,345 H1090 V1990 H675" fill="none" marker-end="url(#a)"/>
+<path d="M310,630 H125 V1395 H310" fill="none" marker-end="url(#a)"/>
+<text x="225" y="618" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="21">
+<tspan x="225" dy="0">Tidak</tspan>
+</text>
+<path d="M790,930 H945 V1395 H790" fill="none" marker-end="url(#a)"/>
+<text x="830" y="918" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="21">
+<tspan x="830" dy="0">Ya</tspan>
+</text>
+<path d="M310,1220 H220 V545 H550 V565" fill="none" marker-end="url(#a)"/>
+<path d="M310,1545 H265 V1660" fill="none" marker-end="url(#a)"/>
+<text x="265" y="1528" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="21">
+<tspan x="265" dy="0">Ya</tspan>
+</text>
+<path d="M790,1545 H835 V1660" fill="none" marker-end="url(#a)"/>
+<text x="845" y="1528" fill="black" stroke="none" text-anchor="middle" font-family="Times New Roman,serif" font-size="21">
+<tspan x="845" dy="0">Tidak</tspan>
+</text>
+<path d="M265,1760 V1790 H550 V1820" fill="none" marker-end="url(#a)"/>
+<path d="M835,1760 V1790 H550" fill="none" marker-end="url(#a)"/>
+</g></svg>
